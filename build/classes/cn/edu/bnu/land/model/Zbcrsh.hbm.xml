@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-18 23:58:44 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbcrsh" table="zbcrsh" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="string">
+            <column name="USERID" length="20">
+                <comment>&#181;&#199;&#194;&#188;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="crzbbh" type="string">
+            <column name="CRZBBH" length="20">
+                <comment>&#179;&#246;&#200;&#195;&#214;&#184;&#177;&#234;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="fkxmbh" type="string">
+            <column name="FKXMBH" length="20">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="fkxmmc" type="string">
+            <column name="FKXMMC" length="100">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="fkxmgm" type="java.lang.Float">
+            <column name="FKXMGM" precision="12" scale="0">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="bccrgm" type="java.lang.Float">
+            <column name="BCCRGM" precision="12" scale="0">
+                <comment>&#177;&#190;&#180;&#206;&#179;&#246;&#200;&#195;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="sykcrgm" type="java.lang.Float">
+            <column name="SYKCRGM" precision="12" scale="0">
+                <comment>&#202;&#163;&#211;&#224;&#191;&#201;&#179;&#246;&#200;&#195;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="kcrgm" type="java.lang.Float">
+            <column name="KCRGM" precision="12" scale="0">
+                <comment>&#191;&#201;&#179;&#246;&#200;&#195;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="crzt" type="string">
+            <column name="CRZT" length="10">
+                <comment>&#179;&#246;&#200;&#195;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="qspzwz" type="string">
+            <column name="QSPZWZ" length="50">
+                <comment>&#200;&#168;&#202;&#244;&#198;&#190;&#214;&#164;&#206;&#187;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="crqt" type="string">
+            <column name="CRQT" length="20">
+                <comment>&#198;&#228;&#203;&#251;</comment>
+            </column>
+        </property>
+        <property name="crbz" type="string">
+            <column name="CRBZ" length="20">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

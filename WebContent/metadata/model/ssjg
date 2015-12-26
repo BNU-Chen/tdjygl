@@ -1,0 +1,84 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ssjg"
+    },
+    "designerId": "bc3e8c19-a309-4ec9-8672-7fcc4fc4ea8a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zbpcbh",
+                "type": "string"
+            },
+            "name": "MyField7",
+            "designerId": "f3cca909-5921-4141-a017-3ceeb0115910"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "userid",
+                "type": "string"
+            },
+            "name": "MyField8",
+            "designerId": "d276cac5-7d0f-4410-9fef-40da7b191047"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sgsl",
+                "type": "int"
+            },
+            "name": "MyField9",
+            "designerId": "2fa5d4b1-61de-43e7-ba49-9e031493b1ca"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sfdb",
+                "type": "boolean"
+            },
+            "name": "MyField10",
+            "designerId": "25a7df0a-db44-4aef-b76d-43d16be31a10"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "pcqt",
+                "type": "string"
+            },
+            "name": "MyField11",
+            "designerId": "f990d960-d66d-4571-ba51-2abd1f482673"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-8-16 10:11:45 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Crawlkeywords" table="Crawlkeywords" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="keywordsname" type="string">
+            <column name="keywordsname" length="50" />
+        </property>
+        <property name="adddate" type="string">
+            <column name="adddate" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

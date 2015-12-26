@@ -1,0 +1,354 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "quotaSearch",
+        "designer|userClassName": "quotaSearch",
+        "layout": "border",
+        "title": "建设指标"
+    },
+    "designerId": "dcb8ddce-f309-4c44-a912-dd8d9487929b",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "layout|region": "center",
+                "title": "高级检索>>建设指标检索"
+            },
+            "name": "MyPanel34",
+            "designerId": "eaf7b698-e628-4d09-b26a-57bbfc8f4255",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "designer|snapToGrid": 10,
+                        "height": 114,
+                        "jsonSubmit": true,
+                        "layout": "absolute",
+                        "layout|region": "north",
+                        "title": "输入检索条件",
+                        "url": "find_landquota"
+                    },
+                    "name": "MyForm15",
+                    "designerId": "40baedde-12c8-4948-aa0a-325c1f45fb04",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "areaText",
+                                "fieldLabel": "区域",
+                                "height": null,
+                                "id": "regionID1",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "layout|x": 10,
+                                "layout|y": 0,
+                                "margin": 15,
+                                "name": "region1",
+                                "queryMode": "local",
+                                "selectOnFocus": true,
+                                "store": "areaStore",
+                                "valueField": "area",
+                                "width": 200
+                            },
+                            "name": "MyComboBox16",
+                            "designerId": "7aa86b8f-a536-4550-9d89-1f5941678715"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": null,
+                                "fieldLabel": "面积",
+                                "id": "acreID1",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "layout|x": 260,
+                                "layout|y": 0,
+                                "margin": 15,
+                                "name": "acre1",
+                                "queryMode": "local",
+                                "selectOnFocus": true,
+                                "store": null,
+                                "value": null,
+                                "valueField": null,
+                                "width": 200
+                            },
+                            "name": "MyComboBox17",
+                            "designerId": "cdfc46a2-b773-4f4b-a2d8-b4b2dff1581d"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "priceText",
+                                "fieldLabel": "底价",
+                                "id": "priceID1",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "layout|x": 10,
+                                "layout|y": 40,
+                                "margin": 15,
+                                "name": "price1",
+                                "queryMode": "local",
+                                "selectOnFocus": true,
+                                "store": "priceStore",
+                                "value": null,
+                                "valueField": "price",
+                                "width": 200
+                            },
+                            "name": "MyComboBox18",
+                            "designerId": "3c26eaa9-5a58-4271-8d32-48d416c9277b"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "tradingText",
+                                "fieldLabel": "交易状态",
+                                "id": "tradingID1",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "layout|x": 260,
+                                "layout|y": 40,
+                                "margin": 15,
+                                "name": "trading",
+                                "queryMode": "local",
+                                "selectOnFocus": true,
+                                "store": "tradingStore",
+                                "value": null,
+                                "valueField": "trading",
+                                "width": 200
+                            },
+                            "name": "MyComboBox19",
+                            "designerId": "7b13faa8-3488-4b87-8d40-4d765d6d93bc"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 30,
+                                "layout|x": 480,
+                                "layout|y": 0,
+                                "margin": 40,
+                                "text": "检索",
+                                "width": 72
+                            },
+                            "name": "MyButton117",
+                            "designerId": "ebd84be5-2b94-44fe-8e8a-93e8e5ccb96f",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "handle",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "\r",
+                                            "var mystore = Ext.StoreMgr.get('landquota');\r",
+                                            "\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"10\",\r",
+                                            "    outArea:Ext.getCmp('regionID1').getValue(),\r",
+                                            "    outAcre:Ext.getCmp('acreID1').getValue(),\r",
+                                            "    outPrice:Ext.getCmp('priceID1').getValue(),\r",
+                                            "outTrading:Ext.getCmp('tradingID1').getValue()}\r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "31130419-c8fc-4967-a182-0491be63c8f0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forceFit": true,
+                        "layout|region": "center",
+                        "store": "landquota",
+                        "title": "检索结果"
+                    },
+                    "name": "MyGridPanel38",
+                    "designerId": "94f3011d-3c6e-4881-9244-480b6bece59a",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "number",
+                                "format": "0,000.",
+                                "text": "编号",
+                                "width": 52
+                            },
+                            "name": "MyNumberColumn24",
+                            "designerId": "2513c28d-81af-4c75-85d7-5bfd7b201e25"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "region",
+                                "text": "区域"
+                            },
+                            "name": "MyColumn104",
+                            "designerId": "c9ae5442-c200-4df2-8b93-5dbf27b7d743"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "acre",
+                                "text": "面积"
+                            },
+                            "name": "MyNumberColumn25",
+                            "designerId": "ab781779-6b82-4724-8da3-9c50aaf9cb48"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "price",
+                                "text": "底价"
+                            },
+                            "name": "MyColumn105",
+                            "designerId": "fe56395f-9f95-4ef0-b5af-9062578b2a29"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "releasedate",
+                                "text": "发布日期",
+                                "width": 119
+                            },
+                            "name": "MyDateColumn21",
+                            "designerId": "dbdb8703-516e-4c93-b935-73e2a6d64af0"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "trading",
+                                "text": "是否可交易"
+                            },
+                            "name": "MyColumn106",
+                            "designerId": "41f3b3b2-9af4-44e6-86af-a2e8355f59db"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView35",
+                            "designerId": "f9278b58-e125-4ce0-82a5-87bfe7811643"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "landquota",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar28",
+                            "designerId": "1f127c9b-589b-4720-9a88-c41ca1852131"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

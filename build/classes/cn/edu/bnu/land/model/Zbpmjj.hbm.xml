@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-25 20:00:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbpmjj" table="zbpmjj" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="zbpcbh" type="string">
+            <column name="ZBPCBH" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#197;&#250;&#180;&#206;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="dwed" type="java.lang.Float">
+            <column name="DWED" precision="12" scale="0" />
+        </property>
+        <property name="sl" type="java.lang.Integer">
+            <column name="SL" />
+        </property>
+        <property name="sgzsl" type="java.lang.Integer">
+            <column name="SGZSL" />
+        </property>
+        <property name="dj" type="java.lang.Float">
+            <column name="DJ" precision="12" scale="0" />
+        </property>
+        <property name="zgcj" type="java.lang.Float">
+            <column name="ZGCJ" precision="12" scale="0">
+                <comment>&#215;&#238;&#184;&#223;&#179;&#246;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="jjksrq" type="date">
+            <column name="JJKSRQ" length="10">
+                <comment>&#190;&#186;&#188;&#219;&#191;&#170;&#202;&#188;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="kssj" type="time">
+            <column name="KSSJ" length="8">
+                <comment>&#191;&#170;&#202;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="pczt" type="string">
+            <column name="PCZT" length="10" />
+        </property>
+        <property name="zdjj" type="java.lang.Float">
+            <column name="ZDJJ" precision="12" scale="0">
+                <comment>&#215;&#238;&#181;&#205;&#188;&#211;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="pcqt" type="string">
+            <column name="PCQT" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "\t['0','不限'],\r",
+            "    ['1','10亩以下'],\r",
+            "    ['2','10-100亩'],\r",
+            "    ['3','101-1000亩'],\r",
+            "    ['4','1001-5000亩'],\r",
+            "    ['5','5000亩以上']\r",
+            "]"
+        ],
+        "designer|userClassName": "acreStore",
+        "storeId": "acreStore"
+    },
+    "designerId": "6ff2ffce-aef4-4cfe-bcf2-971415c7a27d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy68",
+            "designerId": "e9bb6cd0-a521-450c-8e0d-f8c628b43a2d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader68",
+                    "designerId": "c93173bf-0f2d-4bfe-9fc2-47db3b5c8799"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "acre"
+            },
+            "name": "MyField344",
+            "designerId": "d0467644-f3b3-4ffd-849e-d76244d77974"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "acreText"
+            },
+            "name": "MyField345",
+            "designerId": "85127949-2937-4d1b-a0b3-8903eb4c0468"
+        }
+    ]
+}

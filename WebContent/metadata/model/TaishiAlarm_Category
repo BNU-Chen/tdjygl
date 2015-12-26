@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiAlarm_Category",
+        "designer|userClassName": "TaishiAlarm_Category"
+    },
+    "designerId": "8ff5c339-0261-4bb8-9cd0-b972efac1e7d",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jyl"
+            },
+            "name": "MyField465",
+            "designerId": "541f25d7-64e7-4c40-8d1d-ddad9ceae1e4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "htbh"
+            },
+            "name": "MyField466",
+            "designerId": "0f66665e-e71d-403b-b5cc-ef6cc7229a90"
+        }
+    ]
+}

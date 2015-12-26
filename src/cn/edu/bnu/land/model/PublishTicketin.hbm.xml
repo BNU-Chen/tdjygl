@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.PublishTicketin" table="publish_ticketin" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="isPush" type="java.lang.Boolean">
+            <column name="isPush">
+                <comment>&#202;&#199;&#183;&#241;&#182;&#204;&#208;&#197;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="publishDate" type="date">
+            <column name="publishDate" length="10" />
+        </property>
+        <property name="area" type="java.lang.Float">
+            <column name="area" precision="12" scale="0" />
+        </property>
+        <property name="deadline" type="date">
+            <column name="deadline" length="10" />
+        </property>
+        <property name="isMailPush" type="java.lang.Boolean">
+            <column name="isMailPush">
+                <comment>&#202;&#199;&#183;&#241;&#211;&#202;&#188;&#254;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="price" type="java.lang.Float">
+            <column name="price" precision="12" scale="0">
+                <comment>&#212;&#170;/&#196;&#182;</comment>
+            </column>
+        </property>
+        <property name="auction" type="string">
+            <column name="Auction" length="50">
+                <comment>&#197;&#196;&#194;&#244;&#183;&#189;&#202;&#189;</comment>
+            </column>
+        </property>
+        <property name="supplier" type="string">
+            <column name="supplier" length="50">
+                <comment>&#185;&#169;&#211;&#166;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="others" type="string">
+            <column name="others" length="200">
+                <comment>&#198;&#228;&#203;&#252;&#203;&#181;&#195;&#247;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

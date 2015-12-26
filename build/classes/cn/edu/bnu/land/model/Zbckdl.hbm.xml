@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-18 23:58:44 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbckdl" table="zbckdl" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="jcid" type="java.lang.Integer">
+            <column name="JCID">
+                <comment>&#189;&#248;&#179;&#246;id</comment>
+            </column>
+        </property>
+        <property name="zbpcbh" type="string">
+            <column name="ZBPCBH" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#197;&#250;&#180;&#206;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="bcfbed" type="java.lang.Float">
+            <column name="BCFBED" precision="12" scale="0">
+                <comment>&#177;&#190;&#180;&#206;&#183;&#162;&#178;&#188;&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="fbrq" type="date">
+            <column name="FBRQ" length="10">
+                <comment>&#183;&#162;&#178;&#188;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="bz" type="string">
+            <column name="BZ" length="20">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="qt" type="string">
+            <column name="QT" length="20">
+                <comment>&#198;&#228;&#203;&#251;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

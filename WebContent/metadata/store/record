@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "record",
+        "model": "recor",
+        "storeId": "record"
+    },
+    "designerId": "316620a9-563b-4687-a07c-9d89d1d4901d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getrecord"
+            },
+            "name": "MyAjaxProxy65",
+            "designerId": "bab12554-7891-44ff-a38b-59c85b7b368d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader65",
+                    "designerId": "38f4263a-ec63-4940-98dd-cc300eea0f7e"
+                }
+            ]
+        }
+    ]
+}

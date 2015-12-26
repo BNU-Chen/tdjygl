@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ShouyiAlarm_Category",
+        "designer|userClassName": "ShouyiAlarm_Category"
+    },
+    "designerId": "9643d074-2b74-426d-92a5-71617b21fd2f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField376",
+            "designerId": "f6f93c87-42e6-4095-a198-e0716b9f69c1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "visits"
+            },
+            "name": "MyField377",
+            "designerId": "f236d016-e5ee-4fac-ac6c-fd0fa6f59296"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value"
+            },
+            "name": "MyField378",
+            "designerId": "e9d02218-c818-431f-b7ce-81218852665d"
+        }
+    ]
+}

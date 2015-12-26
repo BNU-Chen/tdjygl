@@ -1,0 +1,424 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wqgl",
+        "designer|userClassName": "wqgl",
+        "height": 572,
+        "store": "zbgmstore",
+        "title": "<font size='2.5px'>网签</font>",
+        "width": 995
+    },
+    "designerId": "360bf9fc-b53a-4b56-8b3d-0547235b3667",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "zbpcbh",
+                "text": "批次编号"
+            },
+            "name": "MyColumn169",
+            "designerId": "78f2ebc5-ae19-40f6-9e75-f95d0fe80f13"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "userid",
+                "text": "用户名"
+            },
+            "name": "MyColumn170",
+            "designerId": "8488892d-d5f5-472b-8285-e6f7f36154b7"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dwed",
+                "text": "单位额度"
+            },
+            "name": "MyColumn171",
+            "designerId": "2b4ea18c-03ad-4762-82ee-28e83b43349c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "sgsl",
+                "text": "购买数量"
+            },
+            "name": "MyColumn172",
+            "designerId": "8d3b67de-b3d4-43e0-b4b1-436718412b5b"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "string",
+                "text": "购买总额"
+            },
+            "name": "MyColumn173",
+            "designerId": "b6bd1cfd-8a0a-4d46-a4f9-b24ea4238007",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return record.get('sgsl')*record.get('dwed');"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "1c6296ac-1b6e-40a9-9a54-6bdfe4448e60"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "zbdj",
+                "text": "成交单价"
+            },
+            "name": "MyColumn174",
+            "designerId": "4e3a7467-3ebe-4d67-9d18-4bad30ad495b"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "yfkze",
+                "text": "成交总价"
+            },
+            "name": "MyColumn175",
+            "designerId": "ef75e9ca-50a0-49df-9c0f-b6fb97218060"
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "string",
+                "icon": "images/ht.png",
+                "id": "schtbtn",
+                "width": 85
+            },
+            "name": "MyActionColumn7",
+            "designerId": "1ae5e7af-39ec-4aa9-8258-2405cf45bf73",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onActioncolumnAfterRender",
+                        "implHandler": [
+                            "Ext.getCmp('schtbtn').setText('生成合同');"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onActioncolumnAfterRender",
+                    "designerId": "53e0f6f4-00c3-4972-9cf3-d3b93356e167"
+                },
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "view",
+                            "rowIndex",
+                            "colIndex",
+                            "item",
+                            "e",
+                            "record",
+                            "row"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "Ext.Ajax.request(\r",
+                            "{\r",
+                            "    url:'scht',\r",
+                            "    method:'post', \r",
+                            "    headers:{\r",
+                            "\r",
+                            "        'Content-Type':'application/json'\r",
+                            "    },\r",
+                            "    params:Ext.encode(record.getData()),\r",
+                            "    success:function(response){\r",
+                            "        Ext.MessageBox.alert('信息','合同生成成功');\r",
+                            "\r",
+                            "        var result=Ext.decode(response.responseText);\r",
+                            "        //alert(result.htwz);\r",
+                            "        record.set('htwz',result.htwz);\r",
+                            "        //Ext.MessageBox.alert('信息','发布成功',function(btn){\r",
+                            "        //alert(result.zbpcbh);\r",
+                            "        //record.set('zbpcbh',result.zbpcbh);\r",
+                            "        //record.commit();\r",
+                            "        //});\r",
+                            "    },\r",
+                            "    failure:function(){\r",
+                            "        //Ext.MessageBox.alert('错误','操作失败！');\r",
+                            "    }\r",
+                            "\r",
+                            "}\r",
+                            ");"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "536fede3-7e68-4a7b-9373-e42c7e175ff1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "htwz",
+                "icon": "images/ck.png",
+                "id": "wqckht",
+                "width": 83
+            },
+            "name": "MyActionColumn8",
+            "designerId": "9c3943a0-e3d7-449d-bbe7-2c5080c3efd8",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onActioncolumnAfterRender1",
+                        "implHandler": [
+                            "Ext.getCmp('wqckht').setText('查看合同');"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onActioncolumnAfterRender1",
+                    "designerId": "af6d2def-8984-46b2-9bb0-07a4a63faa20"
+                },
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "view",
+                            "rowIndex",
+                            "colIndex",
+                            "item",
+                            "e",
+                            "record",
+                            "row"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "window.open (record.get('htwz'));"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "46eae1d8-38f4-4368-8179-f6f019c3721c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGridView53",
+            "designerId": "ee2259f0-e8af-4adb-a277-04ae51d4cd48"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 38
+            },
+            "name": "MyToolbar47",
+            "designerId": "26ef7fc2-9502-49ae-b0ef-445f49b0966a",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 35,
+                        "layout|flex": null,
+                        "src": "images/step5.png",
+                        "width": 540
+                    },
+                    "name": "MyImg16",
+                    "designerId": "bedf743f-bf58-4c0f-8d24-7af26de0ca23"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                        ],
+                        "text": "返回管理列表",
+                        "width": 100
+                    },
+                    "name": "MyLabel46",
+                    "designerId": "19d12950-f5ae-4a8a-9547-9bdc39a313fa",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "label"
+                                ],
+                                "element": "el",
+                                "fn": "onLabelClick1111",
+                                "implHandler": [
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget('fbjgck'));"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLabelClick1111",
+                            "designerId": "997f9c8a-fb66-434a-bc45-cc06541c9c6a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "id": "wqglzbpcbh",
+                        "layout|flex": null
+                    },
+                    "name": "MyTextField153",
+                    "designerId": "ab15de4b-41a2-4aae-9d72-3a9a4633ea2b"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridpanelActivate",
+                "implHandler": [
+                    "var store=Ext.StoreMgr.get('zbgmstore');\r",
+                    "store.clearFilter();\r",
+                    "store.filter('zbpcbh',Ext.getCmp('wqglzbpcbh').getValue());\r",
+                    "store.filter('dqhj',4);"
+                ],
+                "name": "activate",
+                "scope": "me"
+            },
+            "name": "onGridpanelActivate",
+            "designerId": "8c6caf05-45fd-4880-b965-0492bc39c1b7"
+        }
+    ]
+}

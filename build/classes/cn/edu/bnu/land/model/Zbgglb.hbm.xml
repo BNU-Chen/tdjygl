@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-18 23:58:44 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbgglb" table="zbgglb" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="zbpcbh" type="string">
+            <column name="ZBPCBH" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#197;&#250;&#180;&#206;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="dwed" type="java.lang.Float">
+            <column name="DWED" precision="12" scale="0">
+                <comment>&#181;&#165;&#206;&#187;&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="sl" type="java.lang.Integer">
+            <column name="SL">
+                <comment>&#202;&#253;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="jylx" type="string">
+            <column name="JYLX" length="10">
+                <comment>&#189;&#187;&#210;&#215;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="dj" type="java.lang.Float">
+            <column name="DJ" precision="12" scale="0">
+                <comment>&#181;&#215;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="fbrq" type="date">
+            <column name="FBRQ" length="10">
+                <comment>&#183;&#162;&#178;&#188;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="sqjzrq" type="date">
+            <column name="SQJZRQ" length="10">
+                <comment>&#201;&#234;&#199;&#235;&#189;&#216;&#214;&#185;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="bzjjzrq" type="date">
+            <column name="BZJJZRQ" length="10">
+                <comment>&#177;&#163;&#214;&#164;&#189;&#240;&#189;&#216;&#214;&#185;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="jjksrq" type="date">
+            <column name="JJKSRQ" length="10">
+                <comment>&#190;&#186;&#188;&#219;&#191;&#170;&#202;&#188;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="jjjsrq" type="date">
+            <column name="JJJSRQ" length="10">
+                <comment>&#190;&#186;&#188;&#219;&#189;&#225;&#202;&#248;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="dqhj" type="java.lang.Integer">
+            <column name="DQHJ">
+                <comment>&#181;&#177;&#199;&#176;&#187;&#183;&#189;&#218;</comment>
+            </column>
+        </property>
+        <property name="pczt" type="string">
+            <column name="PCZT" length="10">
+                <comment>&#197;&#250;&#180;&#206;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="pcbz" type="string">
+            <column name="PCBZ" length="10">
+                <comment>&#197;&#250;&#180;&#206;&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="pcqt" type="string">
+            <column name="PCQT" length="10">
+                <comment>&#197;&#250;&#180;&#206;&#198;&#228;&#203;&#251;</comment>
+            </column>
+        </property>
+        <property name="sfzj" type="java.lang.Boolean">
+            <column name="SFZJ">
+                <comment>&#202;&#199;&#183;&#241;&#214;&#213;&#189;&#225;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

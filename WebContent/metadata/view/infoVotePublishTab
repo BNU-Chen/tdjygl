@@ -1,0 +1,238 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoVotePublishTab",
+        "designer|userClassName": "infoVotePublishTab",
+        "layout": "fit",
+        "title": "网上投票-发起投票"
+    },
+    "designerId": "1ba38885-b024-4d63-b840-8cf43e15cb26",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "layout": "auto",
+                "title": "My Form"
+            },
+            "name": "MyForm26",
+            "designerId": "e5ce8315-4a08-42b2-b7fc-36dd0919b075",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "投票主题",
+                        "name": "voteTitle"
+                    },
+                    "name": "MyTextField89",
+                    "designerId": "b4ffe321-4a75-4ed6-9980-f51977262325"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "投票简介",
+                        "name": "voteIntro"
+                    },
+                    "name": "MyTextField90",
+                    "designerId": "41f22fff-8c27-44ab-8d85-7351c6dc191f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "开始时间",
+                        "inputType": "datetime",
+                        "name": "voteStarttime"
+                    },
+                    "name": "MyTextField91",
+                    "designerId": "38a98e6e-d372-4fd2-998f-f7c22c1abb26"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "结束时间",
+                        "inputType": "datetime",
+                        "name": "voteEndtime"
+                    },
+                    "name": "MyTextField92",
+                    "designerId": "e353c2c1-8bed-4640-9dc2-8badb2ba1329"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "发起人",
+                        "name": "voteVoter",
+                        "width": 256
+                    },
+                    "name": "MyTextField93",
+                    "designerId": "2f76009d-65de-402b-8475-1bd1e1ac841a"
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "store": "InfoVoteoptionStore",
+                        "title": "投票选项"
+                    },
+                    "name": "MyGridPanel49",
+                    "designerId": "2b48e004-4564-4138-be4d-bb48fff94ac2",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer29",
+                            "designerId": "be3f0f5f-6a81-44f0-87ef-a7430a8138de"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "voptionId",
+                                "text": "选项ID"
+                            },
+                            "name": "MyColumn129",
+                            "designerId": "b9eff7a3-3795-4b6f-8186-57d69c7d0f87"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "voptionContent",
+                                "text": "选项内容"
+                            },
+                            "name": "MyColumn130",
+                            "designerId": "8d0714ad-c2af-44fa-b138-193ae6ba0484"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView44",
+                            "designerId": "269f5098-a500-4b68-b1d7-5eed40cb2b43"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar36",
+                            "designerId": "598c382d-83e4-4105-b099-c35ae2a708fa",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "增加选项"
+                                    },
+                                    "name": "MyButton145",
+                                    "designerId": "2cf2edc4-4c6b-4ef2-a65f-b9859cddebb7"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "删除选项"
+                                    },
+                                    "name": "MyButton146",
+                                    "designerId": "e7df8f62-d0eb-4013-9223-318a196be57a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel27",
+                            "designerId": "f1482106-cd4e-4e8f-b885-50a989e7085e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "确定发起投票"
+                    },
+                    "name": "MyButton147",
+                    "designerId": "02e73a55-ae97-441e-9a79-dc6194c2076e"
+                }
+            ]
+        }
+    ]
+}

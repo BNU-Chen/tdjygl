@@ -1,0 +1,76 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    ['租赁','租赁'],\r",
+            "    ['转包','转包'],\r",
+            "    ['合作','合作'],\r",
+            "    ['转让','转让'],\r",
+            "    ['互换','互换'],\r",
+            "    ['入股','入股'],\r",
+            "    ['求租','求租'],\r",
+            "    ['求购','求购'],\r",
+            "    ['招拍挂','招拍挂']\r",
+            "]"
+        ],
+        "designer|userClassName": "transtyleStore",
+        "storeId": "transtyleStore"
+    },
+    "designerId": "ca94edad-5e55-4ce8-8a5b-8472d182e650",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy8",
+            "designerId": "04a2222c-ef61-4163-b37d-8383350af454",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader8",
+                    "designerId": "f016fd5c-1ac3-46e8-a4f8-4c8f3c232f62"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "style"
+            },
+            "name": "MyField39",
+            "designerId": "043294cb-1de6-4ca0-8c74-401ef2e7706b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "styleText"
+            },
+            "name": "MyField40",
+            "designerId": "3cdd995c-8132-40a4-add9-92f869998ac0"
+        }
+    ]
+}

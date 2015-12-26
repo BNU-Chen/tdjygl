@@ -1,0 +1,167 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "sign"
+    },
+    "designerId": "ac3a3c94-729f-438c-9e7e-192e96ad4a7b",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "loginName",
+                "type": "string"
+            },
+            "name": "MyField333",
+            "designerId": "3ada2f8c-cce6-4eb7-8e0d-f0cbbcc42095"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ticketid",
+                "type": "string"
+            },
+            "name": "MyField334",
+            "designerId": "e6373e22-4095-4522-b639-e552f28d79df"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "amount",
+                "type": "string"
+            },
+            "name": "MyField335",
+            "designerId": "c6a79a28-1ffb-4b68-abe6-1956ea88224f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price",
+                "type": "string"
+            },
+            "name": "MyField336",
+            "designerId": "fd9cb578-3c08-4f74-93dd-3e8f0df992e0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "totalprice",
+                "type": "string"
+            },
+            "name": "MyField337",
+            "designerId": "ed96cf27-2ae4-4e75-836a-c4547571c337"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "winner",
+                "type": "string"
+            },
+            "name": "MyField338",
+            "designerId": "b5d645a6-822f-44ea-8b36-fbfbf515f728"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "windate",
+                "type": "string"
+            },
+            "name": "MyField339",
+            "designerId": "2ac28d31-2c6d-4219-9582-4ec2c3e4bad0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "contractid",
+                "type": "string"
+            },
+            "name": "MyField340",
+            "designerId": "c89cc2bf-056d-435f-b7c3-e1680d6696aa"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "netsignid",
+                "type": "string"
+            },
+            "name": "MyField341",
+            "designerId": "281bfb8b-c714-4bed-9ddb-941734d90c69"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "contractstatus"
+            },
+            "name": "MyField342",
+            "designerId": "27376fe0-4b5a-4388-b940-771ece392796"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "contractcontent",
+                "type": "string"
+            },
+            "name": "MyField343",
+            "designerId": "3d7a1e08-ea68-4929-8434-1cc9967394bc"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-11 21:53:39 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Mbssendmsg" table="mbssendmsg" catalog="tdlz">
+        <composite-id name="id" class="cn.edu.bnu.land.model.MbssendmsgId">
+            <key-property name="idxNo" type="int">
+                <column name="IdxNo" />
+            </key-property>
+            <key-property name="msgId" type="string">
+                <column name="MsgID" length="30" />
+            </key-property>
+        </composite-id>
+        <property name="sender" type="string">
+            <column name="Sender" length="20" />
+        </property>
+        <property name="recipient" type="string">
+            <column name="Recipient" />
+        </property>
+        <property name="msgLevel" type="java.lang.Short">
+            <column name="MsgLevel" />
+        </property>
+        <property name="msgType" type="java.lang.Short">
+            <column name="MsgType" />
+        </property>
+        <property name="subject" type="string">
+            <column name="Subject" length="1024" />
+        </property>
+        <property name="urls" type="string">
+            <column name="URLs" />
+        </property>
+        <property name="mmsinfo" type="string">
+            <column name="MMSInfo" />
+        </property>
+        <property name="msgStatus" type="java.lang.Short">
+            <column name="MsgStatus" />
+        </property>
+        <property name="msgSize" type="java.lang.Integer">
+            <column name="MsgSize" />
+        </property>
+        <property name="requestTime" type="string">
+            <column name="RequestTime" length="20" />
+        </property>
+        <property name="sendStyle" type="java.lang.Short">
+            <column name="SendStyle" />
+        </property>
+        <property name="sendTime" type="string">
+            <column name="SendTime" length="20" />
+        </property>
+        <property name="sendOutTime" type="string">
+            <column name="SendOutTime" length="20" />
+        </property>
+        <property name="deliverTime" type="string">
+            <column name="DeliverTime" length="20" />
+        </property>
+        <property name="screenHeight" type="java.lang.Short">
+            <column name="ScreenHeight" />
+        </property>
+        <property name="screenWidth" type="java.lang.Short">
+            <column name="ScreenWidth" />
+        </property>
+        <property name="comPort" type="java.lang.Short">
+            <column name="ComPort" />
+        </property>
+        <property name="needFeedback" type="string">
+            <column name="NeedFeedback" length="1" />
+        </property>
+        <property name="needReadFeedback" type="string">
+            <column name="NeedReadFeedback" length="1" />
+        </property>
+        <property name="refId" type="string">
+            <column name="RefID" length="30" />
+        </property>
+        <property name="extendInfo" type="string">
+            <column name="ExtendInfo" />
+        </property>
+        <property name="comments" type="string">
+            <column name="Comments" />
+        </property>
+    </class>
+</hibernate-mapping>

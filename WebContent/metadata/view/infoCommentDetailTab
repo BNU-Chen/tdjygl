@@ -1,0 +1,208 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoCommentDetailTab",
+        "designer|userClassName": "infoCommentDetailTab",
+        "layout": "fit",
+        "title": "文章评论-详细"
+    },
+    "designerId": "103990bd-028e-4a79-b4bf-b3f8546b4ff3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "title": "My Form"
+            },
+            "name": "MyForm32",
+            "designerId": "233c846d-bb85-4659-b13a-f47f869013b3",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "store": null,
+                        "title": "文章评论"
+                    },
+                    "name": "MyGridPanel53",
+                    "designerId": "3461b30b-5d7a-42e2-9d18-c653e8641c77",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer32",
+                            "designerId": "ea48453f-49f6-4af6-baaa-2f76a8cc9459"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "commentId",
+                                "text": "评论人"
+                            },
+                            "name": "MyColumn141",
+                            "designerId": "fc3a3bb0-cac4-46b6-9410-9fbc2a37f4dc"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "commentId",
+                                "text": "评论内容"
+                            },
+                            "name": "MyColumn142",
+                            "designerId": "0db9e4cf-3ea7-408c-aaca-9bb97d31b4cf"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "text": "评论时间"
+                            },
+                            "name": "MyDateColumn28",
+                            "designerId": "d3c21326-7662-49e5-bc64-f57dcb57219b"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView48",
+                            "designerId": "41ac05cf-0a4d-4d6c-a5e1-13154bba5e3b"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "enableOverflow": true
+                            },
+                            "name": "MyToolbar41",
+                            "designerId": "b5be926f-2472-4922-936a-9c636bf6a10d",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按时间查询",
+                                        "layout|flex": null
+                                    },
+                                    "name": "MyDateField52",
+                                    "designerId": "99099e8c-efee-4e74-b48c-fea57f362842"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按关键词查询",
+                                        "layout|flex": null
+                                    },
+                                    "name": "MyTextField121",
+                                    "designerId": "99155ff3-b84c-4390-ba4a-6863e85035fd"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查询"
+                                    },
+                                    "name": "MyButton157",
+                                    "designerId": "9eeb3a3d-ae9e-4e30-bf85-a76bd50666b5"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton158",
+                                    "designerId": "785d8d10-5d6b-40fe-8471-f2dd7d1be047"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar38",
+                            "designerId": "66a6fe75-a7be-4e50-bf7c-1c596b8819e8"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel31",
+                            "designerId": "57b06958-87b5-413f-af7c-ca99840b1488"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

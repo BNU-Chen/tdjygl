@@ -1,0 +1,71 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "pubNewDealStore",
+        "model": "InfoArticleModel",
+        "pageSize": 10,
+        "storeId": "pubNewDealStore"
+    },
+    "designerId": "537384b1-5808-42b2-9517-646176bcbb2a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "search_PubNewDeal"
+            },
+            "name": "MyAjaxProxy83",
+            "designerId": "35230d8f-cec7-4892-bbf2-241530b1a585",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader83",
+                    "designerId": "d76e8414-e9b4-4e96-9f1e-78609564d03c"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={\r",
+                    "    searchField:Ext.getCmp('searchField_pubNewDeal').getValue(),  \r",
+                    "    searchDate:Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDeal').getValue(),'Y-m-d')  \r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onStoreBeforeLoad",
+            "designerId": "372949da-f695-4f21-88db-cf2e65434c73"
+        }
+    ]
+}

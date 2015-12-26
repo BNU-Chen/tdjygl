@@ -1,0 +1,73 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    ['1','100万元以下'],\r",
+            "    ['2','101-200万元'],\r",
+            "    ['3','201-300万元'],\r",
+            "    ['4','301-400万元'],\r",
+            "    ['5','401-500万元'],\r",
+            "    ['6','501万元及以上']\r",
+            "]"
+        ],
+        "designer|userClassName": "priceStore",
+        "storeId": "priceStore"
+    },
+    "designerId": "65d330ee-2737-4976-83a6-20518e202d7a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy39",
+            "designerId": "142511a7-47cb-4a4f-8d26-80f49d8d159f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader39",
+                    "designerId": "13952392-3062-4ff3-b1d5-ec3c95ba0ae4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price"
+            },
+            "name": "MyField157",
+            "designerId": "ef6300ba-e53e-4a23-84f3-276e94069df7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "priceText"
+            },
+            "name": "MyField158",
+            "designerId": "ed17aa00-6c61-4a80-8691-0b6da7d098bd"
+        }
+    ]
+}

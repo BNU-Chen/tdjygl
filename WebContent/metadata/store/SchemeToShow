@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "SchemeToShow",
+        "model": "SchemeToShow",
+        "pageSize": 10,
+        "storeId": "ContrastProShow"
+    },
+    "designerId": "0338aa11-899b-4dd5-a04d-77ab8fc1d28c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "SchemeToShowLoad"
+            },
+            "name": "MyAjaxProxy75",
+            "designerId": "73f30203-3a8e-45ef-aaa4-e3cea598a61f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader75",
+                    "designerId": "6d7ffdbb-9ce4-4743-817d-b87c8bfa9dc7"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var  extra_params={searchField:Ext.getCmp('searchField').getValue()};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "1ee4b02d-939d-4b45-88f9-7612c44b2b0d"
+        }
+    ]
+}

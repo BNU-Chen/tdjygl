@@ -1,0 +1,229 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoArticlePublishTab",
+        "designer|userClassName": "infoArticlePublishTab",
+        "title": "文章发表"
+    },
+    "designerId": "b2537df0-0734-43ad-a848-881e88497fea",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "anchorSize": 100,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "dock": null,
+                "height": 391,
+                "id": "articleDetailForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "title": "My Form",
+                "url": null
+            },
+            "name": "MyForm23",
+            "designerId": "0c069eed-6f40-4d63-8f61-7c224e3f0494",
+            "cn": [
+                {
+                    "type": "Ext.form.field.HtmlEditor",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "fieldLabel": "",
+                        "height": 240,
+                        "layout|x": 20,
+                        "layout|y": 130,
+                        "name": "articleContent",
+                        "weight": 1
+                    },
+                    "name": "MyHtmlEditor",
+                    "designerId": "322c759d-f46e-4a49-bce3-ea54d0cfe360"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "文章名称",
+                        "layout|anchor": null,
+                        "name": "articleName"
+                    },
+                    "name": "MyTextField80",
+                    "designerId": "83439c40-0b9a-471e-b39c-2664da05dc06"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "文章作者",
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 40,
+                        "name": "articleAuthor"
+                    },
+                    "name": "MyTextField81",
+                    "designerId": "6dcb7125-bc1b-4aae-9918-20db59a11d74"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "跳转URL",
+                        "layout|anchor": null,
+                        "layout|x": 350,
+                        "layout|y": 70,
+                        "name": "articleUrl"
+                    },
+                    "name": "MyTextField82",
+                    "designerId": "42114e80-adab-4cde-8aae-02daed814a05"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "发布时间",
+                        "inputType": "date",
+                        "layout|anchor": null,
+                        "layout|x": 350,
+                        "layout|y": 40,
+                        "name": "articlePublishtime"
+                    },
+                    "name": "MyTextField83",
+                    "designerId": "9ffb2ac5-e7bc-4ca3-8dbe-9e0f4cfa5694"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来源地址",
+                        "layout|anchor": "",
+                        "layout|x": 350,
+                        "layout|y": 10,
+                        "name": "articleSourceaddress",
+                        "width": null
+                    },
+                    "name": "MyTextField84",
+                    "designerId": "8d20444c-8033-4518-8a3a-71b0addbe394"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "文章来源",
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 100,
+                        "name": "articleSource",
+                        "width": null
+                    },
+                    "name": "MyTextField85",
+                    "designerId": "803e4af4-68aa-4e59-aabd-fae9b7fda0a7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "频道栏目",
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "name": "channelId"
+                    },
+                    "name": "MyTextField86",
+                    "designerId": "b2ea9fdd-af08-4767-9ac3-78a500341546"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 350,
+                        "layout|y": 100,
+                        "text": "发表文章"
+                    },
+                    "name": "MyButton140",
+                    "designerId": "44477bb1-ff07-4414-aa6e-c811f5f2d0ad",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var form = this.up('form').getForm(); // get the basic form\r",
+                                    "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    form.submit({\r",
+                                    "        url:'add_infoArticle',\r",
+                                    "        success: function(form, action) {\r",
+                                    "\r",
+                                    "            Ext.Msg.alert('Success', action.result.msg);\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.Msg.alert('Failed', action.result.msg);\r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else { // display error alert if the data is invalid\r",
+                                    "Ext.Msg.alert('Invalid Data', 'Please correct form errors.');}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "33e6d387-fafa-481f-905b-68704a8bb522"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

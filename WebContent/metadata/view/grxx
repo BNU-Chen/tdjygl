@@ -1,0 +1,381 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "bodyPadding": 10,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "grxx",
+        "designer|userClassName": "grxx",
+        "height": 631,
+        "id": null,
+        "layout": "absolute",
+        "title": "个人信息",
+        "width": 827
+    },
+    "designerId": "e60db951-a191-466b-8db7-e5e7f0f767bb",
+    "cn": [
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": null,
+                "layout|x": 20,
+                "layout|y": 20,
+                "style": [
+                    "{fontSize:'11pt',fontWeight:'900'}"
+                ],
+                "text": "基本信息"
+            },
+            "name": "MyLabel58",
+            "designerId": "ee3060e9-7fec-4d83-9123-2cf3d72a1c37"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 280,
+                "style": [
+                    "{fontSize:'11pt',fontWeight:'900'}"
+                ],
+                "text": "联系方式"
+            },
+            "name": "MyLabel59",
+            "designerId": "439becc3-71c4-4cdf-9a9b-2f000c45658f"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 90,
+                "layout|y": 20,
+                "text": "-----------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+            },
+            "name": "MyLabel60",
+            "designerId": "7ae5f6aa-6b9e-4cbd-92c8-77e6f18221c7"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 90,
+                "layout|y": 280,
+                "text": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+            },
+            "name": "MyLabel61",
+            "designerId": "4b7f0b43-94e4-4cd8-9663-53f4665a6f93"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "用户名",
+                "id": "loginname",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 60,
+                "name": "loginname",
+                "value": "['zcw']"
+            },
+            "name": "MyDisplayField29",
+            "designerId": "ae54f067-ede7-49b2-85f1-d2722165ca45"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "真实姓名",
+                "id": "loginname1",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 90,
+                "name": "loginname",
+                "value": "['zcw']"
+            },
+            "name": "MyDisplayField30",
+            "designerId": "0b502fbb-c2c4-4898-9202-82d1c9acd46a"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "身份证号",
+                "id": "loginname2",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 180,
+                "name": "loginname",
+                "value": "['zcw']"
+            },
+            "name": "MyDisplayField31",
+            "designerId": "66160f14-d2a0-4b06-9dae-d0d1bb4fac77"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "出生日期",
+                "id": "loginname5",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 150,
+                "name": "loginname",
+                "value": "['zcw']"
+            },
+            "name": "MyDisplayField32",
+            "designerId": "88c7f29c-f7f4-46b6-98ad-64acbcfa6d1d"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "性别",
+                "id": "loginname4",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 120,
+                "name": "loginname",
+                "value": "男"
+            },
+            "name": "MyDisplayField33",
+            "designerId": "0f54a0f3-b00d-4e1b-afe9-e8f3832688db"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "性质",
+                "id": "loginname3",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 210,
+                "name": "loginname",
+                "value": "个人"
+            },
+            "name": "MyDisplayField34",
+            "designerId": "350bc74a-1b6f-4f41-9f1b-e8a97173d2d2"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "单位",
+                "id": "loginname6",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 240,
+                "name": "loginname",
+                "value": "北京师范大学"
+            },
+            "name": "MyDisplayField35",
+            "designerId": "e3f79467-fa7e-456b-9297-43726a05b72e"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "手机号码",
+                "id": "loginname7",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 320,
+                "name": "loginname",
+                "value": "15101142173"
+            },
+            "name": "MyDisplayField36",
+            "designerId": "d56712f2-1d34-4110-9455-19a70edebf49"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "固定电话",
+                "id": "loginname8",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 350,
+                "name": "loginname",
+                "value": "55658175"
+            },
+            "name": "MyDisplayField37",
+            "designerId": "0f5234f1-eaa8-40d4-9ff8-093da5d85e61"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "电子邮件",
+                "id": "loginname9",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 380,
+                "name": "loginname",
+                "value": "zcw@mail.bnu.edu.cn"
+            },
+            "name": "MyDisplayField38",
+            "designerId": "e4061463-0723-4e0c-9a6f-8af3f9985088"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "地址",
+                "id": "loginname10",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 410,
+                "name": "loginname",
+                "value": "新街口外大街19号"
+            },
+            "name": "MyDisplayField39",
+            "designerId": "2b0285fe-b2db-4605-a424-7d66d13d2907"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "邮编",
+                "id": "loginname11",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 440,
+                "name": "loginname",
+                "value": "100875"
+            },
+            "name": "MyDisplayField40",
+            "designerId": "9ecb2447-79cc-4a42-9afc-ee8fe100f05e"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "传真号码",
+                "id": "loginname12",
+                "labelWidth": 60,
+                "layout|x": 300,
+                "layout|y": 470,
+                "name": "loginname",
+                "value": "574982"
+            },
+            "name": "MyDisplayField41",
+            "designerId": "eaf7601c-2767-4583-b1a8-832b16d9beae"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "href": "",
+                "hrefTarget": "",
+                "layout|x": 340,
+                "layout|y": 520,
+                "text": "编辑",
+                "width": 50
+            },
+            "name": "MyButton182",
+            "designerId": "d5148fd1-50e9-4307-aa79-435dd46adac2",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var panel=Ext.getCmp('contentPanel');\r",
+                            "\r",
+                            "var grxx=Ext.widget('xxxg');\r",
+                            "panel.removeAll();\r",
+                            "panel.add(grxx);"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "ca5dbc61-3db0-46b1-8a4f-7db2f93f99c4"
+                }
+            ]
+        }
+    ]
+}

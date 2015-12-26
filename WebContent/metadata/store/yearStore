@@ -1,0 +1,76 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "\t['0','不限'],\r",
+            "    ['1','5年及以下'],\r",
+            "    ['2','6-10年'],\r",
+            "    ['3','11-15年'],\r",
+            "    ['4','16-20年'],\r",
+            "    ['5','21-30年'],\r",
+            "    ['6','31-40年'],\r",
+            "    ['7','41-50年'],\r",
+            "    ['8','50年以上']\r",
+            "]"
+        ],
+        "designer|userClassName": "yearStore",
+        "storeId": "yearStore"
+    },
+    "designerId": "d121009a-2f11-420b-8589-2e7055b967b3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy9",
+            "designerId": "4c029ad1-b0eb-4527-9182-6b74bd245e40",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader9",
+                    "designerId": "0962d64f-634f-4477-8f36-b0b38117da9e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "year"
+            },
+            "name": "MyField41",
+            "designerId": "60cf17c5-402e-407b-affc-cf433ab5823b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "yearText"
+            },
+            "name": "MyField42",
+            "designerId": "974271bc-052e-421f-bfe2-fd36f4b8cf16"
+        }
+    ]
+}

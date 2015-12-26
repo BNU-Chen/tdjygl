@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ccQueryStatisticAreaModel"
+    },
+    "name": "ccQueryStatisticPriceModel1",
+    "designerId": "2d03a672-250d-40bf-9b6d-37d27b444f43",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField75",
+            "designerId": "bb121b4a-c026-42da-8825-0dcff65a595f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "data"
+            },
+            "name": "MyField76",
+            "designerId": "25bcd435-b2be-46a2-bc3e-6b3b19c4bbb7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "comment"
+            },
+            "name": "MyField77",
+            "designerId": "58767827-b66c-4341-b714-e1d60686817f"
+        }
+    ]
+}

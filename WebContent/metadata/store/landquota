@@ -1,0 +1,68 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "landquota",
+        "model": "QuotaData",
+        "pageSize": 10,
+        "storeId": "landquota"
+    },
+    "designerId": "831d4967-b76a-4542-b95a-cc0ee125cd42",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:8080/lyj0816/find_landquota"
+            },
+            "name": "MyAjaxProxy38",
+            "designerId": "46f627b9-0427-48d7-a037-0433a8dbe416",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader38",
+                    "designerId": "22cb3f9c-a0ff-43f0-8865-e5f14cbb05da"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={outArea:Ext.getCmp('regionID1').getValue(),\r",
+                    "        outAcre:Ext.getCmp('acreID1').getValue(),\r",
+                    "        outTrading:Ext.getCmp('tradingID1').getValue(),\r",
+                    "    outPrice:Ext.getCmp('priceID1').getValue()};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "b10ea2c1-cdde-4bd6-b911-d6cefbb61b21"
+        }
+    ]
+}

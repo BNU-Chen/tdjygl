@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-18 23:58:44 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbjyba" table="zbjyba" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="string">
+            <column name="USERID" length="20">
+                <comment>&#211;&#195;&#187;&#167;&#181;&#199;&#194;&#188;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="zbpcbh" type="string">
+            <column name="ZBPCBH" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#197;&#250;&#180;&#206;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="zbbh" type="string">
+            <column name="ZBBH" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="dwed" type="java.lang.Float">
+            <column name="DWED" precision="12" scale="0">
+                <comment>&#181;&#165;&#206;&#187;&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="gmsl" type="java.lang.Integer">
+            <column name="GMSL">
+                <comment>&#185;&#186;&#194;&#242;&#202;&#253;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="cjdj" type="java.lang.Float">
+            <column name="CJDJ" precision="12" scale="0">
+                <comment>&#179;&#201;&#189;&#187;&#181;&#165;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="cjzj" type="java.lang.Float">
+            <column name="CJZJ" precision="12" scale="0">
+                <comment>&#179;&#201;&#189;&#187;&#215;&#220;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="htbh" type="string">
+            <column name="HTBH" length="20">
+                <comment>&#186;&#207;&#205;&#172;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="wqbh" type="string">
+            <column name="WQBH" length="20">
+                <comment>&#205;&#248;&#199;&#169;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="babh" type="string">
+            <column name="BABH" length="20">
+                <comment>&#177;&#184;&#176;&#184;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="barq" type="date">
+            <column name="BARQ" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="bz" type="string">
+            <column name="BZ" length="20">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="qt" type="string">
+            <column name="QT" length="20">
+                <comment>&#198;&#228;&#203;&#251;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

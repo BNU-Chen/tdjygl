@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoLetter" table="info_letter" catalog="tdlz">
+        <id name="letterId" type="java.lang.Integer">
+            <column name="letter_id" />
+            <generator class="identity" />
+        </id>
+        <property name="letterTitle" type="string">
+            <column name="letter_title" length="30" />
+        </property>
+        <property name="letterContent" type="string">
+            <column name="letter_content" length="65535" />
+        </property>
+        <property name="letterAuthor" type="string">
+            <column name="letter_author" length="10" />
+        </property>
+        <property name="letterIsreply" type="java.lang.Byte">
+            <column name="letter_isreply" />
+        </property>
+        <property name="letterIsshow" type="java.lang.Byte">
+            <column name="letter_isshow" />
+        </property>
+        <property name="letterReplycontent" type="string">
+            <column name="letter_replycontent" length="65535" />
+        </property>
+        <property name="letterTel" type="string">
+            <column name="letter_tel" length="20" />
+        </property>
+        <property name="letterEmail" type="string">
+            <column name="letter_email" length="20" />
+        </property>
+        <property name="letterAddress" type="string">
+            <column name="letter_address" length="30" />
+        </property>
+        <property name="letterAuthoridnum" type="string">
+            <column name="letter_authoridnum" length="20" />
+        </property>
+        <property name="letterTime" type="timestamp">
+            <column name="letter_time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

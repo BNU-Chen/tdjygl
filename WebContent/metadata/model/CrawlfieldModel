@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CrawlfieldModel"
+    },
+    "designerId": "4f6b9c6c-4acf-4a2a-ba81-66a206f0bfab",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "webdataField",
+                "type": "string"
+            },
+            "name": "MyField289",
+            "designerId": "01346397-79af-48f4-8d4b-8cc5c010c2bb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "localdataField",
+                "type": "string"
+            },
+            "name": "MyField290",
+            "designerId": "1d61f0c3-1e2f-4d42-bcff-4214a70ad6c0"
+        }
+    ]
+}

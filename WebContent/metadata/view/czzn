@@ -1,0 +1,19 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "czzn",
+        "designer|userClassName": "czzn",
+        "height": 584,
+        "html": [
+            "此处略去5000字"
+        ],
+        "title": "操作指南",
+        "width": 833
+    },
+    "designerId": "9e35b590-c91e-4688-afbc-f6b23e89ddff"
+}

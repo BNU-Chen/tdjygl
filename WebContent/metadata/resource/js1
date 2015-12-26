@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js1",
+        "url": "resources/runner.js",
+        "x-compile": true
+    },
+    "designerId": "520eda5f-8576-4ba3-9ff3-0c0770438b4f"
+}

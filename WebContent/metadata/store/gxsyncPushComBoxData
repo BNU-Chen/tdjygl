@@ -1,0 +1,68 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[[\"pubDate\",\"发布日期\"],\r",
+            "[\"deadDate\",\"截止日期\"]]"
+        ],
+        "designer|userAlias": "gxsyncPushComBoxData",
+        "designer|userClassName": "gxsyncPushComBoxData",
+        "storeId": "MyArrayStore"
+    },
+    "designerId": "44fbfcc3-4454-437f-b575-8f194964d7e2",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy84",
+            "designerId": "e891b1d2-d992-4972-af3a-56c2cc6eba56",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Array",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyArrayReader",
+                    "designerId": "b70d5fe2-7f6b-4f3b-92c7-ac7c201d43c0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "tid"
+            },
+            "name": "MyField440",
+            "designerId": "4933d9eb-5c62-4bae-a75b-461a157ea147"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ttype"
+            },
+            "name": "MyField441",
+            "designerId": "a84cc7c7-982b-4111-8439-f9a5da004a2b"
+        }
+    ]
+}

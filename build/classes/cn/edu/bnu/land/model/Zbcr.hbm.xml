@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-3 8:35:40 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbcr" table="zbcr" catalog="tdlz">
+        <id name="fkxmbh" type="string">
+            <column name="FKXMBH" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="fkxmmc" type="string">
+            <column name="FKXMMC" length="100">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="fkxmwz" type="string">
+            <column name="FKXMWZ" length="100">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#206;&#187;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="fkxmgm" type="java.lang.Float">
+            <column name="FKXMGM" precision="12" scale="0">
+                <comment>&#184;&#180;&#191;&#209;&#207;&#238;&#196;&#191;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="kcrgm" type="java.lang.Float">
+            <column name="KCRGM" precision="12" scale="0">
+                <comment>&#191;&#201;&#179;&#246;&#200;&#195;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="crzt" type="string">
+            <column name="CRZT" length="10">
+                <comment>&#179;&#246;&#200;&#195;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="crbz" type="string">
+            <column name="CRBZ" length="10">
+                <comment>&#179;&#246;&#200;&#195;&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

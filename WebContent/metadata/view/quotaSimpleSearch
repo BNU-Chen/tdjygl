@@ -1,0 +1,145 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|userAlias": "quotaSimpleSearch",
+        "designer|userClassName": "quotaSimpleSearch",
+        "layout": "border",
+        "title": "建设指标"
+    },
+    "designerId": "cd8ba65a-1b46-4b90-9659-0da215db855d",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "height": 56,
+                "layout": "hbox",
+                "layout|flex": null,
+                "layout|region": "north",
+                "title": ""
+            },
+            "name": "MyForm16",
+            "designerId": "2f4ef2a5-a5ae-425b-914a-b5a6c35db13f",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "hideLabel": true,
+                        "layout|flex": null,
+                        "margin": "",
+                        "width": 420
+                    },
+                    "name": "MyTextField66",
+                    "designerId": "9fd92738-dd8e-4010-b619-f7f37347bfc2"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "layout|flex": null,
+                        "margin": 5,
+                        "text": "检索",
+                        "width": 70
+                    },
+                    "name": "MyButton118",
+                    "designerId": "1c181ac5-02ce-415d-902f-bea00340b7ed"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "margin": 5,
+                        "text": "高级检索",
+                        "width": 70
+                    },
+                    "name": "MyButton119",
+                    "designerId": "8015efc1-50c0-4cac-bec0-61e5e45848bf"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "layout|flex": 1,
+                "layout|region": "center",
+                "title": ""
+            },
+            "name": "MyGridPanel39",
+            "designerId": "af9d9709-5b69-4965-aa6c-7ce26a9e99ee",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView36",
+                    "designerId": "9a85ec34-8514-45d5-8e11-00c01d04860e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "检索结果："
+                    },
+                    "name": "MyColumn107",
+                    "designerId": "20bc5fa7-c61a-4ef5-ac9e-9410912f2ac1"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar29",
+                    "designerId": "00f0cdfb-cae2-4ba8-a3c2-a948992a2596"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,528 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "bodyPadding": 10,
+        "border": false,
+        "designer|userAlias": "fkxm",
+        "designer|userClassName": "fkxm1",
+        "height": 397,
+        "id": null,
+        "layout": "auto",
+        "title": null,
+        "width": null
+    },
+    "designerId": "88712bda-f2c8-426e-93ad-418b04b26cd1",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 38,
+                "id": null
+            },
+            "name": "MyToolbar50",
+            "designerId": "0d5dfc5e-48cb-4109-a283-2d66c2058032",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦项目编号",
+                        "itemId": "fkxmbh",
+                        "layout|flex": null,
+                        "name": "fkxmbh"
+                    },
+                    "name": "MyTextField173",
+                    "designerId": "5cf77705-0188-432c-9108-181aa7b565ad"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "查询",
+                        "width": 69
+                    },
+                    "name": "MyButton179",
+                    "designerId": "bf00bb2d-07f9-4bdb-bc95-27cc29af2940",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "\r",
+                                    "var search=this.dockedItems.get(0).getComponent('fkxmbh');\r",
+                                    "var ts=this.dockedItems.get(0).getComponent('ts');\r",
+                                    "if(search.isValid())\r",
+                                    "{\r",
+                                    "    var fkxmbh=search.getValue();\r",
+                                    "    var form=this.dockedItems.get(1).getComponent('fkxmxx');\r",
+                                    "    form.getForm().load(\r",
+                                    "    {\r",
+                                    "        url:'getfkxmxx',\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.Msg.alert(\"提示\", action.result.msg);\r",
+                                    "            ts.setValue(\"<font color='red' size='3px'> \"+action.result.msg+\"</font>\");\r",
+                                    "        },\r",
+                                    "        params:\r",
+                                    "        {\r",
+                                    "            fkxmbh:fkxmbh\r",
+                                    "        }\r",
+                                    "\r",
+                                    "    }\r",
+                                    "    );\r",
+                                    "}\r",
+                                    "\r",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "029d796b-3975-4210-8c2c-d8ec8b237aed"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hideLabel": true,
+                        "itemId": "ts",
+                        "layout|flex": null,
+                        "width": 192
+                    },
+                    "name": "MyDisplayField16",
+                    "designerId": "64f2485e-3584-4e7b-9f92-1caea61c8fe7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "dock": "top",
+                "height": 357,
+                "id": null,
+                "itemId": "con",
+                "layout": "border",
+                "title": ""
+            },
+            "name": "MyForm44",
+            "designerId": "75c58ea9-c3ef-4ded-bbc9-1966e3f6302c",
+            "cn": [
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0,
+                        "layout|region": "center",
+                        "title": ""
+                    },
+                    "name": "MyTabPanel12",
+                    "designerId": "16b82b2f-4e76-40ad-be0d-b905ef8edef0",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "fit",
+                                "title": "权属凭证"
+                            },
+                            "name": "MyPanel39",
+                            "designerId": "f2654ce7-4050-41f5-99fa-5665d91b5179",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig32",
+                                    "designerId": "0eb18cb4-9610-441f-8fb9-5cc3f5ca7f5a"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "crqspz",
+                                        "height": 201,
+                                        "id": null,
+                                        "itemId": "qspz",
+                                        "width": 201
+                                    },
+                                    "name": "MyImg19",
+                                    "designerId": "6f6bd998-f8f5-483b-85f6-14ad02ca3407"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "复垦项目位置图"
+                            },
+                            "name": "MyPanel40",
+                            "designerId": "a95bdf74-6182-4dcb-ad57-274a140fc30d",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig33",
+                                    "designerId": "c723a8ec-cb60-4d18-9732-3a2c4a084c72"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "designer|snapToGrid": 5,
+                        "id": null,
+                        "itemId": "fkxmxx",
+                        "layout": "absolute",
+                        "layout|region": "west",
+                        "title": "",
+                        "url": "updateqspz",
+                        "width": 471
+                    },
+                    "name": "MyForm45",
+                    "designerId": "bdfa91bf-f79d-48cf-812f-f46906501b86",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "复垦项目编号",
+                                "itemId": "fkxmbh",
+                                "layout|x": 20,
+                                "layout|y": 30,
+                                "name": "fkxmbh",
+                                "submitValue": true
+                            },
+                            "name": "MyDisplayField17",
+                            "designerId": "7f845f44-8344-4b9c-9bf9-9f64c9f26a24"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "复垦项目名称",
+                                "layout|x": 20,
+                                "layout|y": 80,
+                                "name": "fkxmmc",
+                                "submitValue": true
+                            },
+                            "name": "MyDisplayField18",
+                            "designerId": "320ba335-bcfd-4d49-9753-1dbf0303bf64"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "项目总规模",
+                                "itemId": "fkxmgm",
+                                "layout|x": 20,
+                                "layout|y": 130,
+                                "name": "fkxmgm",
+                                "submitValue": true
+                            },
+                            "name": "MyDisplayField19",
+                            "designerId": "fa3630af-4f9d-4a16-92ef-50390e9a04d7"
+                        },
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "baseChars": "0123456789.",
+                                "fieldLabel": "本次出让规模",
+                                "itemId": "bccrgm",
+                                "layout|x": 20,
+                                "layout|y": 230,
+                                "msgTarget": "under",
+                                "name": "bccrgm",
+                                "regex": "/^(\\d*\\.)?\\d+$/",
+                                "vtype": "zd",
+                                "vtypeText": null,
+                                "width": 200
+                            },
+                            "name": "MyNumberField4",
+                            "designerId": "bcf959b9-4007-42d2-84de-61248cd93146",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBccrgmChange",
+                                        "implHandler": [
+                                            "var value=this.queryById('fkxmxx').getComponent('kcrgm').getValue();\r",
+                                            " var cr=this.queryById('fkxmxx').getComponent('bccrgm').getValue();\r",
+                                            "Ext.apply(Ext.form.VTypes, {\r",
+                                            "    //  vtype validation function\r",
+                                            "    zd: function(val, field) {\r",
+                                            "        //var value=this.queryById('fkxmxx').getComponent('kcrgm').getValue();\r",
+                                            "       // var cr=this.queryById('fkxmxx').getComponent('bccrgm').getValue();\r",
+                                            "        if(cr>value)\r",
+                                            "        {\r",
+                                            "           \r",
+                                            "        \r",
+                                            "        return false;\r",
+                                            "        }\r",
+                                            "        else\r",
+                                            "        {\r",
+                                            "            return true;\r",
+                                            "        }\r",
+                                            "    },\r",
+                                            "    // vtype Text property: The error text to display when the validation function returns false\r",
+                                            "    zdText: '输入值不能大于可出让规模'\r",
+                                            "      \r",
+                                            "});"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBccrgmChange",
+                                    "designerId": "4ea7cedc-a567-4e38-b2d8-735c8328cbfa"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "可出让规模",
+                                "itemId": "kcrgm",
+                                "layout|x": 20,
+                                "layout|y": 180,
+                                "name": "kcrgm",
+                                "submitValue": true
+                            },
+                            "name": "MyDisplayField20",
+                            "designerId": "c8c97f19-a4bd-4b02-afd2-e191e23c613b"
+                        },
+                        {
+                            "type": "Ext.form.field.File",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空",
+                                "buttonText": "浏览",
+                                "clearOnSubmit": false,
+                                "fieldLabel": "上传权属凭证",
+                                "layout|x": 20,
+                                "layout|y": 290,
+                                "msgTarget": "under",
+                                "name": "scqspz",
+                                "regex": "/(.jpg)$/",
+                                "regexText": "输入格式必须为jpg",
+                                "width": 240
+                            },
+                            "name": "MyFileUpload6",
+                            "designerId": "5e815c8e-3763-4b4b-9343-5ecb17e34d40"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 280,
+                                "layout|y": 290,
+                                "text": "上传",
+                                "width": 80
+                            },
+                            "name": "MyButton180",
+                            "designerId": "24584009-c459-4ca9-8072-883b8224642b",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "var qspz=this.dockedItems.get(1).items.get(0).items.get(0).getComponent('qspz');\r",
+                                            "var form=this.dockedItems.get(1).getComponent('fkxmxx');\r",
+                                            "\r",
+                                            "if(form.isValid())\r",
+                                            "form.getForm().submit(\r",
+                                            "{\r",
+                                            "\r",
+                                            "    // method:'post',\r",
+                                            "    waitMsg: '正在上传......',\r",
+                                            "    success:function(form, action){\r",
+                                            "\r",
+                                            "        var photoUrl=\"http://localhost:8080/sell/\"+action.result.msg;\r",
+                                            "        //alert(photoUrl);\r",
+                                            "        // var qspz=this.dockedItems.get(1).items.get(0).items.get(0).getComponent('qspz');\r",
+                                            "\r",
+                                            "        qspz.getEl().dom.src=photoUrl;\r",
+                                            "\r",
+                                            "    },\r",
+                                            "    failure:function(){\r",
+                                            "        Ext.MessageBox.alert('提示','操作失败！');\r",
+                                            "    }\r",
+                                            "\r",
+                                            "}\r",
+                                            ");"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "b66707fc-58d5-4d0a-bff5-1ff625592563"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "<font size='2px'>公顷</font>",
+                                "layout|x": 225,
+                                "layout|y": 235,
+                                "text": ""
+                            },
+                            "name": "MyLabel55",
+                            "designerId": "c13b8fbd-bd52-4f37-9b0a-06cee23d997a"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 10,
+                                "layout|x": 175,
+                                "layout|y": 135,
+                                "text": "公顷"
+                            },
+                            "name": "MyLabel56",
+                            "designerId": "1b53a3a2-c2cc-4c66-91a6-022a4a5871ae"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 10,
+                                "layout|x": 175,
+                                "layout|y": 185,
+                                "text": "公顷"
+                            },
+                            "name": "MyLabel57",
+                            "designerId": "42a7581d-6077-4308-baa0-4a52ec8d79a0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

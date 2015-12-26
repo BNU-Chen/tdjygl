@@ -1,0 +1,820 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "infoAritcleNDZCNewWindow",
+        "designer|userClassName": "infoAritcleNDZCNewWindow",
+        "height": 471,
+        "id": "infoAritcleNDZCNewWindow",
+        "layout": "absolute",
+        "title": "发表新信息",
+        "width": 604
+    },
+    "designerId": "59ebbce4-a270-4967-a528-25b161175fe0",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 420,
+                "id": "infoArticleNDZCNewForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "title": ""
+            },
+            "name": "MyForm34",
+            "designerId": "e81f39ef-933b-4aef-a9c0-e95567b8308f",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "名称："
+                    },
+                    "name": "MyLabel16",
+                    "designerId": "ed30b914-3cd6-4a3c-90d8-eb6fffc1fe59"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 14,
+                        "layout|x": 0,
+                        "layout|y": 40,
+                        "text": "作者："
+                    },
+                    "name": "MyLabel17",
+                    "designerId": "1dd8d238-2628-4d98-81d5-0f53391c68da"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 0,
+                        "layout|y": 80,
+                        "text": "信息来源："
+                    },
+                    "name": "MyLabel18",
+                    "designerId": "8a8d9379-0f4d-45bc-967f-9a1174bcda3a"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 0,
+                        "layout|y": 200,
+                        "text": "内容："
+                    },
+                    "name": "MyLabel19",
+                    "designerId": "45319138-516c-4287-b939-8fc35dbc1309"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 10,
+                        "layout|x": 310,
+                        "layout|y": 40,
+                        "text": "频道栏目："
+                    },
+                    "name": "MyLabel20",
+                    "designerId": "44f69bda-e8b3-4fb7-b395-2756094a2f7c"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 0,
+                        "layout|y": 160,
+                        "text": "地块坐标："
+                    },
+                    "name": "MyLabel21",
+                    "designerId": "dd7a4393-8af2-4641-9aa4-fe5f69246b87"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 0,
+                        "layout|y": 120,
+                        "text": ""
+                    },
+                    "name": "MyLabel22",
+                    "designerId": "99544815-1555-450e-b6c8-4e39b202d82c"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "areaName",
+                        "fieldLabel": "",
+                        "id": "infoNDZCProvice",
+                        "layout|x": 80,
+                        "layout|y": 120,
+                        "store": "infoArticleStoreProvice",
+                        "submitValue": false,
+                        "valueField": "areaCode",
+                        "width": 70
+                    },
+                    "name": "MyComboBox21",
+                    "designerId": "d2e95151-9efb-47b5-bffc-63503c39fba7",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onInfoNDZCProviceSelect",
+                                "implHandler": [
+                                    "\r",
+                                    "var codeHead=records[0].get('areaCode');\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'get_infoArticleCity',\r",
+                                    "    params:{codeHead:codeHead},\r",
+                                    "    success:function(response){\r",
+                                    "        var mystore = Ext.StoreMgr.get('infoArticleStoreCity');\r",
+                                    "        mystore.load(\r",
+                                    "        {\r",
+                                    "            params:{\r",
+                                    "                codeHead: codeHead\r",
+                                    "            }\r",
+                                    "        }\r",
+                                    "        );\r",
+                                    "    }\r",
+                                    "});   \r",
+                                    "var  cityStore=Ext.StoreMgr.get('infoArticleStoreCity');//获取store对象\r",
+                                    "\r",
+                                    "var cityField=Ext.getCmp(\"infoNDZCCity\");\r",
+                                    "cityField.setValue('');\r",
+                                    "\r",
+                                    "var countyField=Ext.getCmp(\"infoNDZCCounty\");\r",
+                                    "countyField.setValue('');\r",
+                                    "\r",
+                                    "var villageField=Ext.getCmp(\"infoNDZCVillage\");\r",
+                                    "villageField.setValue('');\r",
+                                    "\r",
+                                    "if(cityField.view)   \r",
+                                    "cityField.view.setStore(cityStore);  "
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onInfoNDZCProviceSelect",
+                            "designerId": "12a9a332-f9c9-4441-bd2b-26e890fa6f6e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 0,
+                        "layout|y": 120,
+                        "text": "所在行政区："
+                    },
+                    "name": "MyLabel23",
+                    "designerId": "ffb718ed-9d19-46e4-8612-a6e06018d5bc"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "areaName",
+                        "fieldLabel": "",
+                        "id": "infoNDZCCity",
+                        "layout|x": 170,
+                        "layout|y": 120,
+                        "store": "infoArticleStoreCity",
+                        "submitValue": false,
+                        "valueField": "areaCode",
+                        "width": 90
+                    },
+                    "name": "MyComboBox22",
+                    "designerId": "1af3b35c-2ca8-41ae-b5c1-41e47fad7818",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onInfoNDZCCitySelect",
+                                "implHandler": [
+                                    "\r",
+                                    "var codeHead=records[0].get('areaCode');\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'get_infoArticleCounty',\r",
+                                    "    params:{codeHead:codeHead},\r",
+                                    "    success:function(response){\r",
+                                    "        var mystore = Ext.StoreMgr.get('infoArticleStoreCounty');\r",
+                                    "        mystore.load(\r",
+                                    "        {\r",
+                                    "            params:{\r",
+                                    "                codeHead: codeHead\r",
+                                    "            }\r",
+                                    "        }\r",
+                                    "        );\r",
+                                    "    }\r",
+                                    "});   \r",
+                                    "var  countyStore=Ext.StoreMgr.get('infoArticleStoreCounty');//获取store对象\r",
+                                    "\r",
+                                    "\r",
+                                    "var countyField=Ext.getCmp(\"infoNDZCCounty\");\r",
+                                    "countyField.setValue('');\r",
+                                    "\r",
+                                    "var villageField=Ext.getCmp(\"infoNDZCVillage\");\r",
+                                    "villageField.setValue('');\r",
+                                    "\r",
+                                    "\r",
+                                    "if(countyField.view)   \r",
+                                    "countyField.view.setStore(countyStore);  "
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onInfoNDZCCitySelect",
+                            "designerId": "51200765-b5b2-44b0-9f49-f8b7352f1c46"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "areaName",
+                        "fieldLabel": "",
+                        "id": "infoNDZCCounty",
+                        "layout|x": 280,
+                        "layout|y": 120,
+                        "store": "infoArticleStoreCounty",
+                        "submitValue": false,
+                        "valueField": "areaCode",
+                        "width": 100
+                    },
+                    "name": "MyComboBox23",
+                    "designerId": "d003d2e6-7d52-42ba-9c45-38aab1a340d7",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onInfoNDZCCountySelect",
+                                "implHandler": [
+                                    "\r",
+                                    "var codeHead=records[0].get('areaCode');\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'get_infoArticleVillage',\r",
+                                    "    params:{codeHead:codeHead},\r",
+                                    "    success:function(response){\r",
+                                    "        var mystore = Ext.StoreMgr.get('infoArticleStoreVillage');\r",
+                                    "        mystore.load(\r",
+                                    "        {\r",
+                                    "            params:{\r",
+                                    "                codeHead: codeHead\r",
+                                    "            }\r",
+                                    "        }\r",
+                                    "        );\r",
+                                    "    }\r",
+                                    "});   \r",
+                                    "var  villageStore=Ext.StoreMgr.get('infoArticleStoreVillage');//获取store对象\r",
+                                    "\r",
+                                    "\r",
+                                    "var villageField=Ext.getCmp(\"infoNDZCVillage\");\r",
+                                    "villageField.setValue('');\r",
+                                    "\r",
+                                    "\r",
+                                    "if(villageField.view)   \r",
+                                    "villageField.view.setStore(villageStore);  "
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onInfoNDZCCountySelect",
+                            "designerId": "ca597657-4765-4f3d-9221-7111c45a9506"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "articleName",
+                        "layout|x": 80,
+                        "layout|y": 0,
+                        "name": "articleName",
+                        "width": 460
+                    },
+                    "name": "MyTextField126",
+                    "designerId": "92c58f2d-8019-4a2b-be94-02c2323b5358"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "articleAuthor",
+                        "layout|x": 80,
+                        "layout|y": 40,
+                        "name": "articleAuthor",
+                        "width": 170
+                    },
+                    "name": "MyTextField127",
+                    "designerId": "3aadbb7f-6607-4369-969d-c610db7083b7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "articleSource",
+                        "layout|x": 80,
+                        "layout|y": 80,
+                        "name": "articleSource",
+                        "width": 460
+                    },
+                    "name": "MyTextField128",
+                    "designerId": "e68f7cce-4ff1-48a7-a49d-f386df464d90"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "channelName",
+                        "fieldLabel": "",
+                        "id": "channelId",
+                        "layout|x": 390,
+                        "layout|y": 40,
+                        "name": "channelId",
+                        "store": "InfoChannelStore",
+                        "value": [
+                            "3"
+                        ],
+                        "valueField": "channelId",
+                        "width": 150
+                    },
+                    "name": "MyComboBox24",
+                    "designerId": "bf335ba0-aa2d-47fa-955c-1ca0aeada229"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 10,
+                        "layout|x": 150,
+                        "layout|y": 120,
+                        "text": "----"
+                    },
+                    "name": "MyLabel24",
+                    "designerId": "82edc933-0169-4646-a74b-ddb0c1ebfa07"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 260,
+                        "layout|y": 120,
+                        "text": "----"
+                    },
+                    "name": "MyLabel25",
+                    "designerId": "7bab0518-016e-43ee-ba1d-2e6c9c5ef8f6"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 380,
+                        "layout|y": 120,
+                        "text": "----"
+                    },
+                    "name": "MyLabel26",
+                    "designerId": "1aed6763-bf12-4636-a4d6-62ec3ba0618a"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "coordinate",
+                        "layout|x": 80,
+                        "layout|y": 160,
+                        "name": "coordinate",
+                        "width": 460
+                    },
+                    "name": "MyTextField129",
+                    "designerId": "c07ce71f-d728-4cda-913f-bf805eb1e61b"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 10,
+                        "layout|x": 320,
+                        "layout|y": 180,
+                        "text": "例：纬度，经度；纬度，经度"
+                    },
+                    "name": "MyLabel27",
+                    "designerId": "f8ab38c8-f269-471f-b45b-0245eca07eb9"
+                },
+                {
+                    "type": "Ext.form.field.HtmlEditor",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "height": 150,
+                        "id": "articleContent",
+                        "layout|anchor": "100%",
+                        "layout|x": 80,
+                        "layout|y": 210,
+                        "name": "articleContent"
+                    },
+                    "name": "MyHtmlEditor1",
+                    "designerId": "3151231f-2c4f-40ed-a3ab-1c0106f7b4dd"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 120,
+                        "layout|y": 380,
+                        "text": "发表信息"
+                    },
+                    "name": "MyButton161",
+                    "designerId": "4f9c900a-c00a-4fca-aedf-b75d11c3efb2",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "\r",
+                                    "var proviceField=Ext.getCmp(\"infoNDZCProvice\");\r",
+                                    "var proviceValue=proviceField.getValue();\r",
+                                    "proviceField.setDisabled(true);\r",
+                                    "\r",
+                                    "var cityField=Ext.getCmp(\"infoNDZCCity\");\r",
+                                    "var cityValue=cityField.getValue();\r",
+                                    "cityField.setDisabled(true);\r",
+                                    "\r",
+                                    "var  countyField=Ext.getCmp(\"infoNDZCCounty\");\r",
+                                    "var  countyValue=countyField.getValue();\r",
+                                    "countyField.setDisabled(true);\r",
+                                    "\r",
+                                    "var villageField=Ext.getCmp(\"infoNDZCVillage\");\r",
+                                    "var  villageValue=villageField.getValue();\r",
+                                    "villageField.setDisabled(true);\r",
+                                    "\r",
+                                    "var areaCodeField=Ext.getCmp(\"areaCode\");\r",
+                                    "\r",
+                                    "if(villageValue !==''){areaCodeField.setValue(villageValue);}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "    if(countyValue!==''){areaCodeField.setValue(countyValue);}\r",
+                                    "    else{\r",
+                                    "        if(cityValue!==''){areaCodeField.setValue(cityValue);}\r",
+                                    "        else{\r",
+                                    "            if(proviceValue!==''){areaCodeField.setValue(proviceValue);}\r",
+                                    "        }\r",
+                                    "    }\r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    "var myform1 = Ext.getCmp('infoArticleNDZCNewForm').getForm();\r",
+                                    "if (myform1.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    myform1.submit({\r",
+                                    "        url:'add_pubArticle',\r",
+                                    "\r",
+                                    "        success: function(form, action) {\r",
+                                    "            Ext.Msg.alert('success', '修改内容成功');\r",
+                                    "\r",
+                                    "            var mystore = Ext.StoreMgr.get('ArticlePubNDZCStore'); //获得store对象                                                   \r",
+                                    "            mystore.load();\r",
+                                    "            Ext.getCmp('infoAritcleNDZCNewWindow').close();\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.getCmp('infoAritcleNDZCNewWindow').close();\r",
+                                    "            Ext.Msg.alert('failure', '修改内容失败');                           \r",
+                                    "\r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else {\r",
+                                    "    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "}\r",
+                                    "\r",
+                                    "return;"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "4f9ef347-9515-46c1-b7cb-d1457a2ed47b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 250,
+                        "layout|y": 380,
+                        "text": "存入草稿箱"
+                    },
+                    "name": "MyButton162",
+                    "designerId": "e35ff1c2-d2e1-414b-8462-1e042c32957f",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "implHandler": [
+                                    "\r",
+                                    "var proviceField=Ext.getCmp(\"infoNDZCProvice\");\r",
+                                    "var proviceValue=proviceField.getValue();\r",
+                                    "proviceField.setDisabled(true);\r",
+                                    "\r",
+                                    "var cityField=Ext.getCmp(\"infoNDZCCity\");\r",
+                                    "var cityValue=cityField.getValue();\r",
+                                    "cityField.setDisabled(true);\r",
+                                    "\r",
+                                    "var  countyField=Ext.getCmp(\"infoNDZCCounty\");\r",
+                                    "var  countyValue=countyField.getValue();\r",
+                                    "countyField.setDisabled(true);\r",
+                                    "\r",
+                                    "var villageField=Ext.getCmp(\"infoNDZCVillage\");\r",
+                                    "var  villageValue=villageField.getValue();\r",
+                                    "villageField.setDisabled(true);\r",
+                                    "\r",
+                                    "var areaCodeField=Ext.getCmp(\"areaCode\");\r",
+                                    "\r",
+                                    "if(villageValue !==''){areaCodeField.setValue(villageValue);}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "    if(countyValue!==''){areaCodeField.setValue(countyValue);}\r",
+                                    "    else{\r",
+                                    "        if(cityValue!==''){areaCodeField.setValue(cityValue);}\r",
+                                    "        else{\r",
+                                    "            if(proviceValue!==''){areaCodeField.setValue(proviceValue);}\r",
+                                    "        }\r",
+                                    "    }\r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    "var myform = Ext.getCmp('infoArticleNDZCNewForm').getForm();\r",
+                                    "if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    myform.submit({\r",
+                                    "        url:'add_draftArticle',\r",
+                                    "\r",
+                                    "        success: function(form, action) {\r",
+                                    "            Ext.Msg.alert('success', '存储成功');\r",
+                                    "\r",
+                                    "            var mystore = Ext.StoreMgr.get('ArticlePubNDZCStore'); //获得store对象                                                   \r",
+                                    "            mystore.load();\r",
+                                    "            Ext.getCmp('infoAritcleNDZCNewWindow').close();\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.getCmp('infoAritcleNDZCNewWindow').close();\r",
+                                    "            Ext.Msg.alert('failure', '存储失败');                           \r",
+                                    "\r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else {\r",
+                                    "    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "}\r",
+                                    "\r",
+                                    "return;\r",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick1",
+                            "designerId": "1bebb98a-0785-455e-9ba4-40b847d5c36c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 410,
+                        "layout|y": 380,
+                        "text": "取    消"
+                    },
+                    "name": "MyButton163",
+                    "designerId": "36f82e4a-81bd-41bf-97b6-db94b5184dd2",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick2",
+                                "implHandler": [
+                                    "Ext.getCmp('infoAritcleNDZCNewWindow').close();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick2",
+                            "designerId": "d3789e36-3762-45f6-bf34-be89e9118a77"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "hidden": true,
+                        "id": "articlePublishtime",
+                        "layout|x": 10,
+                        "layout|y": 250,
+                        "name": "articlePublishtime",
+                        "width": 50
+                    },
+                    "name": "MyTextField130",
+                    "designerId": "ac91cd75-3a56-4b06-b3bb-8556039000ea"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "hidden": true,
+                        "id": "areaCode",
+                        "layout|x": 10,
+                        "layout|y": 290,
+                        "name": "areaCode",
+                        "width": 50
+                    },
+                    "name": "MyTextField131",
+                    "designerId": "f788e142-fa23-4dee-bb0b-375f3bab5fe9"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "areaName",
+                        "fieldLabel": "",
+                        "id": "infoNDZCVillage",
+                        "layout|x": 400,
+                        "layout|y": 120,
+                        "store": "infoArticleStoreVillage",
+                        "submitValue": false,
+                        "valueField": "areaCode",
+                        "width": 110
+                    },
+                    "name": "MyComboBox25",
+                    "designerId": "17994b14-b288-45e2-ad9a-536d673e61b5"
+                }
+            ]
+        }
+    ]
+}

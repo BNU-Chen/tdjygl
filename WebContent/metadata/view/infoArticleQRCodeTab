@@ -1,0 +1,357 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoArticleQRCodeTab",
+        "designer|userClassName": "infoArticleQRCodeTab",
+        "id": "infoArticleQRCodeTab",
+        "layout": "fit",
+        "title": "信息管理与发布>>二维码管理"
+    },
+    "designerId": "c3edb233-b28b-407e-b27b-574d9ec0056b",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "bodyPadding": 10,
+                "dock": null,
+                "height": 421,
+                "id": "",
+                "title": null
+            },
+            "name": "MyTabPanel7",
+            "designerId": "d3ead526-753a-4a11-acdb-1a8630cf6cac",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "二维码"
+                    },
+                    "name": "MyPanel22",
+                    "designerId": "6e32492b-57c7-437e-825f-f024cb64b28e",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig20",
+                            "designerId": "9f412135-a457-4d28-a2ad-228924e13678"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "designer|snapToGrid": 10,
+                                "height": 383,
+                                "id": "infoQRForm",
+                                "layout": "absolute",
+                                "title": "",
+                                "url": "getQRCodeContent"
+                            },
+                            "name": "MyForm7",
+                            "designerId": "80bf3a3b-fa0a-4f0f-8353-a7cc3b5f1b44",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "",
+                                        "id": "infoQRtextcurrent",
+                                        "labelWidth": 120,
+                                        "layout|x": 120,
+                                        "layout|y": 20,
+                                        "width": 360
+                                    },
+                                    "name": "MyTextField36",
+                                    "designerId": "46097b0a-34dc-4ebc-8fc0-dee878d9c6e3",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onInfoQRtextcurrentBeforeShow",
+                                                "implHandler": [
+                                                    "Ext.Ajax.request({\r",
+                                                    "   url:'getQRCodeContent',\r",
+                                                    "    success:function(response){\r",
+                                                    "       Ext.Msg.alert('success',response.content);\r",
+                                                    "    }\r",
+                                                    "\r",
+                                                    "});"
+                                                ],
+                                                "name": "beforeshow",
+                                                "scope": "me"
+                                            },
+                                            "name": "onInfoQRtextcurrentBeforeShow",
+                                            "designerId": "1a760a4c-af44-4c79-87c2-86079388ae26"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "hidden": true,
+                                        "id": "infobtnmodify",
+                                        "layout|x": 480,
+                                        "layout|y": 20,
+                                        "text": "修改",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton80",
+                                    "designerId": "0bef18f8-9a5b-4940-a3b8-bbee73b54539",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onInfobtnmodifyClick",
+                                                "implHandler": [
+                                                    "var infoQRtextcurrent = Ext.getCmp('infoQRtextcurrent');\r",
+                                                    "infoQRtextcurrent.setDisabled(false);\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onInfobtnmodifyClick",
+                                            "designerId": "1de5d56e-c93d-48cc-a331-2fe825c75adb"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "infobtnSave",
+                                        "layout|x": 220,
+                                        "layout|y": 250,
+                                        "text": "保存",
+                                        "width": 90
+                                    },
+                                    "name": "MyButton81",
+                                    "designerId": "09aa488c-5749-4a20-af13-9abf3fd6a2d0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onInfobtnSaveClick",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var params='';\r",
+                                                    "var infoQRtextcurrent = Ext.getCmp('infoQRtextcurrent');\r",
+                                                    "var infoQRtexthidden = Ext.getCmp('infoQRtexthidden');\r",
+                                                    "//如果用户对二维码作了修改\r",
+                                                    "if (infoQRtextcurrent.getValue()!=infoQRtexthidden.getValue())\r",
+                                                    "{\r",
+                                                    "    params=infoQRtextcurrent.getValue();\r",
+                                                    "    Ext.Msg.confirm(\"提示\",\"二维码信息已修改，是否确定保存？\",function(btn){\r",
+                                                    "        if(btn=='yes'){\r",
+                                                    "            Ext.Ajax.request({\r",
+                                                    "                url:'creatQRCode',\r",
+                                                    "                params:{url:params},\r",
+                                                    "                success:function(response){          \r",
+                                                    "                    var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                                    "                    myTabPanel.removeAll(true);\r",
+                                                    "                    myTabPanel.add(Ext.widget('infoArticleQRCodeTab'));\r",
+                                                    "                    Ext.Msg.alert('提示','保存成功');\r",
+                                                    "                    \r",
+                                                    "                    Ext.getCmp('infobtnShow').fireEvent('click');\r",
+                                                    "                  \r",
+                                                    "                }    \r",
+                                                    "            });\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "        else{\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onInfobtnSaveClick",
+                                            "designerId": "65de0961-adda-4c33-9cf7-52e0a805c137"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "infobtnShow",
+                                        "layout|x": 120,
+                                        "layout|y": 250,
+                                        "text": "当前二维码",
+                                        "width": 90
+                                    },
+                                    "name": "MyButton82",
+                                    "designerId": "b81ab08f-a046-40bd-a72d-84928c63e271",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var infoQRtextcurrent1 = Ext.getCmp('infoQRtextcurrent');\r",
+                                                    "var infoQRtexthidden1 = Ext.getCmp('infoQRtexthidden');\r",
+                                                    "Ext.Ajax.request({\r",
+                                                    "    url:'getQRCodeContent',\r",
+                                                    "    success:function(response){                          \r",
+                                                    "        infoQRtextcurrent1.setValue(response.responseText);\r",
+                                                    "        infoQRtexthidden1.setValue(response.responseText);\r",
+                                                    "    }\r",
+                                                    "}); "
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "6534b41d-af84-4afb-b578-68a88f12107d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "layout|x": 10,
+                                        "layout|y": 60,
+                                        "text": "二维码预览："
+                                    },
+                                    "name": "MyLabel8",
+                                    "designerId": "876ae142-f681-4be3-b89b-06e8432d0d37"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 170,
+                                        "id": "infoQRimg",
+                                        "layout|x": 120,
+                                        "layout|y": 60,
+                                        "src": "images/rss_QRCode.png",
+                                        "width": 200
+                                    },
+                                    "name": "MyImg1",
+                                    "designerId": "c1cb4b43-1baf-4c0d-82c8-089cc92eda3f"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|x": 10,
+                                        "layout|y": 20,
+                                        "text": "二维码信息:"
+                                    },
+                                    "name": "MyLabel9",
+                                    "designerId": "1c58cdcf-2aaa-4c72-bb84-23790c0676bd"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Label",
+                                        "hidden": true,
+                                        "id": "infoQRtexthidden",
+                                        "layout|x": 130,
+                                        "layout|y": 310
+                                    },
+                                    "name": "MyTextField37",
+                                    "designerId": "69c77eca-d9a3-4850-a72e-f1c430183b24"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

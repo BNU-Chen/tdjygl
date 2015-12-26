@@ -1,0 +1,318 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "wqclient",
+        "designer|userClassName": "wqclient",
+        "height": 708,
+        "layout": "absolute",
+        "title": "<font size='2.5px'>网签</font>",
+        "width": 884
+    },
+    "designerId": "a0212c36-fc77-41b1-bd40-338357bc867b",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "height": 550,
+                "id": "wqht",
+                "layout": "absolute",
+                "layout|x": 30,
+                "layout|y": 30,
+                "title": "",
+                "width": 710
+            },
+            "name": "MyForm51",
+            "designerId": "8afea2ed-aa9f-4cc3-89b9-a94a7eb15fe2",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "height": 30,
+                        "layout|x": -14,
+                        "layout|y": -32
+                    },
+                    "name": "MyToolbar57",
+                    "designerId": "48fb07bd-7bdf-4e83-939f-d7f4bb823399",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "批次编号",
+                                "id": "wqzbpcbh",
+                                "layout|flex": null,
+                                "value": "01"
+                            },
+                            "name": "MyDisplayField59",
+                            "designerId": "6aacbe2d-6991-4dc9-9056-ed1d017f1cb5"
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 10,
+                                "layout|flex": null,
+                                "width": 65
+                            },
+                            "name": "MySpacer3",
+                            "designerId": "586eef3c-8508-401f-aaf5-324b59058331"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "href": null,
+                                "id": "wqsave",
+                                "layout|flex": null,
+                                "text": "保存",
+                                "width": 77
+                            },
+                            "name": "MyButton190",
+                            "designerId": "95c8bdbb-0009-4a01-8b7e-1b9b1849a444",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "window.location = Ext.getCmp('download_url').getValue();"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "f5969c36-58a5-4ea0-acd6-b91ec7b824dc"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "hidden": true,
+                                "id": "download_url",
+                                "layout|flex": null
+                            },
+                            "name": "MyTextField179",
+                            "designerId": "3a8819df-7bbb-4555-95cc-b1caa4527bb3"
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 10,
+                                "layout|flex": null,
+                                "width": 65
+                            },
+                            "name": "MySpacer4",
+                            "designerId": "0d260eb5-4330-43aa-bd0f-9bb1195bbf43"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "同意",
+                                "width": 54
+                            },
+                            "name": "MyButton191",
+                            "designerId": "c4b91f92-0820-4263-8235-fff87defa199",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var zbpcbh=Ext.getCmp('wqzbpcbh').getValue();\r",
+                                            "Ext.Ajax.request(\r",
+                                            "    {\r",
+                                            "        url:'updateToWb',\r",
+                                            "        method:'get', \r",
+                                            "        headers:{\r",
+                                            "\r",
+                                            "            'Content-Type':'application/json'\r",
+                                            "        },\r",
+                                            "        params:{'zbpcbh':Ext.getCmp('wqzbpcbh').getValue()},\r",
+                                            "        success:function(response){\r",
+                                            "            // Ext.StoreMgr.get('zbgmstore').add(Ext.getCmp('tjdd').getValues());\r",
+                                            "            var store=Ext.StoreMgr.get('zbgmstore');\r",
+                                            "\r",
+                                            "            var n=store.find('zbpcbh',zbpcbh);\r",
+                                            "            //alert(n);\r",
+                                            "            store.getAt(n).set('dqhj','5');\r",
+                                            "            store.getAt(n).set('pczt','尚未备案');\r",
+                                            "             Ext.MessageBox.alert('提示','请在7个工作日内交纳合同价款并申请网上备案',function(){\r",
+                                            "                var panel=Ext.getCmp('contentPanel');\r",
+                                            "\r",
+                                            "                var zbsg=Ext.widget('wdsglb');\r",
+                                            "                panel.removeAll();\r",
+                                            "                panel.add(zbsg);\r",
+                                            "\r",
+                                            "            });\r",
+                                            "          \r",
+                                            "        },\r",
+                                            "\r",
+                                            "        failure:function(){\r",
+                                            "            //Ext.MessageBox.alert('错误','操作失败！');\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    }); \r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "47eba6c3-feda-4f79-be0e-0adecfecbd1b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 50,
+                "layout|x": 152,
+                "layout|y": 11
+            },
+            "name": "MyToolbar58",
+            "designerId": "ed247ec6-1ad1-4b7f-bff8-ba1f64e44074",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 40,
+                        "layout|flex": null,
+                        "src": "images/lc5.png",
+                        "width": 569
+                    },
+                    "name": "MyImg27",
+                    "designerId": "1cf5141b-924a-4894-af00-c52d5b7a7e33"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 12,
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                        ],
+                        "text": "返回订单列表",
+                        "width": 84
+                    },
+                    "name": "MyLabel74",
+                    "designerId": "5e846c11-59fc-4f80-b6e8-3d131de78f2a",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "label"
+                                ],
+                                "element": "el",
+                                "fn": "onLabelClick11",
+                                "implHandler": [
+                                    "\r",
+                                    "var panel=Ext.getCmp('contentPanel');\r",
+                                    "\r",
+                                    "var zbsg=Ext.widget('wdsglb');\r",
+                                    "panel.removeAll();\r",
+                                    "panel.add(zbsg);\r",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLabelClick11",
+                            "designerId": "28f02766-0237-48b7-9a1d-ed23c7e9d87a"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

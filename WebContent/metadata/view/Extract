@@ -1,0 +1,848 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 462,
+        "width": 762,
+        "designer|userClassName": "Extract",
+        "designer|userAlias": "Extract",
+        "autoScroll": true,
+        "layout": "border",
+        "title": "字段存储设置"
+    },
+    "designerId": "12be702b-ca1f-4e9b-9004-206e30bc0644",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "container|align": "stretch",
+                "layout": "vbox",
+                "bodyPadding": 10,
+                "header": false,
+                "title": ""
+            },
+            "designerId": "385a24fd-e37e-40f6-a340-69de61367c16",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "height": 450,
+                        "width": 752,
+                        "layout": "hbox"
+                    },
+                    "designerId": "5e423ec7-a7d9-46e8-8912-e607e786b5f3",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "height": 400,
+                                "id": "webGrid",
+                                "margin": 5,
+                                "title": "网站数据字段列表",
+                                "forceFit": true,
+                                "store": "lyjfieldStore"
+                            },
+                            "designerId": "46f7881e-6f7f-416b-8de0-45d3ce5047db",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 329,
+                                        "dataIndex": "webdataField",
+                                        "text": ""
+                                    },
+                                    "designerId": "65d32f9e-c18c-47cf-b5e8-f5ba7b7e1ee8"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "designerId": "a65b1d67-ae4c-4505-ab43-ae0a9b0a433e"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top"
+                                    },
+                                    "designerId": "b659ca3b-85a9-487a-85f9-68972974530c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "添加"
+                                            },
+                                            "designerId": "6f00cc53-4808-402e-ad1f-f148650d9e18",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "handler",
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "implHandler": [
+                                                            "var win=new Ext.Window({\r",
+                                                            "    height: 170,\r",
+                                                            "    width: 400,\r",
+                                                            "    id:'jsdadafieldWindow',\r",
+                                                            "    layout: {\r",
+                                                            "        type: 'absolute'\r",
+                                                            "    },\r",
+                                                            "    title: '添加',\r",
+                                                            "    modal:'true',\r",
+                                                            "    items: [\r",
+                                                            "    {\r",
+                                                            "        xtype: 'form',\r",
+                                                            "        height: 220,\r",
+                                                            "        jsonSubmit: true,\r",
+                                                            "        id:'jsdadafield_add_Form',\r",
+                                                            "        layout: {\r",
+                                                            "            type: 'absolute'\r",
+                                                            "        },\r",
+                                                            "        bodyPadding: 10,\r",
+                                                            "        url: 'add_jsdadafield',\r",
+                                                            "        title: '',\r",
+                                                            "        items: [\r",
+                                                            "\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            id:'webdataField',\r",
+                                                            "            name:'webdataField',\r",
+                                                            "            x: 15,\r",
+                                                            "            y: 20,\r",
+                                                            "            width: 300,\r",
+                                                            "            fieldLabel: '字段名称',\r",
+                                                            "            labelAlign: 'right'\r",
+                                                            "        },\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            x: 115,\r",
+                                                            "            y: 100,\r",
+                                                            "            width: 50,\r",
+                                                            "            text: '确定',\r",
+                                                            "            handler:function()\r",
+                                                            "            {\r",
+                                                            "\r",
+                                                            "                var myform=Ext.getCmp('jsdadafield_add_Form').getForm();    \r",
+                                                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                            "                    myform.submit({\r",
+                                                            "                        success: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                                            "\r",
+                                                            "                            var mystore=Ext.StoreMgr.get('lyjfieldStore'); //获得store对象\r",
+                                                            "                            //在load事件中添加参数\r",
+                                                            "                            mystore.load(\r",
+                                                            "                            {params:{\r",
+                                                            "                                start:\"0\",\r",
+                                                            "                                limit:\"10\"\r",
+                                                            "                                \r",
+                                                            "                            }} );\r",
+                                                            "                            win.close();\r",
+                                                            "                        },\r",
+                                                            "                        failure: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('提示', '保存失败！');\r",
+                                                            "                            win.close();\r",
+                                                            "                        }\r",
+                                                            "                    });\r",
+                                                            "                } else { \r",
+                                                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                            "                }\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "                return;\r",
+                                                            "\r",
+                                                            "            }\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            handler: function(button, event) {\r",
+                                                            "                win.close();\r",
+                                                            "            },\r",
+                                                            "            x: 230,\r",
+                                                            "            y: 100,\r",
+                                                            "            width: 50,\r",
+                                                            "            text: '取消'\r",
+                                                            "        }\r",
+                                                            "        ]\r",
+                                                            "    }\r",
+                                                            "    ]\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "win.show();"
+                                                        ]
+                                                    },
+                                                    "designerId": "e3590614-4bd5-44d2-b0ea-72ff9a861af8"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "删除"
+                                            },
+                                            "designerId": "2c280110-1d1e-412a-afde-31db1a4ff4b9",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "handler",
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "implHandler": [
+                                                            "\r",
+                                                            "var grid=this.up('grid');\r",
+                                                            "var record =grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length===0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "}\r",
+                                                            "else\r",
+                                                            "{\r",
+                                                            "    var ids='';\r",
+                                                            "    for(var i=0;i<record.length;i++)\r",
+                                                            "    {\r",
+                                                            "        ids+=record[i].get(\"id\");\r",
+                                                            "        if(i<record.length-1)ids=ids+\",\";\r",
+                                                            "    }\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        waitMsg:'正在发送，请等待...',\r",
+                                                            "        url:'del_jsdadafield',\r",
+                                                            "        params:{ids:ids},                          \r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('success','删除成功！');                \r",
+                                                            "            var mystore=Ext.StoreMgr.get('lyjfieldStore'); //获得store对象\r",
+                                                            "            //在load事件中添加参数\r",
+                                                            "            mystore.load(\r",
+                                                            "            {params:{\r",
+                                                            "                start:\"0\",\r",
+                                                            "                limit:\"10\"\r",
+                                                            "            }} );\r",
+                                                            "        },\r",
+                                                            "        failure:function(){\r",
+                                                            "            Ext.Msg.alert('failed','删除失败！');\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "    });\r",
+                                                            "}\r",
+                                                            ""
+                                                        ]
+                                                    },
+                                                    "designerId": "a8e8b72f-c053-4b2b-a169-03a3fbb3030e"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "width": 100,
+                                        "displayInfo": true,
+                                        "displayMsg": "{0} - {1} 条，共计{2}条",
+                                        "emptyMsg": "没有数据",
+                                        "store": "lyjfieldStore"
+                                    },
+                                    "designerId": "02acf302-2fae-423a-8d4e-bf1c96a7bce8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "height": 400,
+                                "id": "localGrid",
+                                "margin": 5,
+                                "title": "本地数据字段列表",
+                                "forceFit": true,
+                                "store": "lyjfieldStore2"
+                            },
+                            "designerId": "ef8a6b35-c234-4821-8e54-1cb0a7696a7f",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 320,
+                                        "dataIndex": "localdataField",
+                                        "text": ""
+                                    },
+                                    "designerId": "cb6ebc5a-c665-485a-a485-2b40778f6926"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top"
+                                    },
+                                    "designerId": "aeddf11a-69b7-4340-b9f6-db033bbf104b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "添加"
+                                            },
+                                            "designerId": "0ee94ac1-5036-4562-9232-5b3bd771a355",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "handler",
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "implHandler": [
+                                                            "var win=new Ext.Window({\r",
+                                                            "    height: 170,\r",
+                                                            "    width: 400,\r",
+                                                            "    id:'jsdadafield2Window',\r",
+                                                            "    layout: {\r",
+                                                            "        type: 'absolute'\r",
+                                                            "    },\r",
+                                                            "    title: '添加',\r",
+                                                            "    modal:'true',\r",
+                                                            "    items: [\r",
+                                                            "    {\r",
+                                                            "        xtype: 'form',\r",
+                                                            "        height: 220,\r",
+                                                            "        jsonSubmit: true,\r",
+                                                            "        id:'jsdadafield2_add_Form',\r",
+                                                            "        layout: {\r",
+                                                            "            type: 'absolute'\r",
+                                                            "        },\r",
+                                                            "        bodyPadding: 10,\r",
+                                                            "        url: 'add_jsdadafield2',\r",
+                                                            "        title: '',\r",
+                                                            "        items: [\r",
+                                                            "\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            id:'localdataField',\r",
+                                                            "            name:'localdataField',\r",
+                                                            "            x: 15,\r",
+                                                            "            y: 20,\r",
+                                                            "            width: 300,\r",
+                                                            "            fieldLabel: '字段名称',\r",
+                                                            "            labelAlign: 'right'\r",
+                                                            "        },\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            x: 115,\r",
+                                                            "            y: 100,\r",
+                                                            "            width: 50,\r",
+                                                            "            text: '确定',\r",
+                                                            "            handler:function()\r",
+                                                            "            {\r",
+                                                            "\r",
+                                                            "                var myform=Ext.getCmp('jsdadafield2_add_Form').getForm();    \r",
+                                                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                            "                    myform.submit({\r",
+                                                            "                        success: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                                            "\r",
+                                                            "                            var mystore=Ext.StoreMgr.get('lyjfieldStore2'); //获得store对象\r",
+                                                            "                            //在load事件中添加参数\r",
+                                                            "                            mystore.load(\r",
+                                                            "                            {params:{\r",
+                                                            "                                start:\"0\",\r",
+                                                            "                                limit:\"10\"\r",
+                                                            "\r",
+                                                            "                            }} );\r",
+                                                            "                            win.close();\r",
+                                                            "                        },\r",
+                                                            "                        failure: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('提示', '保存失败！');\r",
+                                                            "                            win.close();\r",
+                                                            "                        }\r",
+                                                            "                    });\r",
+                                                            "                } else { \r",
+                                                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                            "                }\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "                return;\r",
+                                                            "\r",
+                                                            "            }\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            handler: function(button, event) {\r",
+                                                            "                win.close();\r",
+                                                            "            },\r",
+                                                            "            x: 230,\r",
+                                                            "            y: 100,\r",
+                                                            "            width: 50,\r",
+                                                            "            text: '取消'\r",
+                                                            "        }\r",
+                                                            "        ]\r",
+                                                            "    }\r",
+                                                            "    ]\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "win.show();"
+                                                        ]
+                                                    },
+                                                    "designerId": "f08e2535-e2d0-4527-82c1-1efbebb3d993"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "删除"
+                                            },
+                                            "designerId": "565011a0-7dfb-4101-a947-02844ac1e81c",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "handler",
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "implHandler": [
+                                                            "var grid=this.up('grid');\r",
+                                                            "var record =grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length===0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "}\r",
+                                                            "else\r",
+                                                            "{\r",
+                                                            "    var ids='';\r",
+                                                            "    for(var i=0;i<record.length;i++)\r",
+                                                            "    {\r",
+                                                            "        ids+=record[i].get(\"id\");\r",
+                                                            "        if(i<record.length-1)ids=ids+\",\";\r",
+                                                            "    }\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        waitMsg:'正在发送，请等待...',\r",
+                                                            "        url:'del_jsdadafield2',\r",
+                                                            "        params:{ids:ids},                          \r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('success','删除成功！');                \r",
+                                                            "            var mystore=Ext.StoreMgr.get('lyjfield2Store'); //获得store对象\r",
+                                                            "            //在load事件中添加参数\r",
+                                                            "            mystore.load(\r",
+                                                            "            {params:{\r",
+                                                            "                start:\"0\",\r",
+                                                            "                limit:\"10\"\r",
+                                                            "            }} );\r",
+                                                            "        },\r",
+                                                            "        failure:function(){\r",
+                                                            "            Ext.Msg.alert('failed','删除失败！');\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "    });\r",
+                                                            "}\r",
+                                                            ""
+                                                        ]
+                                                    },
+                                                    "designerId": "d3d19f5c-b26d-4311-9355-44a7cabb694a"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "width": 360,
+                                        "displayInfo": true,
+                                        "displayMsg": "{0} - {1} 条，共计{2}条",
+                                        "emptyMsg": "没有数据",
+                                        "store": "lyjfieldStore2"
+                                    },
+                                    "designerId": "db9972da-3bf2-41ad-a96d-df213eb1e326"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "designerId": "2b7f7d5f-21e1-48b3-9f03-49a7209c8c63"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "height": 30,
+                                "width": 49,
+                                "layout": "hbox"
+                            },
+                            "designerId": "c297929c-a057-43b8-9f4c-2e7cf6938b44",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 42,
+                                        "text": "="
+                                    },
+                                    "designerId": "1b5a3042-6f00-44fd-bbef-e6dd47b814fe",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "var grid1 = Ext.getCmp('webGrid'); \r",
+                                                    "var grid2 = Ext.getCmp('localGrid'); \r",
+                                                    "var record1 = grid1.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "var record2 = grid2.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "if(record1.length===0 || record2.length===0){\r",
+                                                    "    Ext.Msg.alert('提示','请选择您要操作的数据字段！');    \r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "else\r",
+                                                    "{\r",
+                                                    "    var ids1='';\r",
+                                                    "    for(var i=0;i<record1.length;i++)\r",
+                                                    "    {\r",
+                                                    "        ids1+=record1[i].data.webdataField;\r",
+                                                    "        if(i<record1.length-1)ids1=ids1+\",\";\r",
+                                                    "    }\r",
+                                                    "    var ids2='';\r",
+                                                    "    for(var j=0;j<record2.length;j++)\r",
+                                                    "    {\r",
+                                                    "        ids2+=record2[j].data.localdataField;\r",
+                                                    "        if(j<record2.length-1)ids2=ids2+\",\";\r",
+                                                    "    }\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        waitMsg:'正在发送，请等待...',\r",
+                                                    "        url:'add_fieldmapping',\r",
+                                                    "        params:{ids1:ids1,ids2:ids2},                          \r",
+                                                    "        success:function(response){\r",
+                                                    "            Ext.Msg.alert('success','添加成功！');                \r",
+                                                    "            var mystore=Ext.StoreMgr.get('lyjfieldmappingStore'); //获得store对象\r",
+                                                    "            //在load事件中添加参数\r",
+                                                    "            mystore.load(\r",
+                                                    "            {params:{\r",
+                                                    "                start:\"0\",\r",
+                                                    "                limit:\"10\"\r",
+                                                    "            }} );\r",
+                                                    "        },\r",
+                                                    "        failure:function(){\r",
+                                                    "            Ext.Msg.alert('failed','添加失败！');\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "}\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "designerId": "a55ccd14-4d90-41db-93c9-488378ef55ce"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "height": 400,
+                                "margin": 5,
+                                "width": 711,
+                                "title": "字段对应结果",
+                                "forceFit": true,
+                                "store": "lyjfieldmappingStore"
+                            },
+                            "designerId": "aea5d0d7-eaaa-405b-b0cc-78dc220f57f7",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 710,
+                                        "dataIndex": "fieldmapping",
+                                        "text": ""
+                                    },
+                                    "designerId": "d2b9e6b7-c98e-45c9-a7c9-8a47fd8ebad7"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "76a3b8b8-9cef-47f6-8a91-36fa66ec5049"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "designerId": "52fff97f-704a-488a-b562-8db57fed2d97"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top"
+                                    },
+                                    "designerId": "0e4f9aa2-c61d-411f-aefc-d749920ea154",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "删除"
+                                            },
+                                            "designerId": "7a81095b-15f4-4273-9f2f-d96e49943b11",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "handler",
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "implHandler": [
+                                                            "var grid=this.up('grid');\r",
+                                                            "var record =grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length===0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "}\r",
+                                                            "else\r",
+                                                            "{\r",
+                                                            "    var ids='';\r",
+                                                            "    for(var i=0;i<record.length;i++)\r",
+                                                            "    {\r",
+                                                            "        ids+=record[i].get(\"id\");\r",
+                                                            "        if(i<record.length-1)ids=ids+\",\";\r",
+                                                            "    }\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        waitMsg:'正在发送，请等待...',\r",
+                                                            "        url:'del_fieldmapping',\r",
+                                                            "        params:{ids:ids},                          \r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('success','删除成功！');                \r",
+                                                            "            var mystore=Ext.StoreMgr.get('lyjfieldmappingStore'); //获得store对象\r",
+                                                            "            //在load事件中添加参数\r",
+                                                            "            mystore.load(\r",
+                                                            "            {params:{\r",
+                                                            "                start:\"0\",\r",
+                                                            "                limit:\"10\"\r",
+                                                            "            }} );\r",
+                                                            "        },\r",
+                                                            "        failure:function(){\r",
+                                                            "            Ext.Msg.alert('failed','删除失败！');\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "    });\r",
+                                                            "}\r",
+                                                            ""
+                                                        ]
+                                                    },
+                                                    "designerId": "37e39936-a40b-46ce-a74e-93dd60fcefa8"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "width": 360,
+                                        "displayInfo": true,
+                                        "displayMsg": "{0} - {1} 条，共计{2}条",
+                                        "emptyMsg": "没有数据",
+                                        "store": "lyjfieldmappingStore"
+                                    },
+                                    "designerId": "c4003ae0-e9c4-46f3-9e3c-70cc4372ecf4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {value:'0',text:'全部'},\r",
+            "    {value:'1',text:'竞拍'},\r",
+            "    {value:'2',text:'挂牌'}\r",
+            "    \r",
+            "    \r",
+            "]"
+        ],
+        "designer|userAlias": "jylx",
+        "designer|userClassName": "jylx",
+        "storeId": "jylx"
+    },
+    "designerId": "b116a506-34f4-4230-abca-6d511602dbcd",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy53",
+            "designerId": "2a732d17-c12e-4735-a8d3-293daf885a29",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader53",
+                    "designerId": "4f832802-a047-42b0-983f-471570e4c0ed"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value",
+                "type": "string"
+            },
+            "name": "MyField226",
+            "designerId": "a24793a9-af91-4ee1-8d35-45edf8997bff"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField227",
+            "designerId": "731a5d92-9da4-41b4-a788-3b2f9c8caab2"
+        }
+    ]
+}

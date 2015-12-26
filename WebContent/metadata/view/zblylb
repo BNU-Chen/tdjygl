@@ -1,0 +1,312 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": false,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "zblylb",
+        "designer|userClassName": "zblylb",
+        "height": 282,
+        "id": "zblylb",
+        "layout": "absolute",
+        "modal": true,
+        "title": "指标来源列表",
+        "width": 732
+    },
+    "designerId": "a582103f-d5c5-4326-b957-6fb22fd9a5d1",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 180,
+                "layout|x": 166,
+                "layout|y": 42,
+                "store": "zbcrdisplay",
+                "title": ""
+            },
+            "name": "MyGridPanel59",
+            "designerId": "3f74cd5b-8226-4723-b166-f310659eafe6",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fkxmbh",
+                        "groupable": true,
+                        "text": "项目编号"
+                    },
+                    "name": "MyColumn201",
+                    "designerId": "46d0e5e7-4b3e-450a-817e-ab8f9735d916"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fkxmmc",
+                        "text": "项目名称"
+                    },
+                    "name": "MyColumn202",
+                    "designerId": "0c55e2de-a21b-451d-9596-9c87932d8d16"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fkxmgm",
+                        "text": "复垦总规模（公顷）",
+                        "width": 114
+                    },
+                    "name": "MyNumberColumn36",
+                    "designerId": "1d8b864a-d8b5-4be6-a6f2-e4d6955fc59e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "kcrgm",
+                        "text": "可出让规模（公顷）",
+                        "width": 115
+                    },
+                    "name": "MyNumberColumn37",
+                    "designerId": "0c732173-9ea8-4f35-a2b0-5df27b7fb36e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bccrgm",
+                        "text": "本次出让规模（公顷）",
+                        "width": 126
+                    },
+                    "name": "MyNumberColumn38",
+                    "designerId": "8d20c102-975a-4610-8f3c-8188f2f03d63"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "sykcrgm",
+                        "text": "剩余可出让规模（公顷）",
+                        "width": 127
+                    },
+                    "name": "MyNumberColumn39",
+                    "designerId": "0f370cb3-20de-4126-9aa4-08e6f555ff47"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar59",
+                    "designerId": "0d478a81-e23c-4d8e-8ab7-4bf0cb2cfdc5",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "复垦项目总数",
+                                "id": "fkxmzs",
+                                "layout|flex": null,
+                                "value": "Display Field"
+                            },
+                            "name": "MyDisplayField60",
+                            "designerId": "562e1d96-ab9e-4c54-b23d-50f764f06081"
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 10,
+                                "layout|flex": null,
+                                "width": 49
+                            },
+                            "name": "MySpacer5",
+                            "designerId": "c595ffaa-4c7d-4c3a-b3f9-1cae4aed7cde"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "请核实指标信息",
+                                "width": 132
+                            },
+                            "name": "MyLabel75",
+                            "designerId": "d1a5f3a3-1d91-469a-ba59-abe39c594b6f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "x-grid3-row"
+                    },
+                    "name": "MyGridView58",
+                    "designerId": "8dfbd490-fe69-475f-ac76-5fdb9f9b016b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 230,
+                "layout|y": 20,
+                "text": "确认提交",
+                "width": 80
+            },
+            "name": "MyButton192",
+            "designerId": "87d28e9b-851f-4e0d-af62-81a79a6a9db8",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var store=Ext.StoreMgr.get('zbcrdisplay');\r",
+                            "var records = [];\r",
+                            "store.each(function(rec){\r",
+                            "    records.push(Ext.encode(rec.data));\r",
+                            "});\r",
+                            "\r",
+                            "\r",
+                            "//alert(records);\r",
+                            "\r",
+                            "Ext.Ajax.request({\r",
+                            "    url:'addzbcrxx',\r",
+                            "    method:'post',\r",
+                            "\r",
+                            "    headers:{\r",
+                            "        'Content-Type':'application/json'\r",
+                            "    },\r",
+                            "\r",
+                            "\r",
+                            "    success:function(response){\r",
+                            "        var result=Ext.decode(response.responseText);\r",
+                            "        Ext.MessageBox.alert('信息',result.msg);\r",
+                            "        Ext.getCmp('zblylb').close();\r",
+                            "\r",
+                            "    },\r",
+                            "    fail:function()\r",
+                            "    {\r",
+                            "\r",
+                            "    },\r",
+                            "    params:'['+records+']'\r",
+                            "}\r",
+                            ");"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "22077a8a-c72d-413a-99e4-e5cb2b6bef68"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 380,
+                "layout|y": 20,
+                "text": "返回编辑",
+                "width": 70
+            },
+            "name": "MyButton193",
+            "designerId": "b427cbb6-f140-4013-be68-b4b97543dba9",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonClick",
+                        "implHandler": [
+                            "var store=Ext.StoreMgr.get('zbcrdisplay');\r",
+                            "store.removeAll();\r",
+                            "this.close();"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onButtonClick",
+                    "designerId": "d66b2d67-bcba-4eed-aa16-9d7f52ad7456"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "jycheck",
+        "model": "jycheck",
+        "pageSize": 10,
+        "storeId": "jycheck"
+    },
+    "designerId": "c64bbfd0-1328-4c2f-b155-3cfe23e2a12e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getcheck"
+            },
+            "name": "MyAjaxProxy64",
+            "designerId": "8dbe79e3-2738-4d5d-992e-8818626fc341",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader64",
+                    "designerId": "286d14bd-5b2f-4954-bc79-800ea57e0b72"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1181 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wdsglb",
+        "designer|userClassName": "wdsglb",
+        "height": 615,
+        "layout": "fit",
+        "title": "<font size='2.5px'>我的指标</font>",
+        "width": 950
+    },
+    "designerId": "8a29f98a-97bf-4463-8df8-4ca435b82977",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "cls": "x-grid3-row",
+                "height": 211,
+                "id": "",
+                "itemId": null,
+                "store": "zbgmstore",
+                "title": ""
+            },
+            "name": "MyGridPanel58",
+            "designerId": "0f503f8d-6c39-4ce1-a01d-96f095ea4df8",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "text": "序号",
+                        "width": 37
+                    },
+                    "name": "MyRowNumberer35",
+                    "designerId": "0bb1b13e-e68a-4295-9c78-a736385680eb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "zbpcbh",
+                        "text": "指标批次编号",
+                        "width": 103
+                    },
+                    "name": "MyColumn191",
+                    "designerId": "09b276fb-0060-4308-9c3a-12823ab17770"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "dwed",
+                        "text": "单位额度",
+                        "width": 96
+                    },
+                    "name": "MyColumn192",
+                    "designerId": "d0eba4d1-7c00-4662-a7e1-9439458daed7",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return value+'公顷';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "59c2d150-32cd-4ce6-9498-638ee9e72635"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "sl",
+                        "text": "总数量",
+                        "width": 72
+                    },
+                    "name": "MyColumn193",
+                    "designerId": "d2094283-f869-4510-bf5c-79d6589837df",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return value+'张';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "7963d13b-4848-4cf2-9740-4c39aba83965"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "text": "总额度",
+                        "width": 80
+                    },
+                    "name": "MyColumn194",
+                    "designerId": "fa488760-a2d5-46bf-93db-61005d8bcf4f",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return record.get('dwed')*record.get('sl')+'公顷';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "ce10a5d0-8c19-4873-868d-366dbc0ca0d8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "sgsl",
+                        "text": "申购数量",
+                        "width": 78
+                    },
+                    "name": "MyColumn195",
+                    "designerId": "64f4378e-dc8b-41e1-93f2-0b4ed5b932f5",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空",
+                                "regex": "/^[0-9]*[1-9][0-9]*$/",
+                                "regexText": "申购数量至少为1"
+                            },
+                            "name": "MyNumberField6",
+                            "designerId": "8e43424d-a6b8-4ef9-85d9-ca185d50bb56"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return value+'张';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "3dfc9ceb-e21f-4664-a4b8-21899a102827"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "text": "申购总额",
+                        "width": 97
+                    },
+                    "name": "MyColumn196",
+                    "designerId": "e014236d-9429-4a36-8896-f9add090db59",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return record.get('dwed')*record.get('sgsl')+'公顷';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "b74f9b3a-28fb-4357-9684-57fd8ee33af6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "dqhj",
+                        "text": "当前环节",
+                        "width": 96
+                    },
+                    "name": "MyColumn197",
+                    "designerId": "254fbd33-3489-44d4-8f93-0790a7576fad",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==1)\r",
+                                    "return \"申请阶段\";\r",
+                                    "if(value==2)\r",
+                                    "return \"交保证金阶段\";\r",
+                                    "if(value==3)\r",
+                                    "return \"竞价阶段\";\r",
+                                    "if(value==4)\r",
+                                    "return \"网签阶段\";\r",
+                                    "if(value==5)\r",
+                                    "return \"网备阶段\";"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "3b98bc08-c6ab-4163-8651-345a6ea59334"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "pczt",
+                        "text": "状态",
+                        "width": 88
+                    },
+                    "name": "MyColumn198",
+                    "designerId": "7d409a49-7e1d-48d7-ab3c-b975483b3304"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "text": "操作",
+                        "tooltip": "点击进入相应的购买环节",
+                        "width": 80
+                    },
+                    "name": "MyColumn199",
+                    "designerId": "b846a2b2-3c45-4b5b-8d1c-c3a01c435158",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var dqhj=record.get('dqhj');\r",
+                                    "var pczt=record.get('pczt');\r",
+                                    "var zt;\r",
+                                    "switch(pczt)\r",
+                                    "{\r",
+                                    "    case '尚未提交': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '待审核': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '通过': \r",
+                                    "    zt='3';\r",
+                                    "    break;\r",
+                                    "    case '未通过': \r",
+                                    "    zt='4';\r",
+                                    "    break;\r",
+                                    "    case '尚未开始': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '正在进行': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '中标': \r",
+                                    "    zt='3';\r",
+                                    "    break;\r",
+                                    "    case '未中标': \r",
+                                    "    zt='4';\r",
+                                    "    break;\r",
+                                    "    case '未签': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '已签': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '尚未备案': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '完成备案': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "\r",
+                                    "    default:\r",
+                                    "    break;\r",
+                                    "\r",
+                                    "}\r",
+                                    "var cz=dqhj+zt;\r",
+                                    "switch(cz)\r",
+                                    "{\r",
+                                    "    case '11':\r",
+                                    "    return \"<button >提交订单</button>\";\r",
+                                    "    case '12':\r",
+                                    "    return \"<button disabled='disabled'>提交订单</button>\";\r",
+                                    "    case '13':\r",
+                                    "    return \"<button disabled='disabled'>提交订单</button>\";\r",
+                                    "    case '14':\r",
+                                    "    return \"<button >提交订单</button>\";\r",
+                                    "    case '21':\r",
+                                    "    return \"<button >交保证金</button>\";\r",
+                                    "    case '22':\r",
+                                    "    return \"<button disabled='disabled' >交保证金</button>\";\r",
+                                    "    case '23':\r",
+                                    "    return \"<button disabled='disabled' >交保证金</button>\";\r",
+                                    "    case '24':\r",
+                                    "    return \"<button disabled='disabled' >交保证金核</button>\";\r",
+                                    "\r",
+                                    "\r",
+                                    "    case '31':\r",
+                                    "    return \"<button>开始竞价</button>\";\r",
+                                    "    case '32':\r",
+                                    "    return \"<button>开始竞价</button>\";\r",
+                                    "    case '33':\r",
+                                    "    return \"<button>开始竞价</button>\";\r",
+                                    "    case '34':\r",
+                                    "    return \"<button>开始竞价</button>\";\r",
+                                    "\r",
+                                    "    case '41':\r",
+                                    "    return \"<button>网上签约</button>\";\r",
+                                    "    case '42':\r",
+                                    "    return \"<button>网上签约</button>\";\r",
+                                    "    case '51':\r",
+                                    "    return \"<button '>申请网备</button>\";\r",
+                                    "    case '52':\r",
+                                    "    return \"<button disabled='disabled'>申请网备</button>\";\r",
+                                    "}\r",
+                                    ""
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "177676cd-9b5e-4b04-bf84-31a1282c8327"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "pcbz",
+                        "text": "备注",
+                        "width": 120
+                    },
+                    "name": "MyColumn200",
+                    "designerId": "958f0e66-07d4-413a-9725-e4c09452d008",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return '<font color=red>'+value+'</font>';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "1ec9da14-a721-49ac-9bfe-9473fc2909bb"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "x-grid3-row"
+                    },
+                    "name": "MyGridView57",
+                    "designerId": "2cefa1db-594a-4f1e-b504-de2cfec68d80",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onViewCellClick",
+                                "implHandler": [
+                                    "if(cellIndex==9)\r",
+                                    "{\r",
+                                    "    var panel=Ext.getCmp('contentPanel');\r",
+                                    "    var p;\r",
+                                    "    var dqhj=record.get('dqhj');\r",
+                                    "    var pczt=record.get('pczt');\r",
+                                    "    var zt;\r",
+                                    "    switch(pczt)\r",
+                                    "    {\r",
+                                    "        case '尚未提交': \r",
+                                    "        zt='1';\r",
+                                    "        break;\r",
+                                    "        case '待审核': \r",
+                                    "        zt='2';\r",
+                                    "        break;\r",
+                                    "        case '通过': \r",
+                                    "        zt='3';\r",
+                                    "        break;\r",
+                                    "        case '未通过': \r",
+                                    "        zt='4';\r",
+                                    "        break;\r",
+                                    "        case '尚未开始': \r",
+                                    "        zt='1';\r",
+                                    "        break;\r",
+                                    "        case '正在进行': \r",
+                                    "        zt='2';\r",
+                                    "        break;\r",
+                                    "        case '中标': \r",
+                                    "        zt='3';\r",
+                                    "        break;\r",
+                                    "        case '未中标': \r",
+                                    "        zt='4';\r",
+                                    "        break;\r",
+                                    "        case '未签': \r",
+                                    "        zt='1';\r",
+                                    "        break;\r",
+                                    "        case '已签': \r",
+                                    "        zt='2';\r",
+                                    "        break;\r",
+                                    "        case '尚未备案': \r",
+                                    "        zt='1';\r",
+                                    "        break;\r",
+                                    "        case '完成备案': \r",
+                                    "        zt='2';\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "        default:\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "    }\r",
+                                    "    var cz=dqhj+zt;\r",
+                                    "    switch(cz)\r",
+                                    "    {\r",
+                                    "        case '11':\r",
+                                    "        var cpanel=Ext.getCmp('contentPanel');\r",
+                                    "        var scpz=Ext.widget('scpz');\r",
+                                    "        scpz.items.get(5).disable();\r",
+                                    "        Ext.getCmp('yyzzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        Ext.getCmp('nspzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        Ext.getCmp('zzdmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        Ext.getCmp('sfzmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        Ext.getCmp('bh').setValue(record.get('zbpcbh'));\r",
+                                    "        cpanel.removeAll();\r",
+                                    "        cpanel.add(scpz);\r",
+                                    "        break;\r",
+                                    "        case '12':\r",
+                                    "        Ext.MessageBox.confirm('提示','该订单已经提交正在等待管理员审核，您确定要重新提交吗？',function(btn){\r",
+                                    "            if(btn=='yes')\r",
+                                    "            {\r",
+                                    "                Ext.Ajax.request(\r",
+                                    "                {\r",
+                                    "                    url:'tjdd',\r",
+                                    "                    method:'post', \r",
+                                    "                    headers:{\r",
+                                    "\r",
+                                    "                        'Content-Type':'application/json'\r",
+                                    "                    },\r",
+                                    "                    params:Ext.encode(record.getData()),\r",
+                                    "                    success:function(response){\r",
+                                    "                        // var panel=Ext.getCmp('contentPanel');\r",
+                                    "                        // var p=Ext.widget('scpz');\r",
+                                    "                        //Ext.getCmp('yyzzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                        // Ext.getCmp('nspzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                        //Ext.getCmp('zzdmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                        // Ext.getCmp('sfzmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                        // Ext.getCmp('bh').setValue(record.get('zbpcbh'));\r",
+                                    "                        // panel.removeAll();\r",
+                                    "                        //panel.add(p);\r",
+                                    "                    },\r",
+                                    "\r",
+                                    "                    failure:function(){\r",
+                                    "                        //Ext.MessageBox.alert('错误','操作失败！');\r",
+                                    "                    }\r",
+                                    "\r",
+                                    "                }); \r",
+                                    "            }\r",
+                                    "        });\r",
+                                    "\r",
+                                    "        break;\r",
+                                    "        case '13':\r",
+                                    "        //return \"<button disabled='disabled'>提交订单</button>\";\r",
+                                    "        break;\r",
+                                    "        case '14':\r",
+                                    "        Ext.Ajax.request(\r",
+                                    "        {\r",
+                                    "            url:'tjdd',\r",
+                                    "            method:'post', \r",
+                                    "            headers:{\r",
+                                    "\r",
+                                    "                'Content-Type':'application/json'\r",
+                                    "            },\r",
+                                    "            params:Ext.encode(record.getData()),\r",
+                                    "            success:function(response){\r",
+                                    "                var panel=Ext.getCmp('contentPanel');\r",
+                                    "                var p=Ext.widget('scpz');\r",
+                                    "                Ext.getCmp('yyzzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                Ext.getCmp('nspzpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                Ext.getCmp('zzdmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                Ext.getCmp('sfzmpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "                Ext.getCmp('bh').setValue(record.get('zbpcbh'));\r",
+                                    "                panel.removeAll();\r",
+                                    "                panel.add(p);\r",
+                                    "            },\r",
+                                    "\r",
+                                    "            failure:function(){\r",
+                                    "                //Ext.MessageBox.alert('错误','操作失败！');\r",
+                                    "            }\r",
+                                    "\r",
+                                    "        }); \r",
+                                    "        break;\r",
+                                    "        case '21':\r",
+                                    "\r",
+                                    "        p=Ext.widget('jbzj');\r",
+                                    "        p.items.get(0).loadRecord(record);\r",
+                                    "\r",
+                                    "        p.items.get(0).getComponent('sgze').setValue(Ext.Number.from(record.get('sgsl'),1)*Ext.Number.from(record.get('dwed'),1)+'公顷');\r",
+                                    "        p.items.get(0).getComponent('yjbzj').setValue(Ext.Number.from(record.get('sgsl'),1)*Ext.Number.from(record.get('dwed'),1)*0.05+'万元');\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "        case '22':\r",
+                                    "        //var panel=Ext.getCmp('contentPanel');\r",
+                                    "        p=Ext.widget('jbzj');\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "        case '23':\r",
+                                    "        break;\r",
+                                    "        case '24':\r",
+                                    "        //var panel=Ext.getCmp('contentPanel');\r",
+                                    "        p=Ext.widget('jbzj');\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "\r",
+                                    "        case '31':\r",
+                                    "        p=Ext.widget('pmjjclient');\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "\r",
+                                    "        var form=Ext.getCmp('jpxxclient');\r",
+                                    "        Ext.getCmp('sgslclient').setValue(record.get('sgsl'));\r",
+                                    "\r",
+                                    "        form.load({\r",
+                                    "            url:'getjpxx',\r",
+                                    "            params:{zbpcbh:record.get('zbpcbh')},\r",
+                                    "            success:function(form,action){       \r",
+                                    "\r",
+                                    "                //Ext.MessageBox.alert('提示','设置成功');\r",
+                                    "\r",
+                                    "                runner.stopAll();\r",
+                                    "                var dif=action.result.dif;\r",
+                                    "                //alert(dif);\r",
+                                    "                var day=parseInt(dif/(24*3600*1000));      \r",
+                                    "                var hour=parseInt(dif/(3600*1000))-day*24;\r",
+                                    "                var minute=parseInt(dif/(60*1000))-day*24*60-hour*60;\r",
+                                    "                var second=parseInt(dif/1000)-day*24*3600-hour*3600-minute*60;\r",
+                                    "\r",
+                                    "                var djs=Ext.getCmp('pcqtclient');\r",
+                                    "\r",
+                                    "                var task =runner.newTask({\r",
+                                    "                    run: function()\r",
+                                    "                    {\r",
+                                    "                        var flag=1;\r",
+                                    "                        if(second>0)\r",
+                                    "                        {\r",
+                                    "                            second=second-1;\r",
+                                    "                        }\r",
+                                    "                        else\r",
+                                    "                        {\r",
+                                    "                            if(minute>0)\r",
+                                    "                            {\r",
+                                    "\r",
+                                    "                                second=59;\r",
+                                    "                                minute=minute-1;\r",
+                                    "                            }\r",
+                                    "                            else\r",
+                                    "                            {\r",
+                                    "                                if(hour>0)\r",
+                                    "                                {\r",
+                                    "                                    minute=59;\r",
+                                    "                                    hour=hour-1;\r",
+                                    "                                }\r",
+                                    "                                else\r",
+                                    "                                {\r",
+                                    "                                    if(day>0)\r",
+                                    "                                    {\r",
+                                    "                                        hour=23;\r",
+                                    "                                        day=day-1;\r",
+                                    "                                    }\r",
+                                    "                                    else\r",
+                                    "                                    {\r",
+                                    "                                        djs.setValue('正在进行');\r",
+                                    "                                        Ext.getCmp('pcztclient').setValue('正在进行');\r",
+                                    "                                        flag=0;\r",
+                                    "                                    }\r",
+                                    "                                }\r",
+                                    "                            }\r",
+                                    "\r",
+                                    "                        } \r",
+                                    "                        if(flag==1)\r",
+                                    "                        {//alert(second);\r",
+                                    "                            djs.setValue(day+'天'+hour+'小时'+minute+'分'+second+'秒');    \r",
+                                    "                        }                       \r",
+                                    "\r",
+                                    "                    },\r",
+                                    "                    interval:1000\r",
+                                    "                }\r",
+                                    "\r",
+                                    "                );\r",
+                                    "                task.start();\r",
+                                    "\r",
+                                    "            }\r",
+                                    "\r",
+                                    "        });\r",
+                                    "\r",
+                                    "\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "        case '32':\r",
+                                    "        p=Ext.widget('pmjjclient');\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        var form=Ext.getCmp('jpxxclient');\r",
+                                    "        Ext.getCmp('sgslclient').setValue(record.get('sgsl'));\r",
+                                    "        form.load({\r",
+                                    "            url:'getjpxx',\r",
+                                    "            params:{zbpcbh:record.get('zbpcbh')},\r",
+                                    "            success:function(form,action){       \r",
+                                    "\r",
+                                    "                Ext.MessageBox.alert('提示','设置成功');\r",
+                                    "                runner.stopAll();\r",
+                                    "                var dif=action.result.dif;\r",
+                                    "                var day=parseInt(dif/(24*3600*1000));      \r",
+                                    "                var hour=parseInt(dif/(3600*1000))-day*24;\r",
+                                    "                var minute=parseInt(dif/(60*1000))-day*24*60-hour*60;\r",
+                                    "                var second=parseInt(dif/1000)-day*24*3600-hour*3600-minute*60;\r",
+                                    "\r",
+                                    "                var djs=Ext.getCmp('pcqtclient');\r",
+                                    "\r",
+                                    "                var task =runner.newTask({\r",
+                                    "                    run: function()\r",
+                                    "                    {\r",
+                                    "                        var flag=1;\r",
+                                    "                        if(second>0)\r",
+                                    "                        {\r",
+                                    "                            second=second-1;\r",
+                                    "                        }\r",
+                                    "                        else\r",
+                                    "                        {\r",
+                                    "                            if(minute>0)\r",
+                                    "                            {\r",
+                                    "\r",
+                                    "                                second=59;\r",
+                                    "                                minute=minute-1;\r",
+                                    "                            }\r",
+                                    "                            else\r",
+                                    "                            {\r",
+                                    "                                if(hour>0)\r",
+                                    "                                {\r",
+                                    "                                    minute=59;\r",
+                                    "                                    hour=hour-1;\r",
+                                    "                                }\r",
+                                    "                                else\r",
+                                    "                                {\r",
+                                    "                                    if(day>0)\r",
+                                    "                                    {\r",
+                                    "                                        hour=23;\r",
+                                    "                                        day=day-1;\r",
+                                    "                                    }\r",
+                                    "                                    else\r",
+                                    "                                    {\r",
+                                    "                                        djs.setValue('正在进行');\r",
+                                    "                                        Ext.getCmp('pcztclient').setValue('正在进行');\r",
+                                    "                                        flag=0;\r",
+                                    "                                    }\r",
+                                    "                                }\r",
+                                    "                            }\r",
+                                    "\r",
+                                    "                        } \r",
+                                    "                        if(flag==1)\r",
+                                    "                        {//alert(second);\r",
+                                    "                            djs.setValue(day+'天'+hour+'小时'+minute+'分'+second+'秒');    \r",
+                                    "                        }                       \r",
+                                    "\r",
+                                    "                    },\r",
+                                    "                    interval:1000\r",
+                                    "                }\r",
+                                    "\r",
+                                    "                );\r",
+                                    "                task.start();\r",
+                                    "\r",
+                                    "            }\r",
+                                    "\r",
+                                    "        });\r",
+                                    "\r",
+                                    "        break;\r",
+                                    "        case '33':\r",
+                                    "        break;\r",
+                                    "        case '34':\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "        case '41':\r",
+                                    "        p=Ext.widget('wqclient');\r",
+                                    "        panel.removeAll();\r",
+                                    "        Ext.getCmp('wqzbpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        var ht=Ext.getCmp('wqht');\r",
+                                    "        var htContent=\"<iframe src='\"+record.get('htwz')+\"' width=100% height=100%></iframe>\";\r",
+                                    "        //var htContent=\"<iframe src='\"+\"ht/admin.html\"+\"' width=100% height=100%></iframe>\";\r",
+                                    "        ht.html=htContent; \r",
+                                    "        var str=record.get('htwz');                    \r",
+                                    "\t\tvar strs= new Array(2);\r",
+                                    "\t\t\tstrs=str.split(\".\"); //字符分割 \r",
+                                    "       Ext.getCmp('download_url').setValue(strs[0]+'.doc');\r",
+                                    "        // alert(htContent);\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "\r",
+                                    "        case '42':\r",
+                                    "        p=Ext.widget('wqclient');\r",
+                                    "        panel.removeAll();\r",
+                                    "\r",
+                                    "        ht2=Ext.getCmp('wqht');\r",
+                                    "         Ext.getCmp('wqzbpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        var ht2=Ext.getCmp('wqht');\r",
+                                    "        var htContent2=\"<iframe src='\"+record.get('htwz')+\"' width=100% height=100%></iframe>\";\r",
+                                    "        //var htContent=\"<iframe src='\"+\"ht/admin.html\"+\"' width=100% height=100%></iframe>\";\r",
+                                    "        ht2.html=htContent; \r",
+                                    "        var str1=record.get('htwz');                    \r",
+                                    "\t\tvar strs1= new Array(2);\r",
+                                    "\t\t\tstrs1=str1.split(\".\"); //字符分割 \r",
+                                    "       Ext.getCmp('download_url').setValue(strs1[0]+'.doc');\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "        case '51':\r",
+                                    "        p=Ext.widget('wbclient');\r",
+                                    "        Ext.getCmp('wbpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "        case '52':\r",
+                                    "        p=Ext.widget('wbclient');\r",
+                                    "        Ext.getCmp('wbpcbh').setValue(record.get('zbpcbh'));\r",
+                                    "        panel.removeAll();\r",
+                                    "        panel.add(p);\r",
+                                    "        break;\r",
+                                    "    }\r",
+                                    "\r",
+                                    "}"
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "name": "onViewCellClick",
+                            "designerId": "d7a22f68-1bf3-43a2-9ee9-24e2ec1fc1b2"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "record",
+                                    "rowIndex",
+                                    "rowParams",
+                                    "store"
+                                ],
+                                "fn": "getRowClass",
+                                "implHandler": [
+                                    "\r",
+                                    "var dqhj=record.get('dqhj');\r",
+                                    "var pczt=record.get('pczt');\r",
+                                    "var zt;\r",
+                                    "switch(pczt)\r",
+                                    "{\r",
+                                    "    case '尚未提交': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '待审核': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '通过': \r",
+                                    "    zt='3';\r",
+                                    "    break;\r",
+                                    "    case '未通过': \r",
+                                    "    zt='4';\r",
+                                    "    break;\r",
+                                    "    case '尚未开始': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '正在进行': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '中标': \r",
+                                    "    zt='3';\r",
+                                    "    break;\r",
+                                    "    case '未中标': \r",
+                                    "    zt='4';\r",
+                                    "    break;\r",
+                                    "    case '未签': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '已签': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "    case '尚未备案': \r",
+                                    "    zt='1';\r",
+                                    "    break;\r",
+                                    "    case '完成备案': \r",
+                                    "    zt='2';\r",
+                                    "    break;\r",
+                                    "\r",
+                                    "    default:\r",
+                                    "    break;\r",
+                                    "\r",
+                                    "}\r",
+                                    "var cz=dqhj+zt;\r",
+                                    "switch(cz)\r",
+                                    "{\r",
+                                    "    case '11':\r",
+                                    "    return 'oper';\r",
+                                    "    case '12':\r",
+                                    "    return 'wait';\r",
+                                    "    case '13':\r",
+                                    "    return 'oper';\r",
+                                    "    case '14':\r",
+                                    "    return 'oper';\r",
+                                    "    case '21':\r",
+                                    "    return 'oper';\r",
+                                    "    case '22':\r",
+                                    "    return 'wait';\r",
+                                    "    case '23':\r",
+                                    "    return 'oper';\r",
+                                    "    case '24':\r",
+                                    "    return 'oper';\r",
+                                    "    case '31':\r",
+                                    "    return 'wait';\r",
+                                    "    case '32':\r",
+                                    "    return 'oper';\r",
+                                    "    case '33':\r",
+                                    "    return 'wait';\r",
+                                    "    case '34':\r",
+                                    "    return 'wait';\r",
+                                    "    case '41':\r",
+                                    "    return 'oper';\r",
+                                    "    case '42':\r",
+                                    "    return '';\r",
+                                    "    case '51':\r",
+                                    "    return 'oper';\r",
+                                    "    case '52':\r",
+                                    "    return '';\r",
+                                    "\r",
+                                    "}"
+                                ]
+                            },
+                            "name": "getRowClass",
+                            "designerId": "0ce4d82e-f729-4aa9-83d1-146f8736de4c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.CellEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": "Ext.grid.plugin.CellEditing",
+                    "name": "MyCellEditingPlugin6",
+                    "designerId": "b848cafe-4dbb-4636-b301-bd02fb6b3afe"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "store": "zbgmstore",
+                "width": 360
+            },
+            "name": "MyPagingToolbar43",
+            "designerId": "d4cb44ad-614e-484c-a875-8165cc1984b8"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 44
+            },
+            "name": "MyToolbar56",
+            "designerId": "faf4f472-4edc-4957-94f8-d718f6efe3f9",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',color:'red'}"
+                        ],
+                        "text": "在审核通过后不能更改订单内容和相关凭证,如果未通过审核在规定时间前可重新提交相关信息"
+                    },
+                    "name": "MyLabel72",
+                    "designerId": "e4c71202-b1a9-4e23-ae5e-64c9391477e8"
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MyFill",
+                    "designerId": "e0733626-08cd-4003-aa8e-c1f2c1c8dc9a"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                        ],
+                        "text": "返回公告列表",
+                        "width": 81
+                    },
+                    "name": "MyLabel73",
+                    "designerId": "a9f3b360-7aab-4933-b272-eb56cef3612c",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "label"
+                                ],
+                                "element": "el",
+                                "fn": "onLabelClick",
+                                "implHandler": [
+                                    "var gmstore=Ext.StoreMgr.get('zbgmstore');\r",
+                                    "var ggstore=Ext.StoreMgr.get('zbgglbstore');\r",
+                                    "var panel=Ext.getCmp('contentPanel');\r",
+                                    "/*\r",
+                                    "gmstore.each(function(rec){\r",
+                                    "// zbpcbhs.push(gmstore.get('zbpcbh'));\r",
+                                    "var zbpcbh=rec.get('zbpcbh');\r",
+                                    "//alert(zbpcbh);\r",
+                                    "ggstore.getAt(ggstore.find('zbpcbh',zbpcbh)).set('pcqt','yd');\r",
+                                    "//alert( ggstore.getAt(ggstore.find('zbpcbh',zbpcbh)).get('pcqt'));\r",
+                                    "//rec.setValue('pcqt','yd');//已订\r",
+                                    "//ggstore.removeAt(ggstore.find('zbpcbh',rec.get('zbpcbh')));\r",
+                                    "});\r",
+                                    "*/\r",
+                                    "ggstore.clearFilter();\r",
+                                    "\r",
+                                    "ggstore.filter('pcqt','wd');\r",
+                                    "var zbsg=Ext.widget('zbsq');\r",
+                                    "var wdzb=Ext.widget('wdsglb');\r",
+                                    "panel.removeAll();\r",
+                                    "panel.add(zbsg);\r",
+                                    "panel.add(wdzb);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLabelClick",
+                            "designerId": "1d2f6091-70cd-4a5c-b78c-cb6eee37f0af"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

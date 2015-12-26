@@ -1,0 +1,361 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|userAlias": "CrawlInfo",
+        "designer|userClassName": "CrawlInfo",
+        "height": 440,
+        "html": null,
+        "layout": "border",
+        "title": "查看检索信息",
+        "width": 757
+    },
+    "configAlternates": {
+        "html": "string"
+    },
+    "designerId": "9da0aa53-ead3-4ba3-8187-8d2a76d696b0",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "layout|region": "west",
+                "store": "landinfo1",
+                "title": "检索信息列表",
+                "width": 446
+            },
+            "name": "MyGridPanel44",
+            "designerId": "756530ee-e040-49a9-9520-75d7308f6662",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "title",
+                        "text": null
+                    },
+                    "name": "MyColumn113",
+                    "designerId": "ab37a9fb-21d1-439c-9ee6-04b653f878c8"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView39",
+                    "designerId": "4ac1a331-6176-4763-8a57-be8dea2e930c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "url",
+                        "hidden": true,
+                        "text": "url"
+                    },
+                    "name": "MyColumn114",
+                    "designerId": "2f92f555-3235-483c-b4cb-d12e4ed06515"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "region",
+                        "hidden": true,
+                        "text": "region"
+                    },
+                    "name": "MyColumn115",
+                    "designerId": "744a0abe-bfee-4072-a5f3-3c573e1b9aec"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "acre",
+                        "text": "面积（亩）",
+                        "width": 40
+                    },
+                    "name": "MyNumberColumn27",
+                    "designerId": "029f365b-da31-4db8-bdfe-4e429e276ba8"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "year",
+                        "text": "年限（年）",
+                        "width": 40
+                    },
+                    "name": "MyNumberColumn28",
+                    "designerId": "8f6b5336-8d3a-4ffc-8050-24fad3ae3b44"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "releasedate",
+                        "hidden": true,
+                        "text": "releasedate"
+                    },
+                    "name": "MyDateColumn22",
+                    "designerId": "5195f317-8f86-42c6-b628-05adecafaf2e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "price",
+                        "hidden": true,
+                        "text": "price"
+                    },
+                    "name": "MyColumn116",
+                    "designerId": "48e73d40-7820-4977-bc80-19354a44388a"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar28",
+                    "designerId": "49026476-6e9e-441f-9052-31dba8a38708",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "",
+                                "id": "JssearchField",
+                                "layout|flex": null
+                            },
+                            "name": "MyTextField70",
+                            "designerId": "b58be227-5640-409d-87e6-1645581f1e69"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "检索",
+                                "width": 64
+                            },
+                            "name": "MyButton128",
+                            "designerId": "edc8ef6e-31e1-4057-a896-22f9be679c9f",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "//Ext.Msg.alert('find');\r",
+                                            "var mystore = Ext.StoreMgr.get('landinfo1');\r",
+                                            "var outSearch=Ext.getCmp('JssearchField').getValue();\r",
+                                            "\r",
+                                            "mystore.on('beforeload', function (store, options) {\r",
+                                            "    var new_params = {  searchField: outSearch};\r",
+                                            "    Ext.apply(store.proxy.extraParams, new_params);\r",
+                                            "});\r",
+                                            "mystore.load({ params: { start: 0, limit: 10} });"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "abc226eb-f636-4a42-b20e-3316c3cad965"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "emptyMsg": "没有数据",
+                        "store": "landinfo1",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar31",
+                    "designerId": "67e0f8be-e426-40e2-adfd-802b69f54822"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelCellClick",
+                        "implHandler": [
+                            "var adress = null;\r",
+                            "adress = record.data.region;\r",
+                            "title = record.data.title;\r",
+                            "//text = record.data.text;\r",
+                            "price = record.data.price;\r",
+                            "acre = record.data.acre;\r",
+                            "transtyle = record.data.transtyle;\r",
+                            "releasedate = record.data.releasedate;\r",
+                            "url = record.data.url;\r",
+                            "year = record.data.year;\r",
+                            "//Ext.Msg.alert('title',adress);\r",
+                            "\r",
+                            "\r",
+                            "var map = new BMap.Map(\"allmap\");\r",
+                            "map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件\r",
+                            "map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用\r",
+                            "//var point = new BMap.Point(116.331398,39.897445);\r",
+                            "\r",
+                            "\r",
+                            "// 创建地址解析器实例\r",
+                            "var myGeo = new BMap.Geocoder();\r",
+                            "//var adress=Ext.getCmp('adress_field').getValue();\r",
+                            "if(adress){\r",
+                            "    bdGEO(adress);\r",
+                            "}\r",
+                            "if(!adress){\r",
+                            "    Ext.Msg.alert('提醒','此条数据无定位信息！');\r",
+                            "}\r",
+                            "\r",
+                            "function bdGEO(adress){\r",
+                            "    // 将地址解析结果显示在地图上,并调整地图视野\r",
+                            "    myGeo.getPoint(adress, function(point){\r",
+                            "        if (point) {\r",
+                            "            map.centerAndZoom(point, 14);\r",
+                            "            map.addOverlay(new BMap.Marker(point));\r",
+                            "\r",
+                            "\r",
+                            "            //添加纯文本信息窗口\r",
+                            "            var opts = {\r",
+                            "                width : 480,     // 信息窗口宽度\r",
+                            "                height: 80,     // 信息窗口高度\r",
+                            "                offset:new BMap.Size(0, -20),\r",
+                            "                title: \"<h3 style='margin:0 0 10px 0;padding:0.2em 0;color:red;size:'>\"+title +'   '+ '<a target=\"_blank\" style=\"fontsize:15px\" href='+url+'>查看详情</a></h3>', // 信息窗口标题\r",
+                            "                enableMessage:false//设置允许信息窗发送短息\r",
+                            "\r",
+                            "            }\r",
+                            "            var infoWindow = new BMap.InfoWindow(\"流转方式：\" + transtyle +\"   \"+\"地理位置：\"+adress + \"\\r\\n\" \r",
+                            "            + \"面积：\" + acre+\"  \" + \"年限：\" + year  + \"  \"+ \"价格：\"+ price, opts);  // 创建信息窗口对象\r",
+                            "            map.openInfoWindow(infoWindow,point); //开启信息窗口\r",
+                            "        }\r",
+                            "    });\r",
+                            "}\r",
+                            ""
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onGridpanelCellClick",
+                    "designerId": "74ed6696-8126-456b-8962-42d371e14037"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "id": "allmap",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "title": "地图定位显示"
+            },
+            "name": "MyForm19",
+            "designerId": "2df31665-6e96-45a0-ba17-58c9a1720bd2",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAllmapResize",
+                        "implHandler": [
+                            "var map = new BMap.Map(\"allmap\");            // 创建Map实例\r",
+                            "map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);\r",
+                            "\r",
+                            "map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件\r",
+                            "map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用\r",
+                            "var point = new BMap.Point(116.331398,39.897445);"
+                        ],
+                        "name": "resize",
+                        "scope": "me"
+                    },
+                    "name": "onAllmapResize",
+                    "designerId": "28e555d2-ce7f-4fcc-93f8-5b438a6be0c6"
+                }
+            ]
+        }
+    ]
+}

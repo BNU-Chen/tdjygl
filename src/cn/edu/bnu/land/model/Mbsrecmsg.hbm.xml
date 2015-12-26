@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-11 16:56:43 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Mbsrecmsg" table="mbsrecmsg" catalog="tdlz">
+        <id name="idxNo" type="java.lang.Integer">
+            <column name="IdxNo" />
+            <generator class="identity" />
+        </id>
+        <property name="sender" type="string">
+            <column name="Sender" length="20" />
+        </property>
+        <property name="recipient" type="string">
+            <column name="Recipient" />
+        </property>
+        <property name="msgType" type="java.lang.Short">
+            <column name="MsgType" />
+        </property>
+        <property name="subject" type="string">
+            <column name="Subject" length="1024" />
+        </property>
+        <property name="urls" type="string">
+            <column name="URLs" />
+        </property>
+        <property name="recMmsinfo" type="string">
+            <column name="RecMMSInfo" />
+        </property>
+        <property name="msgStatus" type="java.lang.Short">
+            <column name="MsgStatus" />
+        </property>
+        <property name="msgSize" type="java.lang.Integer">
+            <column name="MsgSize" />
+        </property>
+        <property name="recTime" type="string">
+            <column name="RecTime" length="20" />
+        </property>
+        <property name="comPort" type="java.lang.Short">
+            <column name="ComPort" />
+        </property>
+        <property name="refMsgId" type="string">
+            <column name="RefMsgID" length="64" />
+        </property>
+        <property name="sendOutTime" type="string">
+            <column name="SendOutTime" length="20" />
+        </property>
+        <property name="comments" type="string">
+            <column name="Comments" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoVoteStore",
+        "model": "InfoVoteModel",
+        "storeId": "MyStore1"
+    },
+    "designerId": "3c37e836-99a7-4cbe-9e87-aa9db7129033",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy44",
+            "designerId": "f45c82b5-71e7-44e7-ab3e-5d89df3eff92",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader44",
+                    "designerId": "05921e58-68ce-4fc2-8562-21860534840d"
+                }
+            ]
+        }
+    ]
+}

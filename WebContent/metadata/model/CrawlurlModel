@@ -1,0 +1,70 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CrawlurlModel"
+    },
+    "designerId": "258a90ba-3a47-4a17-a350-ca4ac1b172aa",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "number",
+                "type": "int"
+            },
+            "name": "MyField285",
+            "designerId": "fc220c84-fcc7-4a67-a002-a78a7214bebd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "webname",
+                "type": "string"
+            },
+            "name": "MyField286",
+            "designerId": "217548cc-4615-4ae1-a8c2-b4c458d8eeb8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "url",
+                "type": "string"
+            },
+            "name": "MyField287",
+            "designerId": "9a3548d8-90c5-4267-b361-cf15ba8c07ea"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "is_recycle",
+                "type": "string"
+            },
+            "name": "MyField288",
+            "designerId": "da46db24-619e-45cc-9b55-378cff8550b2"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-18 23:58:44 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbjcgl" table="zbjcgl" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="jcid" type="java.lang.Integer">
+            <column name="JCID">
+                <comment>&#189;&#248;&#179;&#246;id</comment>
+            </column>
+        </property>
+        <property name="jcfmc" type="string">
+            <column name="JCFMC" length="20">
+                <comment>&#189;&#248;&#179;&#246;&#183;&#189;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="jcbh" type="string">
+            <column name="JCBH" length="20">
+                <comment>&#189;&#248;&#179;&#246;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="lrlc" type="java.lang.Boolean">
+            <column name="LRLC">
+                <comment>&#193;&#247;&#200;&#235;&#193;&#247;&#179;&#246;</comment>
+            </column>
+        </property>
+        <property name="crlx" type="string">
+            <column name="CRLX" length="20">
+                <comment>&#179;&#246;&#200;&#235;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="cred" type="java.lang.Float">
+            <column name="CRED" precision="12" scale="0">
+                <comment>&#179;&#246;&#200;&#235;&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="crrq" type="date">
+            <column name="CRRQ" length="10">
+                <comment>&#179;&#246;&#200;&#235;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="sfjs" type="java.lang.Boolean">
+            <column name="SFJS">
+                <comment>&#202;&#199;&#183;&#241;&#189;&#225;&#202;&#248;</comment>
+            </column>
+        </property>
+        <property name="bz" type="string">
+            <column name="BZ" length="20">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="qt" type="string">
+            <column name="QT" length="20">
+                <comment>&#198;&#228;&#203;&#251;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

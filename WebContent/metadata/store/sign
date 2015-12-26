@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "sign",
+        "model": "sign",
+        "pageSize": 5,
+        "storeId": "sign"
+    },
+    "designerId": "b10c4f0c-7e09-4a45-8c01-90f40a062e33",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getsign"
+            },
+            "name": "MyAjaxProxy67",
+            "designerId": "6731d79c-45d1-49ae-8dc9-228332f587cb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader67",
+                    "designerId": "388e321e-8629-4176-bc05-eae408b44b4e"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,555 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "jylcgl",
+        "designer|userClassName": "jylcgl",
+        "height": 685,
+        "store": "zbgglbstore",
+        "title": "<font size='2.5px'>交易流程管理</font>",
+        "width": 901
+    },
+    "designerId": "b624f73f-7212-457f-863e-0c7d8d5ee585",
+    "cn": [
+        {
+            "type": "Ext.grid.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "text": "序号",
+                "width": 38
+            },
+            "name": "MyRowNumberer33",
+            "designerId": "a43e1b3f-7621-454d-80b9-f9c0664e1467"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "zbpcbh",
+                "text": "指标批次编号"
+            },
+            "name": "MyColumn143",
+            "designerId": "04d27c06-faf7-43c0-a34c-baae35c30d17"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dwed",
+                "text": "单位额度"
+            },
+            "name": "MyColumn144",
+            "designerId": "9a6013d1-dcd0-4a71-b080-cbd6976b6d07",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'公顷/张';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "9d4c0197-baa1-456a-900b-63f088de40cc"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "sl",
+                "text": "数量",
+                "width": 76
+            },
+            "name": "MyColumn145",
+            "designerId": "2eb56c1c-549b-4d68-b371-cc4c0d7cbf8e",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'张';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "a0d96b8c-c762-4867-b2ff-a208f2f23632"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "jylx",
+                "text": "交易类型",
+                "width": 85
+            },
+            "name": "MyColumn146",
+            "designerId": "50ce31a2-9ab5-4a70-9e0f-e9d22a230a5b"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dj",
+                "text": "底价"
+            },
+            "name": "MyColumn147",
+            "designerId": "0686662b-0371-4e28-957f-f913a3b73a4e",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'万元/张';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "19d38d1e-c3c0-46a6-9f2c-91b9a4a9e9fa"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "fbrq",
+                "format": "Y-m-d",
+                "text": "发布日期"
+            },
+            "name": "MyDateColumn29",
+            "designerId": "677ba3c0-829e-4a0e-863f-c23cc724a07f"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "sqjzrq",
+                "format": "Y-m-d",
+                "text": "申请截止日期"
+            },
+            "name": "MyDateColumn30",
+            "designerId": "2e1eb720-380b-46cc-8186-9bc13e6c4e90"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "x-grid3-row"
+            },
+            "name": "MyGridView49",
+            "designerId": "9b6fe8f2-b77e-4a88-954a-2c43f48c857e",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onViewCellClick",
+                        "implHandler": [
+                            "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                            "var store=Ext.StoreMgr.get('zbgmstore');\r",
+                            "if(cellIndex==9&&record.get('dqhj')<=2)\r",
+                            "{\r",
+                            "\r",
+                            "    myTabPanel.removeAll(true);\r",
+                            "    store.clearFilter();\r",
+                            "    store.filter('zbpcbh',record.get('zbpcbh'));\r",
+                            "    store.filter('dqhj',1);\r",
+                            "    var p=Ext.widget('zbsgsh');\r",
+                            "    myTabPanel.add(p);\r",
+                            "    myTabPanel.add(Ext.widget('bzjsh'));\r",
+                            "    Ext.getCmp('bzjshpc').setValue(record.get('zbpcbh'));\r",
+                            "    Ext.getCmp('sgshpc').setValue(record.get('zbpcbh'));\r",
+                            "    myTabPanel.setActiveTab(0);\r",
+                            "    // p.setActive();\r",
+                            "\r",
+                            "    /*\r",
+                            "    store.load(\r",
+                            "    {\r",
+                            "    url:'getsgsh',\r",
+                            "\r",
+                            "    params:\r",
+                            "    {\r",
+                            "    'zbpcbh':record.get('zbpcbh')\r",
+                            "    }\r",
+                            "    }\r",
+                            "    );\r",
+                            "    store.filter('dqhj',7);\r",
+                            "    */\r",
+                            "} \r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "if(cellIndex==9&&record.get('dqhj')==3)\r",
+                            "{\r",
+                            "    myTabPanel.removeAll(true);\r",
+                            "    myTabPanel.add(Ext.widget('pmjj'));\r",
+                            "    var form=Ext.getCmp('jpxx');\r",
+                            "    form.load({\r",
+                            "        params:{zbpcbh:record.get('zbpcbh')},\r",
+                            "         success:function(form,action){       \r",
+                            "\r",
+                            "           // Ext.MessageBox.alert('提示','设置成功');\r",
+                            "            runner.stopAll();\r",
+                            "            var dif=action.result.dif;\r",
+                            "            var day=parseInt(dif/(24*3600*1000));      \r",
+                            "            var hour=parseInt(dif/(3600*1000))-day*24;\r",
+                            "            var minute=parseInt(dif/(60*1000))-day*24*60-hour*60;\r",
+                            "            var second=parseInt(dif/1000)-day*24*3600-hour*3600-minute*60;\r",
+                            "\r",
+                            "            var djs=Ext.getCmp('pcqt');\r",
+                            "\r",
+                            "            var task =runner.newTask({\r",
+                            "                run: function()\r",
+                            "                {\r",
+                            "                    var flag=1;\r",
+                            "                    if(second>0)\r",
+                            "                    {\r",
+                            "                        second=second-1;\r",
+                            "                    }\r",
+                            "                    else\r",
+                            "                    {\r",
+                            "                        if(minute>0)\r",
+                            "                        {\r",
+                            "\r",
+                            "                            second=59;\r",
+                            "                            minute=minute-1;\r",
+                            "                        }\r",
+                            "                        else\r",
+                            "                        {\r",
+                            "                            if(hour>0)\r",
+                            "                            {\r",
+                            "                                minute=59;\r",
+                            "                                hour=hour-1;\r",
+                            "                            }\r",
+                            "                            else\r",
+                            "                            {\r",
+                            "                                if(day>0)\r",
+                            "                                {\r",
+                            "                                    hour=23;\r",
+                            "                                    day=day-1;\r",
+                            "                                }\r",
+                            "                                else\r",
+                            "                                {\r",
+                            "                                    djs.setValue('正在进行');\r",
+                            "                                    Ext.getCmp('pczt').setValue('正在进行');\r",
+                            "                                    flag=0;\r",
+                            "                                }\r",
+                            "                            }\r",
+                            "                        }\r",
+                            "\r",
+                            "                    } \r",
+                            "                    if(flag==1)\r",
+                            "                    {//alert(second);\r",
+                            "                        djs.setValue(day+'天'+hour+'小时'+minute+'分'+second+'秒');    \r",
+                            "                    }                       \r",
+                            "\r",
+                            "                },\r",
+                            "                interval:1000\r",
+                            "            }\r",
+                            "\r",
+                            "            );\r",
+                            "            task.start();\r",
+                            "\r",
+                            "        }\r",
+                            "    });\r",
+                            "\r",
+                            "}\r",
+                            "\r",
+                            "if(cellIndex==9&&record.get('dqhj')==4)\r",
+                            "{\r",
+                            "    myTabPanel.removeAll(true);\r",
+                            "    myTabPanel.add(Ext.widget('wqgl'));\r",
+                            "    store.clearFilter();\r",
+                            "    store.filter('zbpcbh',record.get('zbpcbh'));\r",
+                            "    store.filter('pczt','中标');\r",
+                            "\r",
+                            "}\r",
+                            "\r",
+                            "if(cellIndex==9&&record.get('dqhj')==5)\r",
+                            "{\r",
+                            "    myTabPanel.removeAll(true);\r",
+                            "    myTabPanel.add(Ext.widget('wbgl'));\r",
+                            "\r",
+                            "}\r",
+                            "\r",
+                            "if(cellIndex==9&&record.get('dqhj')>=4)\r",
+                            "{\r",
+                            "\r",
+                            "    myTabPanel.removeAll(true);\r",
+                            "    store.clearFilter();\r",
+                            "    store.filter('zbpcbh',record.get('zbpcbh'));\r",
+                            "    store.filter('dqhj',4);\r",
+                            "    var wqgl=Ext.widget('wqgl');\r",
+                            "    myTabPanel.add(wqgl);\r",
+                            "    myTabPanel.add(Ext.widget('wbgl'));\r",
+                            "    Ext.getCmp('wqglzbpcbh').setValue(record.get('zbpcbh'));\r",
+                            "    Ext.getCmp('wbglzbpcbh').setValue(record.get('zbpcbh'));\r",
+                            "    myTabPanel.setActiveTab(0);\r",
+                            "    // p.setActive();\r",
+                            "\r",
+                            "    /*\r",
+                            "    store.load(\r",
+                            "    {\r",
+                            "    url:'getsgsh',\r",
+                            "\r",
+                            "    params:\r",
+                            "    {\r",
+                            "    'zbpcbh':record.get('zbpcbh')\r",
+                            "    }\r",
+                            "    }\r",
+                            "    );\r",
+                            "    store.filter('dqhj',7);\r",
+                            "    */\r",
+                            "} "
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onViewCellClick",
+                    "designerId": "bf1e1172-7df4-41f7-93a0-1a1076f57053"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dqhj",
+                "text": "当前环节",
+                "width": 90
+            },
+            "name": "MyColumn148",
+            "designerId": "0f2a929f-95de-44ce-be82-2dcf15973683",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "if(value==1)\r",
+                            "return \"审核阶段\";\r",
+                            "if(value==2)\r",
+                            "return \"审核阶段\";\r",
+                            "if(value==3)\r",
+                            "return \"竞价阶段\";\r",
+                            "if(value==4)\r",
+                            "return \"网签网备\";\r",
+                            "if(value==5)\r",
+                            "return \"网签网备\";"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "68f6f460-2c0a-4302-9366-2a1462992f34"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 44
+            },
+            "name": "MyToolbar42",
+            "designerId": "7e9be08c-36e9-41d0-bcbd-24f59f2c641f",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 33,
+                        "layout|flex": null,
+                        "src": "images/step1.png",
+                        "width": 527
+                    },
+                    "name": "MyImg7",
+                    "designerId": "62c52be9-ad10-4416-85ca-1fda4dc675fe"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "text": "操作",
+                "tooltip": "进入该指标交易流程"
+            },
+            "name": "MyColumn149",
+            "designerId": "75469cd0-1fe9-4e3e-b42b-c9c405f64dfa",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return \"<button style='background-color:dodgerblue;color:white'>管理</button>\";"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "c87a0156-47ba-4318-9cf0-8551f2ec5c20"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "store": "zbgglbstore",
+                "width": 360
+            },
+            "name": "MyPagingToolbar39",
+            "designerId": "e988de7b-9b30-4575-bb12-cceecc6d7b96"
+        }
+    ]
+}

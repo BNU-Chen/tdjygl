@@ -1,0 +1,47 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ccQueryStatisticSupplierStore",
+        "model": "ccQueryStatisticPieModel",
+        "storeId": "ccQueryStatisticSupplierStore"
+    },
+    "name": "ccQueryStatisticPieStore1",
+    "designerId": "04477e46-037b-45e5-bebf-3570a2273208",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "StatisticSupplier"
+            },
+            "name": "MyAjaxProxy28",
+            "designerId": "24fe012c-d178-40a0-8db5-f41f66ecc460",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader28",
+                    "designerId": "f4014139-ace9-4fc4-b6df-58d538855e8a"
+                }
+            ]
+        }
+    ]
+}

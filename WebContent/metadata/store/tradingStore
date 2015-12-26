@@ -1,0 +1,69 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    [\"0\",\"不可交易\"],\r",
+            "    [\"1\",\"可交易\"]\r",
+            "]"
+        ],
+        "designer|userClassName": "tradingStore",
+        "storeId": "tradingStore"
+    },
+    "designerId": "9c14f46b-8d0b-4c1a-b4b9-6dfc06124b26",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy40",
+            "designerId": "eb7c9c73-5cfb-490b-88ac-65261c56f96e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader40",
+                    "designerId": "991618ac-c1df-4754-88fa-18245c0c3a04"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "trading"
+            },
+            "name": "MyField159",
+            "designerId": "05469772-f7c8-4d7e-aefb-31da92998589"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "tradingText"
+            },
+            "name": "MyField160",
+            "designerId": "cb27537a-ed1a-445d-a7c8-188c7d2af03a"
+        }
+    ]
+}

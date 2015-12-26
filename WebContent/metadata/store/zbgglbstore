@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userAlias": "zbgglbstore",
+        "designer|userClassName": "zbgglbstore",
+        "model": "zbgglbmodel",
+        "pageSize": 15,
+        "storeId": "zbgglbstore"
+    },
+    "designerId": "5f72a534-1648-45f2-8e02-0b8e2fed230a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getgglb"
+            },
+            "name": "MyAjaxProxy52",
+            "designerId": "d550ebb8-fbe1-42a8-9060-2dc707caf60a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader52",
+                    "designerId": "d25ef0dd-8881-43e6-9ea5-4d037dcc6fde"
+                }
+            ]
+        }
+    ]
+}

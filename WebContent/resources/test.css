@@ -1,0 +1,67 @@
+.aa .x-btn-inner{
+    color: white;
+}
+.tab .x-tab-bar-default-top{
+background:'green';
+}
+
+.x-grid3-hd-row TD { 
+    font-size: 12px;/*改变表头字体大小*/ 
+    color:blue;
+} 
+.x-grid3-row TD { 
+    font-size: 12px;/*改变行内容字体大小*/ 
+    color:black;
+    
+}
+
+.my-header .x-panel-header {
+            background: red;
+        }
+
+.my-tabheader .x-tabpanel-header {
+            background: red;
+        }
+
+ul.x-tab-strip-top{
+	padding-top: 1px;
+	background: repeat-x bottom;
+	border-bottom: 1px solid;
+	background-color: white;
+}
+
+.x-tab-strip-active .x-tab-strip-text{
+		color: red !important;
+	}
+.x-column-header{
+    color:blue;
+    font-size:12px;
+}
+
+.x-grid-cell-inner {
+    overflow: hidden;
+    padding: 3px 3px;
+    white-space: nowrap;
+ }
+
+.x-btn.my-over {
+    background: red;
+}
+
+.x-grid-group-title{//grid中的grouptitle
+ font-size:20px;
+}
+
+.mylabel .x-form-item-label{
+    color:white;
+}
+
+.mylabel .x-form-display-field{
+color:white;
+}
+.wait .x-grid-cell{
+     background: #d3d3d3;
+}
+.oper .x-grid-cell{
+     background: #ffa500;
+}

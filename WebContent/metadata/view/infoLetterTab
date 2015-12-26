@@ -1,0 +1,313 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoLetterTab",
+        "designer|userClassName": "infoLetterTab",
+        "layout": "fit",
+        "title": "群众来信-列表"
+    },
+    "designerId": "31c5b39f-20c7-44c8-8d54-7ebd7759f753",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "dock": null,
+                "height": 421,
+                "jsonSubmit": true,
+                "layout": "fit",
+                "pollForChanges": null,
+                "title": "My Form"
+            },
+            "name": "MyForm21",
+            "designerId": "55f311ee-0b75-4f82-9d38-e10be9829b79",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "collapsible": false,
+                        "height": 241,
+                        "id": null,
+                        "store": "InfoLetterStore",
+                        "title": "群众来信"
+                    },
+                    "name": "MyGridPanel46",
+                    "designerId": "6d2b82ab-e42d-4370-b0bc-fd629715b4b2",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": null
+                            },
+                            "name": "MyRowNumberer26",
+                            "designerId": "c23d391c-1dfd-4935-b441-db4daa02fe6b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "letterTitle",
+                                "text": "来信主题"
+                            },
+                            "name": "MyColumn121",
+                            "designerId": "6b8314a2-df0f-439f-839c-e1395265ad03"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "letterAuthor",
+                                "text": "来信人"
+                            },
+                            "name": "MyColumn122",
+                            "designerId": "fc2d0ffd-4c86-4075-b56f-52910eb2e2d3"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "letterTime",
+                                "text": "来信时间"
+                            },
+                            "name": "MyDateColumn24",
+                            "designerId": "b0747767-0497-469f-be9c-66bb05386ca8"
+                        },
+                        {
+                            "type": "Ext.grid.column.Boolean",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "letterIsreply",
+                                "text": "是否回复"
+                            },
+                            "name": "MyBooleanColumn2",
+                            "designerId": "b30f5e52-c600-4651-bacf-9e6b3bfba23a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Boolean",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "letterIsshow",
+                                "text": "是否公示"
+                            },
+                            "name": "MyBooleanColumn3",
+                            "designerId": "f563acaa-4ef7-460b-843f-1a7cf2fe8ac3"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView41",
+                            "designerId": "4d2ac806-0185-4479-b143-553e44d9feba"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel24",
+                            "designerId": "086106e9-016e-4f58-900c-710212e41b1c"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "enableOverflow": true,
+                                "frame": false,
+                                "height": null
+                            },
+                            "name": "MyToolbar31",
+                            "designerId": "485c68dd-4023-420d-bf23-09e34234324f",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按来信人查询",
+                                        "layout|flex": null,
+                                        "width": 176
+                                    },
+                                    "name": "MyTextField74",
+                                    "designerId": "cfe33ff0-72e0-43b6-9dea-22653848666c"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按文章标题查询",
+                                        "layout|flex": null,
+                                        "width": 211
+                                    },
+                                    "name": "MyTextField75",
+                                    "designerId": "1de037e8-92dc-480c-9d01-e2687f7e68ca"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按时间查询",
+                                        "layout|flex": null,
+                                        "width": 204
+                                    },
+                                    "name": "MyDateField47",
+                                    "designerId": "4dad52cb-8736-48a2-9a20-76f7661aa56b"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "按关键词查询",
+                                        "layout|flex": null,
+                                        "width": 176
+                                    },
+                                    "name": "MyTextField76",
+                                    "designerId": "2d3a6892-5103-41f2-ba64-67bf254043dc"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查询来信"
+                                    },
+                                    "name": "MyButton134",
+                                    "designerId": "5f5d037b-8a9a-46ca-a32d-ff50f620fdc1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar32",
+                            "designerId": "ebe87c11-49c5-42d7-a08b-a74332974746",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查看详细"
+                                    },
+                                    "name": "MyButton135",
+                                    "designerId": "2b36b2ab-14a7-4d14-8553-70eaf0bb506f"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "删除来信"
+                                    },
+                                    "name": "MyButton136",
+                                    "designerId": "008c53d3-70e3-4444-b6df-815972da9558"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "height": 36,
+                                "store": "InfoArticleStore",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar33",
+                            "designerId": "e00f23da-6335-45be-a4d8-4d84a0b6059b"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

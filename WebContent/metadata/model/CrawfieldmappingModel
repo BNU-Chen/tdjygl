@@ -1,0 +1,28 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CrawfieldmappingModel"
+    },
+    "designerId": "0656844d-1f0a-4dc4-8c15-20be929e6226",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fieldmapping",
+                "type": "string"
+            },
+            "name": "MyField291",
+            "designerId": "46a22e9e-ca11-430a-a4b0-4961cf319939"
+        }
+    ]
+}

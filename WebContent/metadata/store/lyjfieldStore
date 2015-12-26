@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "lyjfieldStore",
+        "model": "CrawlfieldModel",
+        "pageSize": 10,
+        "storeId": "lyjfieldStore"
+    },
+    "designerId": "28d70b06-2087-4ae5-8401-5ce013d1d7e1",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "look_datafield"
+            },
+            "name": "MyAjaxProxy71",
+            "designerId": "2189a7d4-cebd-4f79-a81b-baffd1258920",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader71",
+                    "designerId": "60123ed7-5700-4534-b4d1-9b593dfb8441"
+                }
+            ]
+        }
+    ]
+}

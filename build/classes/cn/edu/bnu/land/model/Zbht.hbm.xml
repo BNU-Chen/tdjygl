@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-5 9:28:43 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zbht" table="zbht" catalog="tdlz">
+        <id name="zbpcbh" type="string">
+            <column name="zbpcbh" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="dwmc" type="string">
+            <column name="dwmc" length="30">
+                <comment>&#181;&#165;&#206;&#187;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="cjdj" type="java.lang.Float">
+            <column name="cjdj" precision="12" scale="0">
+                <comment>&#179;&#201;&#189;&#187;&#181;&#165;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="sgsl" type="java.lang.Integer">
+            <column name="sgsl">
+                <comment>&#201;&#234;&#185;&#186;&#202;&#253;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="cjzj" type="java.lang.Float">
+            <column name="cjzj" precision="12" scale="0">
+                <comment>&#179;&#201;&#189;&#187;&#215;&#220;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="zbmj" type="java.lang.Float">
+            <column name="zbmj" precision="12" scale="0">
+                <comment>&#214;&#184;&#177;&#234;&#195;&#230;&#187;&#253;</comment>
+            </column>
+        </property>
+        <property name="cjyear" type="java.lang.Integer">
+            <column name="cjyear">
+                <comment>&#196;&#234;</comment>
+            </column>
+        </property>
+        <property name="cjmonth" type="java.lang.Integer">
+            <column name="cjmonth">
+                <comment>&#212;&#194;</comment>
+            </column>
+        </property>
+        <property name="cjday" type="java.lang.Integer">
+            <column name="cjday">
+                <comment>&#200;&#213;</comment>
+            </column>
+        </property>
+        <property name="djdx" type="string">
+            <column name="djdx" length="10">
+                <comment>&#181;&#165;&#188;&#219;&#180;&#243;&#208;&#180;</comment>
+            </column>
+        </property>
+        <property name="mjdx" type="string">
+            <column name="mjdx" length="10">
+                <comment>&#195;&#230;&#187;&#253;&#180;&#243;&#208;&#180;</comment>
+            </column>
+        </property>
+        <property name="zjdx" type="string">
+            <column name="zjdx" length="10">
+                <comment>&#215;&#220;&#188;&#219;&#180;&#243;&#208;&#180;</comment>
+            </column>
+        </property>
+        <property name="htqt" type="string">
+            <column name="htqt" length="10" />
+        </property>
+        <property name="htbz" type="string">
+            <column name="htbz" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

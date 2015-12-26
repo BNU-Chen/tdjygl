@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ArticleRecTZGGStore",
+        "model": "InfoArticleModel",
+        "pageSize": null,
+        "storeId": "ArticleRecTZGGStore"
+    },
+    "designerId": "7fe83c01-0ee2-46a3-85f8-68e252965bbf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: '', \r",
+                    "    searchDate:''\r",
+                    "}"
+                ],
+                "url": "get_recycleArticleList?channelId=2"
+            },
+            "name": "MyAjaxProxy15",
+            "designerId": "30da43b8-172a-4132-800c-d69efc479bd3",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader15",
+                    "designerId": "7e3d0139-b84f-4275-aea1-36903702836b"
+                }
+            ]
+        }
+    ]
+}

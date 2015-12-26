@@ -1,0 +1,410 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fbjgck",
+        "designer|userClassName": "fbjgck",
+        "height": 685,
+        "store": "zbgglbstore",
+        "title": "<font size='2.5px'>指标申购列表</font>",
+        "width": 901
+    },
+    "designerId": "d2681df6-086f-456a-9065-5f4c951185b3",
+    "cn": [
+        {
+            "type": "Ext.grid.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "text": "序号",
+                "width": 38
+            },
+            "name": "MyRowNumberer39",
+            "designerId": "f7470ed4-8afa-4b22-80c5-fc9aaaa2a207"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "zbpcbh",
+                "text": "指标批次编号"
+            },
+            "name": "MyColumn226",
+            "designerId": "2cca9a7c-4b0a-4c6c-a4a0-3c98f46772ba"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dwed",
+                "text": "单位额度",
+                "width": 73
+            },
+            "name": "MyColumn227",
+            "designerId": "460b156c-3879-4106-a232-39d2d1d4dacc",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'公顷/个';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "c4ea20d1-2ecf-4817-8d6e-bbac56b7c000"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "sl",
+                "text": "数量",
+                "width": 59
+            },
+            "name": "MyColumn228",
+            "designerId": "aaed199a-6305-43c6-a463-2eba4e2fcf31",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'张';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "e1f7a838-4067-4b29-b15e-b4b6f8b6d5c0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "jylx",
+                "text": "交易类型",
+                "width": 85
+            },
+            "name": "MyColumn229",
+            "designerId": "f7926e89-52e2-471b-82f6-a3f0d7db13e5"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "dj",
+                "text": "底价",
+                "width": 72
+            },
+            "name": "MyColumn230",
+            "designerId": "e76531b5-eb99-42bc-9d6a-b3f028287f93",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return value+'万元/张';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "9dd5cea0-c50a-4f45-a54f-5103befa798a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "sqjzrq",
+                "text": "申请截止日期"
+            },
+            "name": "MyDateColumn39",
+            "designerId": "8afa6cc1-4508-4011-894a-1252b7f03c69"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "jjksrq",
+                "text": "竞价开始日期"
+            },
+            "name": "MyDateColumn40",
+            "designerId": "7a21fd10-c726-4eca-a055-b7f9c32a345f"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "x-grid3-row"
+            },
+            "name": "MyGridView62",
+            "designerId": "6f11a377-25ac-4bc3-8c32-7ce90b55add7",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onViewCellClick",
+                        "implHandler": [
+                            "if(cellIndex==9)\r",
+                            "{\r",
+                            "    Ext.MessageBox.alert('提示','您的登录身份为管理者不能进行预订，请已普通用户身份登录');\r",
+                            "}    "
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onViewCellClick",
+                    "designerId": "003861ca-ff5e-4810-829c-9ba4ad04b232"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "jjjsrq",
+                "text": "竞价结束日期",
+                "width": 90
+            },
+            "name": "MyDateColumn41",
+            "designerId": "c7ef9123-07d6-4a2d-b7d1-d8bac4488a9d"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 44
+            },
+            "name": "MyToolbar61",
+            "designerId": "f325cf9b-db7e-4d28-8ef9-6d7dfbc0f98b",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 33,
+                        "layout|flex": null,
+                        "src": "images/step1.png",
+                        "width": 527
+                    },
+                    "name": "MyImg29",
+                    "designerId": "f534dbf2-07bb-4947-bf65-88d6a83f6cac"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                        ],
+                        "text": "指标发布",
+                        "width": 100
+                    },
+                    "name": "MyLabel76",
+                    "designerId": "e68fda65-daaf-41d0-a98e-29962c749041",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "label"
+                                ],
+                                "element": "el",
+                                "fn": "onLabelClick1",
+                                "implHandler": [
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget('zblbfb'));\r",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLabelClick1",
+                            "designerId": "693128fa-a0a6-4376-b324-1c3e117ec7db"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "text": "操作"
+            },
+            "name": "MyColumn231",
+            "designerId": "3e998589-1359-4492-8f45-e81f1d4dce8b",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return \"<button style='background-color:dodgerblue;color:white'>预订</button>\";"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "ca155ceb-478f-45d0-bc7d-44e9522728a4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "store": "zbgglbstore",
+                "width": 360
+            },
+            "name": "MyPagingToolbar46",
+            "designerId": "a98db2bb-f32a-459d-9353-081b5d2bed0c"
+        }
+    ]
+}

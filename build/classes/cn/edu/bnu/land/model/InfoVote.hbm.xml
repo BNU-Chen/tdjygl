@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoVote" table="info_vote" catalog="tdlz">
+        <id name="voteId" type="java.lang.Integer">
+            <column name="vote_id" />
+            <generator class="identity" />
+        </id>
+        <property name="voteTitle" type="string">
+            <column name="vote_title" length="20" />
+        </property>
+        <property name="voteVoter" type="string">
+            <column name="vote_voter" length="20" />
+        </property>
+        <property name="voteTime" type="timestamp">
+            <column name="vote_time" length="19" />
+        </property>
+        <property name="voteIntro" type="string">
+            <column name="vote_intro" length="65535" />
+        </property>
+        <property name="voteStarttime" type="date">
+            <column name="vote_starttime" length="10" />
+        </property>
+        <property name="voteEndtime" type="date">
+            <column name="vote_endtime" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

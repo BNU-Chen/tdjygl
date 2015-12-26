@@ -1,0 +1,47 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ccQueryStatisticPriceStore",
+        "model": "ccQueryStatisticPieModel",
+        "storeId": "ccQueryStatisticPriceStore"
+    },
+    "name": "ccQueryStatisticSupplierStore1",
+    "designerId": "386c3907-4829-4468-b314-9cea15734df6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "StatisticPrice"
+            },
+            "name": "MyAjaxProxy28",
+            "designerId": "e1848a84-c2ac-48e7-ad4a-e04592e37f99",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader28",
+                    "designerId": "49cf6e36-0b2d-4345-a873-a521ae545bb5"
+                }
+            ]
+        }
+    ]
+}

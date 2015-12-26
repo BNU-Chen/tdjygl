@@ -1,0 +1,894 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "border": false,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "scpz",
+        "designer|userClassName": "scpz",
+        "height": null,
+        "id": null,
+        "layout": "absolute",
+        "title": "<font size=2.5px>上传资质</font>",
+        "width": 930
+    },
+    "designerId": "e918b121-7d5d-44a7-81b7-df7103967028",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 50,
+                "layout|x": 273,
+                "layout|y": 9
+            },
+            "name": "MyToolbar45",
+            "designerId": "fa7bdeb9-d8c4-4a3b-8fc8-62f26067535d",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 37,
+                        "layout|flex": null,
+                        "src": "images/lc2.png",
+                        "width": 648
+                    },
+                    "name": "MyImg10",
+                    "designerId": "1fcf46c9-f7a0-4c46-b6b9-e617a795d087"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 12,
+                        "layout|flex": null,
+                        "style": [
+                            "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                        ],
+                        "text": "我的购买指标",
+                        "width": 84
+                    },
+                    "name": "MyLabel41",
+                    "designerId": "55861547-d001-4596-97ba-16eab902ff82",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "label"
+                                ],
+                                "element": "el",
+                                "fn": "onLabelClick1",
+                                "implHandler": [
+                                    "\r",
+                                    "var panel=Ext.getCmp('contentPanel');\r",
+                                    "\r",
+                                    "var zbsg=Ext.widget('wdsglb');\r",
+                                    "panel.removeAll();\r",
+                                    "panel.add(zbsg);\r",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLabelClick1",
+                            "designerId": "ff8d7c04-41b8-4d3e-8e2d-69f502117896"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "height": 280,
+                "id": "yyzz",
+                "layout": "absolute",
+                "layout|x": 40,
+                "layout|y": 0,
+                "title": "",
+                "url": "scyyzz",
+                "width": 350
+            },
+            "name": "MyForm36",
+            "designerId": "bb6243e6-c231-4825-bb1d-dee71f3ed0fa",
+            "cn": [
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "不能为空",
+                        "buttonText": "浏览",
+                        "clearOnSubmit": false,
+                        "fieldLabel": "营业执照",
+                        "labelWidth": 60,
+                        "layout|x": 50,
+                        "layout|y": 20,
+                        "name": "yyzz",
+                        "regex": "/(.jpg)$/",
+                        "regexText": "格式必须为jpg",
+                        "width": 200
+                    },
+                    "name": "MyFileUpload1",
+                    "designerId": "cf99a1a6-a41e-47bc-811e-d0662d2369bf",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFilefieldChange",
+                                "implHandler": [
+                                    "var form=Ext.getCmp('yyzz'); \r",
+                                    "\r",
+                                    "if(form.isValid())\r",
+                                    "form.getForm().submit(\r",
+                                    "{\r",
+                                    "\r",
+                                    "    // method:'post',\r",
+                                    "    waitMsg: '正在上传......',\r",
+                                    "    success:function(form, action){\r",
+                                    "\r",
+                                    "        var photoUrl=action.result.msg;\r",
+                                    "        // alert(photoUrl);\r",
+                                    "        var photo=Ext.getCmp('yyzz').items.get(1); \r",
+                                    "        //alert(photo.getId());\r",
+                                    "        photo.getEl().dom.src=photoUrl;\r",
+                                    "\r",
+                                    "    },\r",
+                                    "    failure:function(){\r",
+                                    "        Ext.MessageBox.alert('提示','操作失败！');\r",
+                                    "    }\r",
+                                    "\r",
+                                    "}\r",
+                                    ");"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onFilefieldChange",
+                            "designerId": "49fe250f-65aa-4e19-a948-d81334f33aac"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": true,
+                        "height": 210,
+                        "id": "success",
+                        "layout|x": 60,
+                        "layout|y": 60,
+                        "style": [
+                            "{'border-style':'solid',\r",
+                            "  'border-color':'black'\r",
+                            "}"
+                        ],
+                        "width": 210
+                    },
+                    "name": "MyImg11",
+                    "designerId": "5eb30e9a-9d1c-4323-a0ef-cba4ed0eced1"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "id": "yyzzpcbh",
+                        "layout|x": 60,
+                        "layout|y": 140,
+                        "name": "zbpcbh"
+                    },
+                    "name": "MyTextField147",
+                    "designerId": "27c06924-b076-4252-acbc-701cfb54b87c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "height": 280,
+                "id": "zzdm",
+                "layout": "absolute",
+                "layout|x": 30,
+                "layout|y": 290,
+                "title": "",
+                "url": "sczzdm",
+                "width": 350
+            },
+            "name": "MyForm37",
+            "designerId": "a190088b-849f-4dbe-a8b5-4c7d755e883e",
+            "cn": [
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "不能为空",
+                        "buttonText": "浏览",
+                        "clearOnSubmit": false,
+                        "fieldLabel": "组织代码证",
+                        "labelWidth": 70,
+                        "layout|x": 50,
+                        "layout|y": 20,
+                        "name": "zzdm",
+                        "regex": "/(.jpg)$/",
+                        "regexText": "格式必须为jpg",
+                        "width": 200
+                    },
+                    "name": "MyFileUpload2",
+                    "designerId": "63adda8a-b276-439e-9052-bdb4eacd35fb",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFilefieldChange1",
+                                "implHandler": [
+                                    "var form=Ext.getCmp('zzdm'); \r",
+                                    "\r",
+                                    "if(form.isValid())\r",
+                                    "form.getForm().submit(\r",
+                                    "{\r",
+                                    "\r",
+                                    "    // method:'post',\r",
+                                    "    waitMsg: '正在上传......',\r",
+                                    "    success:function(form, action){\r",
+                                    "\r",
+                                    "        var photoUrl=action.result.msg;\r",
+                                    "        //alert(photoUrl);\r",
+                                    "        var photo=Ext.getCmp('zzdm').items.get(1); \r",
+                                    "        //alert(photo.getId());\r",
+                                    "        photo.getEl().dom.src=photoUrl;\r",
+                                    "\r",
+                                    "    },\r",
+                                    "    failure:function(){\r",
+                                    "        Ext.MessageBox.alert('提示','操作失败！');\r",
+                                    "    }\r",
+                                    "\r",
+                                    "}\r",
+                                    ");"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onFilefieldChange1",
+                            "designerId": "9d10ecb1-b15e-4780-80a7-7f9b75477bd7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": true,
+                        "height": 210,
+                        "layout|x": 60,
+                        "layout|y": 60,
+                        "style": [
+                            "{'border-style':'solid',\r",
+                            "  'border-color':'black'\r",
+                            "}"
+                        ],
+                        "width": 210
+                    },
+                    "name": "MyImg12",
+                    "designerId": "649ce69b-024c-4751-9611-daaddf9d4d4a"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "id": "zzdmpcbh",
+                        "layout|x": 70,
+                        "layout|y": 160,
+                        "name": "zbpcbh"
+                    },
+                    "name": "MyTextField148",
+                    "designerId": "9e98dff6-0f3c-4ca1-ad35-fe31d4347cca"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "height": 280,
+                "id": "sfzm",
+                "layout": "absolute",
+                "layout|x": 480,
+                "layout|y": 290,
+                "title": "",
+                "url": "scsfzm",
+                "width": 350
+            },
+            "name": "MyForm38",
+            "designerId": "57700ef2-2dde-41d1-8d58-0db61d1e8efe",
+            "cn": [
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "不能为空",
+                        "buttonText": "浏览",
+                        "clearOnSubmit": false,
+                        "fieldLabel": "身份凭证",
+                        "labelWidth": 60,
+                        "layout|x": 50,
+                        "layout|y": 20,
+                        "name": "sfzm",
+                        "regex": "/(.jpg)$/",
+                        "regexText": "格式必须为jpg",
+                        "width": 200
+                    },
+                    "name": "MyFileUpload3",
+                    "designerId": "cb78ee00-5023-4696-b735-12a7f3ac7cd3",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFilefieldChange2",
+                                "implHandler": [
+                                    "var form=Ext.getCmp('sfzm'); \r",
+                                    "\r",
+                                    "if(form.isValid())\r",
+                                    "form.getForm().submit(\r",
+                                    "{\r",
+                                    "\r",
+                                    "    // method:'post',\r",
+                                    "    waitMsg: '正在上传......',\r",
+                                    "    success:function(form, action){\r",
+                                    "\r",
+                                    "        var photoUrl=action.result.msg;\r",
+                                    "        //alert(photoUrl);\r",
+                                    "        var photo=Ext.getCmp('sfzm').items.get(1); \r",
+                                    "        //alert(photo.getId());\r",
+                                    "        photo.getEl().dom.src=photoUrl;\r",
+                                    "\r",
+                                    "    },\r",
+                                    "    failure:function(){\r",
+                                    "        Ext.MessageBox.alert('提示','操作失败！');\r",
+                                    "    }\r",
+                                    "\r",
+                                    "}\r",
+                                    ");"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onFilefieldChange2",
+                            "designerId": "ff79d5bd-69c2-430b-81c5-25ef27b3ba8a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": true,
+                        "height": 210,
+                        "layout|x": 60,
+                        "layout|y": 60,
+                        "style": [
+                            "{'border-style':'solid',\r",
+                            "  'border-color':'black'\r",
+                            "}"
+                        ],
+                        "width": 210
+                    },
+                    "name": "MyImg13",
+                    "designerId": "61567459-2486-4caa-bdb6-a0740a3a6456"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "id": "sfzmpcbh",
+                        "layout|x": 50,
+                        "layout|y": 170,
+                        "name": "zbpcbh"
+                    },
+                    "name": "MyTextField149",
+                    "designerId": "32f63827-6b54-4808-bc8e-a286afd3a529"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "height": 280,
+                "id": "nspz",
+                "layout": "absolute",
+                "layout|x": 480,
+                "layout|y": 0,
+                "title": "",
+                "url": "scnspz",
+                "width": 350
+            },
+            "name": "MyForm39",
+            "designerId": "e019cdd5-e54f-4c25-8274-a805013090ec",
+            "cn": [
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "不能为空",
+                        "buttonText": "浏览",
+                        "clearOnSubmit": false,
+                        "fieldLabel": "纳税凭证",
+                        "labelWidth": 60,
+                        "layout|x": 50,
+                        "layout|y": 20,
+                        "name": "nspz",
+                        "regex": "/(.jpg)$/",
+                        "regexText": "格式必须为jpg",
+                        "width": 200
+                    },
+                    "name": "MyFileUpload4",
+                    "designerId": "98c24c1c-3a5f-485c-a319-9033c3fd394c",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFilefieldChange3",
+                                "implHandler": [
+                                    "var form=Ext.getCmp('nspz'); \r",
+                                    "\r",
+                                    "if(form.isValid())\r",
+                                    "form.getForm().submit(\r",
+                                    "{\r",
+                                    "\r",
+                                    "    // method:'post',\r",
+                                    "    waitMsg: '正在上传......',\r",
+                                    "    success:function(form, action){\r",
+                                    "\r",
+                                    "        var photoUrl=action.result.msg;\r",
+                                    "        //alert(photoUrl);\r",
+                                    "        var photo=Ext.getCmp('nspz').items.get(1); \r",
+                                    "        //alert(photo.getId());\r",
+                                    "        photo.getEl().dom.src=photoUrl;\r",
+                                    "\r",
+                                    "    },\r",
+                                    "    failure:function(){\r",
+                                    "        Ext.MessageBox.alert('提示','操作失败！');\r",
+                                    "    }\r",
+                                    "\r",
+                                    "}\r",
+                                    ");"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onFilefieldChange3",
+                            "designerId": "da091469-316d-4f6f-b48d-ed4edebc8042"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": true,
+                        "height": 210,
+                        "layout|x": 60,
+                        "layout|y": 60,
+                        "style": [
+                            "{'border-style':'solid',\r",
+                            "  'border-color':'black'\r",
+                            "}"
+                        ],
+                        "width": 210
+                    },
+                    "name": "MyImg14",
+                    "designerId": "7edaa7f7-fe67-4828-9152-21d844666e45"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "id": "nspzpcbh",
+                        "layout|x": 36,
+                        "layout|y": 139,
+                        "name": "zbpcbh"
+                    },
+                    "name": "MyTextField150",
+                    "designerId": "7513d734-ee25-42dc-a7c2-f7de7b9f5f36"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Label",
+                "hidden": true,
+                "id": "bh",
+                "layout|x": 320,
+                "layout|y": 150
+            },
+            "name": "MyTextField151",
+            "designerId": "0fd45fc6-cd6a-40b4-8c62-bd6ac4866599"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 25,
+                "layout|x": 280,
+                "layout|y": 590,
+                "text": "<font size=2.5>上一步</font>",
+                "tooltip": [
+                    "'返回提交订单页面'"
+                ],
+                "width": 100
+            },
+            "name": "MyButton171",
+            "designerId": "caabb1a8-374d-4fdb-9b40-ee0f864d77a8",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var store=Ext.StoreMgr.get('zbgmstore');\r",
+                            "var zbpcbh=Ext.getCmp('sfzmpcbh').getValue();\r",
+                            "var record=store.findRecord('zbpcbh',zbpcbh);\r",
+                            "//alert(record.get('sgsl'));\r",
+                            "var p=Ext.widget('tjdd'); \r",
+                            "p.loadRecord(record);\r",
+                            "//var title=record.get('zbpcbh');\r",
+                            "//p.setTitle(\"<font size=2.5px>\"+\"指标批次编号\"+title+\"</font>\");\r",
+                            "p.getComponent('sgsl').setValue(Ext.Number.from(record.get('sgsl'),1));\r",
+                            "var zed=Ext.Number.from(record.get('dwed'),1)*Ext.Number.from(record.get('sl'),1);\r",
+                            "var sgze=Ext.Number.from(record.get('dwed'),1)*Ext.Number.from(record.get('sgsl'),1);\r",
+                            "Ext.getCmp('zed').setValue(zed);\r",
+                            "Ext.getCmp('sgze').setValue(zed);\r",
+                            "\r",
+                            "var panel=Ext.getCmp('contentPanel');\r",
+                            "\r",
+                            "panel.removeAll();\r",
+                            "panel.add(p);"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "02e20693-eaa0-48f6-85fd-70d2c9caa283"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": null,
+                "height": 25,
+                "layout|x": 450,
+                "layout|y": 590,
+                "style": [
+                    "{background: '#ffa500',border: 'none', borderColor:'white'}"
+                ],
+                "text": "<font size=2.5 color='white'>提交</font>",
+                "tooltip": [
+                    "'提交资质凭证'"
+                ],
+                "width": 100
+            },
+            "name": "MyButton172",
+            "designerId": "c147c99f-2669-4832-8310-9c25e4c0829a",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var form1=Ext.getCmp('yyzz');\r",
+                            "var form2=Ext.getCmp('nspz');\r",
+                            "var form3=Ext.getCmp('zzdm');\r",
+                            "var form4=Ext.getCmp('sfzm');\r",
+                            "var zbpcbh=Ext.getCmp('bh').getValue();\r",
+                            "if(form1.isValid()&&form2.isValid()&&form3.isValid()&&form4.isValid())\r",
+                            "{ \r",
+                            "\r",
+                            "    Ext.Ajax.request(\r",
+                            "    {\r",
+                            "        url:'pzscsh',\r",
+                            "        method:'get', \r",
+                            "        headers:{\r",
+                            "\r",
+                            "            'Content-Type':'application/json'\r",
+                            "        },\r",
+                            "\r",
+                            "        success:function(response){\r",
+                            "\r",
+                            "\r",
+                            "            var store=Ext.StoreMgr.get('zbgmstore');\r",
+                            "\r",
+                            "            var n=store.find('zbpcbh',zbpcbh);\r",
+                            "            //alert(n);\r",
+                            "            store.getAt(n).set('pczt','待审核');\r",
+                            "\r",
+                            "            Ext.MessageBox.alert('提示','已经提交资质凭证，正在等待管理员审核，审核完毕后请提交保证金',function(){\r",
+                            "                var panel=Ext.getCmp('contentPanel');\r",
+                            "\r",
+                            "                var zbsg=Ext.widget('wdsglb');\r",
+                            "                panel.removeAll();\r",
+                            "                panel.add(zbsg);\r",
+                            "\r",
+                            "            });\r",
+                            "        },\r",
+                            "\r",
+                            "\r",
+                            "        failure:function(){\r",
+                            "            //Ext.MessageBox.alert('错误','操作失败！');\r",
+                            "        },\r",
+                            "        params:{'bh':zbpcbh}\r",
+                            "\r",
+                            "    }); \r",
+                            "}\r",
+                            "else\r",
+                            "{\r",
+                            "    Ext.MessageBox.alert('提示','请先上传所有凭证');\r",
+                            "}"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "11810c74-9149-43e8-8474-ef40e9360352"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "dock": "bottom",
+                "height": 180,
+                "layout": "vbox",
+                "layout|x": 20,
+                "layout|y": 670,
+                "style": [
+                    "{backgroundImage:'url(images/footbg.png)'}"
+                ],
+                "width": 640
+            },
+            "name": "MyContainer16",
+            "designerId": "a8e19381-e979-4447-b7a4-5ebaf8013734",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|snapToGrid": 5,
+                        "fieldLabel": "<font size=2.5>温馨提示</font>",
+                        "height": 140,
+                        "layout": "absolute",
+                        "style": [
+                            "{backgroundColor:'#e0ffff',borderRadius: '12px'}"
+                        ],
+                        "width": 719
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "d1db73e6-a92e-46be-b5dc-42f4f92659a6",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": -117,
+                                "layout|y": 5,
+                                "text": "1）上传文件必须为图片格式，长90px，高120px"
+                            },
+                            "name": "MyLabel42",
+                            "designerId": "c8360f97-ae03-477b-bd78-34ba25aeabe2"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 20,
+                                "layout|x": -116,
+                                "layout|y": 45,
+                                "text": "2)上传图片清晰，能够识别有效日期和单位公章"
+                            },
+                            "name": "MyLabel43",
+                            "designerId": "b1d2d271-8f42-4c8e-9d7c-57c1109e6f93"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 20,
+                                "layout|x": -117,
+                                "layout|y": 90,
+                                "text": "3）系统将于一个工作日内完成审核工作，请耐心等该"
+                            },
+                            "name": "MyLabel44",
+                            "designerId": "5edc2e8a-2ccc-4427-8e96-264beb1b27ef"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

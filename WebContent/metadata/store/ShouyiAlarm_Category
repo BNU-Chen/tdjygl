@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ShouyiAlarm_Category",
+        "designer|userClassName": "ShouyiAlarm_Category",
+        "model": "ShouyiAlarm_Category",
+        "storeId": "ShouyiAlarm_Category"
+    },
+    "designerId": "6a643def-0677-48ec-ba3d-bff172145654"
+}

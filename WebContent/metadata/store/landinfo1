@@ -1,0 +1,52 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "clearOnPageLoad": false,
+        "designer|userClassName": "landinfo1",
+        "model": "JsModel",
+        "pageSize": 15,
+        "sortRoot": null,
+        "storeId": "landinfo1"
+    },
+    "designerId": "4becc089-3c6a-4e80-a2cc-26919eacbc7d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{outSearch:''}"
+                ],
+                "url": "find_transinfo"
+            },
+            "name": "MyAjaxProxy6",
+            "designerId": "cdc9cb76-e217-44b3-8234-2a6b8ecf2bf0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader6",
+                    "designerId": "6b653baa-7719-4086-9162-2f622ab786f8"
+                }
+            ]
+        }
+    ]
+}

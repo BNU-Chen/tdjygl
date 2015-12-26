@@ -1,0 +1,303 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "gpjj",
+        "designer|userClassName": "gpjj",
+        "height": 719,
+        "layout": "absolute",
+        "title": "我的指标>>我的购买指标>>挂牌竞价",
+        "width": 900
+    },
+    "designerId": "98429fd1-8505-4b9e-a5d9-15b17810e1fc",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 40,
+                "layout|x": 110,
+                "layout|y": 30,
+                "src": "images/lc4.png",
+                "width": 540
+            },
+            "name": "MyImg20",
+            "designerId": "b167d91b-39fd-4d9b-b3e2-ba1280a23410"
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 410,
+                "layout": "absolute",
+                "layout|x": 40,
+                "layout|y": 120,
+                "title": "竞拍信息",
+                "width": 510
+            },
+            "name": "MyForm46",
+            "designerId": "41325061-824d-491d-ab35-88e4f68bca94",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "批次编号",
+                        "layout|x": 20,
+                        "layout|y": 30,
+                        "value": "01",
+                        "width": 220
+                    },
+                    "name": "MyDisplayField21",
+                    "designerId": "a9dc2ef0-35b4-449d-803f-0b5305ae2ae5"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "单位额度",
+                        "layout|x": 260,
+                        "layout|y": 30,
+                        "value": "100亩",
+                        "width": 230
+                    },
+                    "name": "MyDisplayField22",
+                    "designerId": "8b7d5d79-bfbc-4f1b-a6e8-c2ba051b3eec"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "本批次总数量",
+                        "layout|x": 20,
+                        "layout|y": 90,
+                        "value": "10",
+                        "width": 220
+                    },
+                    "name": "MyDisplayField23",
+                    "designerId": "16454fa8-2038-4fd7-adb4-21e7299a19ce"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "申购数量",
+                        "layout|x": 260,
+                        "layout|y": 90,
+                        "value": "3"
+                    },
+                    "name": "MyDisplayField24",
+                    "designerId": "a9e64e4f-55d0-42a2-a24c-a80681e82bdd"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "底价",
+                        "layout|x": 20,
+                        "layout|y": 150,
+                        "value": "10万",
+                        "width": 220
+                    },
+                    "name": "MyDisplayField25",
+                    "designerId": "d7f8bdd9-3c31-4a30-8800-9793781af317"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "最高出价",
+                        "layout|x": 260,
+                        "layout|y": 150,
+                        "value": "101000"
+                    },
+                    "name": "MyDisplayField26",
+                    "designerId": "06e3f34b-a496-4e9a-af92-3ccca2570999"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "我的出价",
+                        "layout|x": 20,
+                        "layout|y": 280,
+                        "width": 220
+                    },
+                    "name": "MyTextField174",
+                    "designerId": "32f12a45-19ad-4abb-ad85-7e5945a3769d"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "状态",
+                        "fieldStyle": "",
+                        "layout|x": 20,
+                        "layout|y": 210,
+                        "style": [
+                            "{fontColor:'red'}"
+                        ],
+                        "value": "挂牌期间",
+                        "width": 220
+                    },
+                    "name": "MyDisplayField27",
+                    "designerId": "2cc426ac-8650-429b-b131-395e44bbf71a"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "剩余时间",
+                        "layout|x": 260,
+                        "layout|y": 210,
+                        "value": "10天",
+                        "width": 220
+                    },
+                    "name": "MyDisplayField28",
+                    "designerId": "8b221c0e-97fb-4bd1-ba25-41eca8691477"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 20,
+                        "layout|x": 270,
+                        "layout|y": 280,
+                        "text": "出价",
+                        "width": 100
+                    },
+                    "name": "MyButton181",
+                    "designerId": "9087c103-727a-4659-b56f-27ee9d94fb81"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 410,
+                "layout|x": 590,
+                "layout|y": 120,
+                "title": "历史记录",
+                "width": 250
+            },
+            "name": "MyGridPanel56",
+            "designerId": "c516fc71-d442-4995-b345-af08518b6709",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "用户",
+                        "width": 70
+                    },
+                    "name": "MyColumn182",
+                    "designerId": "0151df83-0b62-46cc-a51d-99f428d649b4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "日期",
+                        "width": 74
+                    },
+                    "name": "MyColumn183",
+                    "designerId": "fa62d505-eb80-4ffc-9656-6e8e212d08af"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "出价"
+                    },
+                    "name": "MyColumn184",
+                    "designerId": "4e7a3f50-2063-4cf6-ad84-c2f10d0f2943"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView55",
+                    "designerId": "6f5f28a5-68a1-4896-bb3d-d42c11e68a8f"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 500,
+        "width": 557,
+        "designer|userClassName": "MyPanel16",
+        "layout": "border",
+        "title": "交易态势异常监测"
+    },
+    "designerId": "b33b0fde-cb26-4318-afff-bcb65ce2a154",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "designerId": "84b34c6d-25d7-4150-9692-a01e21701e6d",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 179,
+                        "fieldLabel": "起始日期",
+                        "labelWidth": 60,
+                        "enforceMaxLength": false,
+                        "maxLength": null,
+                        "useStrict": false
+                    },
+                    "designerId": "2058c87d-57fe-4a09-ba82-53faa96df7dd"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 189,
+                        "fieldLabel": "结束日期",
+                        "labelWidth": 60
+                    },
+                    "designerId": "11e69ea9-6641-46a9-8ab1-377d03045998"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "查询"
+                    },
+                    "designerId": "471d4991-c81e-443e-becf-c1a6ee438505"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "参数设置"
+                    },
+                    "designerId": "5da5272e-7144-4319-9239-12d08f55e6fc"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "导出报告"
+                    },
+                    "designerId": "cad0a321-b2f5-4ac3-9264-6f1e0911624f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "width": 274,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20
+            },
+            "designerId": "d4cbea4f-ea51-42e3-96d0-5ddf7c189605",
+            "isBuiltIn": true,
+            "iconCls": "icon-pie-chart",
+            "autoName": "PieChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Pie",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'field':'x','display':'rotate','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "showInLegend": true,
+                        "angleField": "y"
+                    },
+                    "designerId": "1a78f553-699c-4b3a-afa6-5316284b7f58"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "height": 200,
+                "title": "交易态势异常分析列表"
+            },
+            "designerId": "6f1973e0-c861-4553-a8c0-a05af6696d6d",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 112,
+                        "dataIndex": "string",
+                        "text": "异常类型"
+                    },
+                    "designerId": "612342c0-625a-4d8e-a64d-6b6a254f9380"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 345,
+                        "dataIndex": "string",
+                        "text": "异常详情"
+                    },
+                    "designerId": "a9dd8fc3-1843-43fd-bb12-94d7d6e31d10"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 94,
+                        "dataIndex": "date",
+                        "text": "出现时间"
+                    },
+                    "designerId": "683d646e-3920-476c-a51c-a034ef8a6381"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "3d58da53-4e5d-4aea-9005-0e72abf16259"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true
+                    },
+                    "designerId": "fd5d6d9f-dd9c-4317-b0c7-7cee6f1ad0ec"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "east",
+                "width": 281,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20
+            },
+            "designerId": "9bf1bb96-9482-41a4-a323-26f31a6ae8b3",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "x"
+                        ],
+                        "title": "Category Axis"
+                    },
+                    "designerId": "8304c79e-b3ce-4c45-a55c-b33212e22568"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "y"
+                        ],
+                        "title": "Numeric Axis"
+                    },
+                    "designerId": "1f9522d1-60da-451b-8ae5-8f346e3835ab"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'display':'insideEnd','field':'y','color':'#333','text-anchor':'middle'}"
+                        ],
+                        "xField": "x",
+                        "yField": [
+                            "y"
+                        ]
+                    },
+                    "designerId": "717187e1-06f1-48e0-bf48-15ec79893645"
+                }
+            ]
+        }
+    ]
+}

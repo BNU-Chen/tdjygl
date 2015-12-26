@@ -1,0 +1,86 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "gxmailPushStore",
+        "model": "gxMyData",
+        "pageSize": 10,
+        "storeId": "mailPushStore"
+    },
+    "designerId": "64d93be1-cf15-4a31-8127-9015d18e4fc5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "searchMailPush"
+            },
+            "name": "MyAjaxProxy78",
+            "designerId": "da0ff7ad-d5d4-44d9-bdf8-59ca397ff1f7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader78",
+                    "designerId": "39c83aa4-3b00-4163-89d9-81de67a6ed58"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "direction": "DESC",
+                "property": "publishDate"
+            },
+            "name": "MySorter1",
+            "designerId": "f91f35a2-be11-4c99-a9a6-0b2fa905093f"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={\r",
+                    "    searchField:Ext.getCmp('searchField2').getValue(),\r",
+                    "    dateType:Ext.getCmp('dateType2').getValue(),\r",
+                    "    searchDate:Ext.util.Format.date(Ext.getCmp('searchDate2').getValue(),'Y-m-d')  \r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onStoreBeforeLoad",
+            "designerId": "aadfaece-9b09-4bd8-8c55-18b01dbdbb9e"
+        }
+    ]
+}

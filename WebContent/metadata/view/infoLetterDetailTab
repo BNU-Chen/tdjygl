@@ -1,0 +1,252 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoLetterDetailTab",
+        "designer|userClassName": "infoLetterDetailTab",
+        "title": "群众来信-详细"
+    },
+    "designerId": "b48eb626-e5b1-4618-ac84-bbce7d280cd3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 395,
+                "layout": "absolute",
+                "title": "My Form"
+            },
+            "name": "MyForm29",
+            "designerId": "a84ccf73-5861-4172-bbd5-83e4d17a8dd3",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信主题",
+                        "layout|anchor": "100%",
+                        "readOnly": true
+                    },
+                    "name": "MyTextField111",
+                    "designerId": "f4c942c0-d262-4509-9e51-3b36c9185dae"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "姓名",
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 40,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField112",
+                    "designerId": "c029579f-107f-4dc9-b02b-a54db43e6f3d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "电话",
+                        "layout|anchor": null,
+                        "layout|x": 540,
+                        "layout|y": 70,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField113",
+                    "designerId": "a8494364-3518-47d3-9341-c0ee04ce6726"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "地址",
+                        "layout|anchor": null,
+                        "layout|x": 540,
+                        "layout|y": 40,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField114",
+                    "designerId": "c8378419-0a23-4d7e-8703-345b258b3095"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "身份证号",
+                        "layout|anchor": null,
+                        "layout|x": 270,
+                        "layout|y": 70,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField115",
+                    "designerId": "89219ec1-422f-4276-9ce3-c0fafbb12ab0"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "电子邮件",
+                        "layout|anchor": null,
+                        "layout|x": 270,
+                        "layout|y": 40,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField116",
+                    "designerId": "ff2589f4-389c-457f-9186-bf9441bcb09d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信时间",
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "readOnly": true,
+                        "width": 230
+                    },
+                    "name": "MyTextField117",
+                    "designerId": "030e0d35-4b42-487e-807f-c97e90e485d8"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信内容",
+                        "layout|anchor": "100%",
+                        "layout|x": 10,
+                        "layout|y": 100,
+                        "readOnly": true
+                    },
+                    "name": "MyTextArea2",
+                    "designerId": "8f6c7cb5-2d3e-41b0-a255-5ccc43181e98"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "回复内容",
+                        "height": null,
+                        "layout|anchor": "100%",
+                        "layout|x": 10,
+                        "layout|y": 170
+                    },
+                    "name": "MyTextArea3",
+                    "designerId": "0b43bd14-007e-4fae-8e1d-dd658de902a7"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "是否公示：",
+                        "layout|x": 10,
+                        "layout|y": 240
+                    },
+                    "name": "MyRadioGroup2",
+                    "designerId": "49e3a8d5-b9b4-4767-9ffd-4b4b8b05bc0f",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "是",
+                                "fieldLabel": null
+                            },
+                            "name": "MyRadio6",
+                            "designerId": "493eeecd-165e-4414-b1af-83f76a929b67"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "否",
+                                "fieldLabel": null
+                            },
+                            "name": "MyRadio7",
+                            "designerId": "38e3a8f6-434c-4df3-8d70-3e78f7e88086"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 280,
+                        "text": "确定并发送邮件"
+                    },
+                    "name": "MyButton151",
+                    "designerId": "3d07ba5c-9ed2-4564-817a-2593105f9c8b"
+                }
+            ]
+        }
+    ]
+}

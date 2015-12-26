@@ -1,0 +1,78 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {text:0,value:'50亩'},\r",
+            "    {text:1,value:'100亩'},\r",
+            "    {text:2,value:'200亩'},\r",
+            "    {text:3,value:'300亩'},\r",
+            "    {text:4,value:'400亩'},\r",
+            "    {text:5,value:'500亩'},\r",
+            "    {text:6,value:'600亩'},\r",
+            "    {text:7,value:'700亩'},\r",
+            "    {text:8,value:'900亩'},\r",
+            "{text:10,value:'1000亩'}\r",
+            "]"
+        ],
+        "designer|userAlias": "ticketfbcount",
+        "designer|userClassName": "ticketfbcount",
+        "storeId": "MyJsonStore2"
+    },
+    "designerId": "18084243-fc2e-40f0-926c-5409fd77dae0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy66",
+            "designerId": "9c33e242-73c8-43a3-93d3-6c7f6cc42052",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader66",
+                    "designerId": "f3682f8b-020f-4f7a-ab8b-13f3e060262b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField331",
+            "designerId": "6174f0c6-be18-444c-b3ae-59384955f586"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value"
+            },
+            "name": "MyField332",
+            "designerId": "e2464955-6dd8-4cef-a34d-b5212c41211e"
+        }
+    ]
+}

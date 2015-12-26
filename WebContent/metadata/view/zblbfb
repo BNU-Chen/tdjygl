@@ -1,0 +1,933 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "zblbfb",
+        "designer|userClassName": "zblbfb",
+        "height": 344,
+        "id": null,
+        "layout": "fit",
+        "title": "指标发布",
+        "width": 957
+    },
+    "designerId": "e6859d5d-5901-4e1e-ab90-72d150bc7c39",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "dock": "top",
+                "height": 40
+            },
+            "name": "MyToolbar43",
+            "designerId": "0105fdfc-2a0c-4e13-89d5-8620b2a2d2dd",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 35,
+                        "layout|flex": null,
+                        "src": "images/step1.png",
+                        "width": 562
+                    },
+                    "name": "MyImg8",
+                    "designerId": "fb5605c1-3bc5-4418-a78a-af34f1b3beaf"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "zbfb",
+                "store": "zbgglbstore",
+                "title": ""
+            },
+            "name": "MyGridPanel54",
+            "designerId": "6c90f742-2443-4397-858b-3819f1a64b10",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "zbpcbh",
+                        "text": "指标批次编号"
+                    },
+                    "name": "MyColumn150",
+                    "designerId": "86bb705e-4828-4751-a61e-e4e70debde9a",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "\r",
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"编辑\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value;"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "f44c7420-a47f-4af4-994b-89b51aefda52"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "text": "复垦项目编号",
+                        "width": 89
+                    },
+                    "name": "MyColumn151",
+                    "designerId": "5c027c0d-5dbb-45fe-abc6-031e9b70dc4a",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"自动生成\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value;"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "5a9b91ab-38bd-400e-b8c3-04f9453f2bcd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "dwed",
+                        "text": "单位额度",
+                        "width": 76
+                    },
+                    "name": "MyColumn152",
+                    "designerId": "009520f3-ae19-49a2-a9db-d1571316c6dc",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空",
+                                "regex": "/^(\\d*\\.)?\\d+$/",
+                                "regexText": "只能输入数字"
+                            },
+                            "name": "MyNumberField",
+                            "designerId": "8efdbe0b-22ac-47fd-bcae-359b24b99006"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"编辑\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value+'公顷/张';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "3077226b-26a1-4dc7-ad60-ec2c21752415"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "sl",
+                        "text": "数量",
+                        "width": 71
+                    },
+                    "name": "MyColumn153",
+                    "designerId": "dee14cde-83ef-46a3-9f94-059d8a13ebec",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空"
+                            },
+                            "name": "MyNumberField1",
+                            "designerId": "c841d589-3abf-4023-a083-59158ce0ec4f"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"编辑\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value+'张';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "bdf45fd4-4aba-47de-b93b-df8bce253b9b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "jylx",
+                        "text": "交易类型",
+                        "width": 74
+                    },
+                    "name": "MyColumn154",
+                    "designerId": "8f290434-4710-4353-909a-40564df8864c",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"编辑\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value;"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "6706cc68-b901-4497-ab7f-c89e536eafdd"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空",
+                                "editable": false,
+                                "emptyText": "请选择",
+                                "queryMode": "local",
+                                "store": "jylx",
+                                "value": [
+                                    "'竞拍'"
+                                ],
+                                "valueField": "text"
+                            },
+                            "name": "MyComboBox31",
+                            "designerId": "bac1d590-46e2-4315-b27b-42056bdcf501",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onComboboxChange",
+                                        "implHandler": [
+                                            "var grid=Ext.getCmp('zbfb');\r",
+                                            "var sm = grid.getSelectionModel();\r",
+                                            "var record=sm.getSelection()[0];\r",
+                                            "var lx=record.get('jylx');\r",
+                                            "var sqjzrq=record.get('sqjzrq');\r",
+                                            "var jjksrq;\r",
+                                            "if(lx=='竞拍')\r",
+                                            "{\r",
+                                            "    jjksrq=this.addDays(sqjzrq,3);\r",
+                                            "    record.set('jjksrq',jjksrq);\r",
+                                            "    record.set('jjjsrq',jjksrq);\r",
+                                            "}\r",
+                                            "if(lx=='挂牌')\r",
+                                            "{\r",
+                                            "    jjksrq=this.addDays(new Date(),3);\r",
+                                            "    record.set('jjksrq',jjksrq);\r",
+                                            "    record.set('jjjsrq',this.addDays(sqjzrq,3));\r",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onComboboxChange",
+                                    "designerId": "aa0e3d9c-6c08-4580-b2f2-8433bc67fbf6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "dj",
+                        "text": "底价",
+                        "width": 79
+                    },
+                    "name": "MyColumn155",
+                    "designerId": "e9a97960-9b6f-4bf3-b6b4-bfc8f91afb64",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false
+                            },
+                            "name": "MyNumberField2",
+                            "designerId": "a4059a55-f9cd-44c6-8f10-b050aa76c2a6"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if(value==null||value=='')\r",
+                                    "{\r",
+                                    "    return \"编辑\";\r",
+                                    "}\r",
+                                    "else\r",
+                                    "return value+'万元';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "54edcc50-dea1-45b2-ac94-a316e822479b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "sqjzrq",
+                        "format": "Y-m-d",
+                        "text": "申请截止日期",
+                        "width": 88
+                    },
+                    "name": "MyDateColumn31",
+                    "designerId": "34e8cf54-487f-4220-a5df-7a91cad72c63",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "不能为空"
+                            },
+                            "name": "MyDateField54",
+                            "designerId": "765c778b-d723-4e89-84fe-d92b7849b81c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "jjksrq",
+                        "format": "Y-m-d",
+                        "text": "竞价开始日期",
+                        "width": 88
+                    },
+                    "name": "MyDateColumn32",
+                    "designerId": "b99e3713-3203-41e0-9324-cd131c5ec9dd",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyDateField55",
+                            "designerId": "ddd297ad-1b00-4b0a-ae02-5234baee32ed"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "jjjsrq",
+                        "format": "Y-m-d",
+                        "text": "竞价结束日期",
+                        "width": 90
+                    },
+                    "name": "MyDateColumn33",
+                    "designerId": "27c10d99-5424-40dd-95b1-3a139024d0ad",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyDateField56",
+                            "designerId": "0944b58d-5e49-4ec5-999b-3e3131ae3d73"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": null,
+                        "cls": "x-grid3-row",
+                        "minHeight": 200
+                    },
+                    "name": "MyGridView50",
+                    "designerId": "ff2aa77e-b7c9-4c36-ade1-2a7fbff4deed"
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "icon": "images/fb.jpg",
+                        "tooltip": "发布指标",
+                        "width": 65
+                    },
+                    "name": "MyActionColumn",
+                    "designerId": "5d758bc4-ff65-4be6-9213-ec008fb08913",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/true.png",
+                                "tooltip": "发布指标"
+                            },
+                            "name": "MyActionColumnItem",
+                            "designerId": "dcedbb19-8131-4d22-bc70-106ed7c5fe4a",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var store=Ext.StoreMgr.get('zbgglbstore');\r",
+                                            "record.set('pczt','尚未提交');\r",
+                                            "Ext.Ajax.request(\r",
+                                            "{\r",
+                                            "    url:'addfbzb',\r",
+                                            "    method:'post', \r",
+                                            "    headers:{\r",
+                                            "\r",
+                                            "        'Content-Type':'application/json'\r",
+                                            "    },\r",
+                                            "    params:Ext.encode(record.getData()),\r",
+                                            "    success:function(response){\r",
+                                            "        var result=Ext.decode(response.responseText);\r",
+                                            "        Ext.MessageBox.alert('信息','发布成功',function(btn){\r",
+                                            "            //alert(result.zbpcbh);\r",
+                                            "            record.set('zbpcbh',result.zbpcbh);\r",
+                                            "            record.commit();\r",
+                                            "        });\r",
+                                            "    },\r",
+                                            "    failure:function(){\r",
+                                            "        //Ext.MessageBox.alert('错误','操作失败！');\r",
+                                            "    }\r",
+                                            "\r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "729b874d-6580-4797-814f-cc7e1a3ecec1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onActioncolumnAfterRender",
+                                "implHandler": [
+                                    "component.setText('发布');"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "name": "onActioncolumnAfterRender",
+                            "designerId": "10c2f68a-ebb7-4dde-9503-e8bc1bd53188"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "height": 33
+                    },
+                    "name": "MyToolbar44",
+                    "designerId": "fd30042b-26cc-460a-a4c2-56b1c044c089",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "添加新指标",
+                                "width": 80
+                            },
+                            "name": "MyButton169",
+                            "designerId": "a9e8a923-0370-4fee-a83b-e711184b22cc",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "\r",
+                                            "var store=Ext.StoreMgr.get('zbgglbstore');\r",
+                                            "var r=Ext.widget('zbgglbmodel', {\r",
+                                            "    id: '',\r",
+                                            "    zbpcbh: '',\r",
+                                            "    dwed: '',\r",
+                                            "    sl: '',\r",
+                                            "    jylx: '',\r",
+                                            "    dj: '',\r",
+                                            "    fbrq: new Date(),\r",
+                                            "    sqjzrq: this.addDay(new Date(),10),\r",
+                                            "    bzjjzrq: '',\r",
+                                            "    jjksrq: '',\r",
+                                            "    jjjsrq: '',\r",
+                                            "    pczt: '',\r",
+                                            "    pcbz: '',\r",
+                                            "    pcqt: '',\r",
+                                            "    sfjs:'false',\r",
+                                            "    dqhj:1\r",
+                                            "});\r",
+                                            "//alert(r);\r",
+                                            "\r",
+                                            "store.add(r);\r",
+                                            "\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "5a5dfa01-f1df-4f98-91df-4d7c80706f6b"
+                                },
+                                {
+                                    "type": "basicfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "date,days"
+                                        ],
+                                        "fn": "addDay",
+                                        "implHandler": [
+                                            "\r",
+                                            "var nd = new Date(date); \r",
+                                            "   nd = nd.valueOf(); \r",
+                                            "   nd = nd + days * 24 * 60 * 60 * 1000; \r",
+                                            "   nd = new Date(nd); \r",
+                                            "   //alert(nd.getFullYear() + \"年\" + (nd.getMonth() + 1) + \"月\" + nd.getDate() + \"日\"); \r",
+                                            "var y = nd.getFullYear(); \r",
+                                            "var m = nd.getMonth()+1; \r",
+                                            "var d = nd.getDate(); \r",
+                                            "if(m <= 9) m = \"0\"+m; \r",
+                                            "if(d <= 9) d = \"0\"+d; \r",
+                                            "var cdate = y+\"-\"+m+\"-\"+d; \r",
+                                            "return cdate; \r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "addDay",
+                                    "designerId": "a65fd8dd-54f0-4545-a03c-b4a44807714a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "删除指标",
+                                "width": 80
+                            },
+                            "name": "MyButton170",
+                            "designerId": "569abf94-6e6e-4c2e-8265-6804dacb46a6",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var store=Ext.StoreMgr.get('zbgglbstore');\r",
+                                            "var grid=Ext.getCmp('zbfb');\r",
+                                            "var sm = grid.getSelectionModel();\r",
+                                            "//rowEditing.cancelEdit();\r",
+                                            "store.remove(sm.getSelection());\r",
+                                            "//if (store.getCount() > 0) {\r",
+                                            "// sm.select(0);\r",
+                                            "// }"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "cea021bb-53e8-4751-82ce-6f73059da9a7"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "style": [
+                                    "{fontSize:'12px',cursor:'pointer',color:'blue'}"
+                                ],
+                                "text": "查看发布结果"
+                            },
+                            "name": "MyLabel40",
+                            "designerId": "2e7f6582-c33b-455f-b999-c2973f61e63f",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "label"
+                                        ],
+                                        "element": "el",
+                                        "fn": "onLabelClick",
+                                        "implHandler": [
+                                            "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                            "myTabPanel.removeAll(true);\r",
+                                            "myTabPanel.add(Ext.widget('fbjgck'));"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onLabelClick",
+                                    "designerId": "c9786c6e-b802-4041-81fa-2bbf188fae31"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel32",
+                    "designerId": "d764e5b6-23cd-462d-bb56-9c2f85485e01"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "zbgglbstore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar40",
+                    "designerId": "0c7f4d3c-3df3-4dc2-b3ae-1fee48d977b6"
+                },
+                {
+                    "type": "Ext.grid.plugin.CellEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": "Ext.grid.plugin.CellEditing",
+                    "userConfig": {
+                        "clicksToEdit": 1
+                    },
+                    "name": "MyCellEditingPlugin1",
+                    "designerId": "842370c3-dc73-4f08-b027-357a0f8ed8b5"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "date,days"
+                ],
+                "fn": "addDays",
+                "implHandler": [
+                    "\r",
+                    "var nd = new Date(date); \r",
+                    "   nd = nd.valueOf(); \r",
+                    "   nd = nd + days * 24 * 60 * 60 * 1000; \r",
+                    "   nd = new Date(nd); \r",
+                    "   //alert(nd.getFullYear() + \"年\" + (nd.getMonth() + 1) + \"月\" + nd.getDate() + \"日\"); \r",
+                    "var y = nd.getFullYear(); \r",
+                    "var m = nd.getMonth()+1; \r",
+                    "var d = nd.getDate(); \r",
+                    "if(m <= 9) m = \"0\"+m; \r",
+                    "if(d <= 9) d = \"0\"+d; \r",
+                    "var cdate = y+\"-\"+m+\"-\"+d; \r",
+                    "return cdate; \r",
+                    ""
+                ]
+            },
+            "name": "addDays",
+            "designerId": "7da2028a-05cd-4aa5-80dc-34c8bbbb1298"
+        }
+    ]
+}

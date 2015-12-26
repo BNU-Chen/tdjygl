@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "lyjkeywordsStore",
+        "model": "CrawlkeywordsModel",
+        "pageSize": 10,
+        "storeId": "lyjkeywordsStore"
+    },
+    "designerId": "e5b5cb1c-6eee-4306-8859-d08e9d1b3b92",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchField:''}"
+                ],
+                "url": "look_keywords"
+            },
+            "name": "MyAjaxProxy87",
+            "designerId": "efe5c43b-f09b-4c37-af53-d70bf588f4d6",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader86",
+                    "designerId": "d5bac1f5-42af-4240-a7b6-156450bafd7e"
+                }
+            ]
+        }
+    ]
+}

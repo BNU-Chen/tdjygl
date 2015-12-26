@@ -1,0 +1,118 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoVoteResultTab",
+        "designer|userClassName": "infoVoteResultTab",
+        "layout": "fit",
+        "title": "网上投票-结果"
+    },
+    "designerId": "a8d46619-8ac6-49f5-ac80-4cc819183fb9",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "jsonSubmit": true,
+                "title": "My Form",
+                "url": "get_voteResult"
+            },
+            "name": "MyForm25",
+            "designerId": "c8e8ba69-fcf7-4a93-9a36-ad11fcbc9ee8",
+            "cn": [
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": [
+                            "true"
+                        ],
+                        "height": 250,
+                        "insetPadding": 20,
+                        "store": "InfoVoteoptionStore",
+                        "width": 400
+                    },
+                    "name": "BarChart",
+                    "designerId": "b989ff1b-f0eb-4cc1-a61f-00e32778f93e",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-bar-chart",
+                    "autoName": "BarChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "voptionContent"
+                                ],
+                                "position": "left",
+                                "title": "投票选项"
+                            },
+                            "name": "MyCategoryAxis5",
+                            "designerId": "2acb423a-53f9-463c-b9b5-61e6550b127d"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "voptionNumber"
+                                ],
+                                "maximum": 100,
+                                "minimum": 0,
+                                "position": "bottom",
+                                "title": "票数"
+                            },
+                            "name": "MyNumericAxis5",
+                            "designerId": "de4c3345-994b-422b-b560-c9de950d7278"
+                        },
+                        {
+                            "type": "Ext.chart.series.Bar",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "axis": [
+                                    "bottom"
+                                ],
+                                "label": [
+                                    "{'display':'insideEnd','field':'voptionNumber','color':'#333','text-anchor':'middle'}"
+                                ],
+                                "xField": "voptionContent",
+                                "xPadding": 10,
+                                "yField": [
+                                    "voptionNumber"
+                                ]
+                            },
+                            "name": "MyBarSeries",
+                            "designerId": "77eef743-7125-4529-b665-d8581ba099aa"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

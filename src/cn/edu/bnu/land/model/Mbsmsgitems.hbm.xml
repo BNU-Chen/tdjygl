@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-11 16:56:43 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Mbsmsgitems" table="mbsmsgitems" catalog="tdlz">
+        <id name="idxNo" type="java.lang.Integer">
+            <column name="IdxNo" />
+            <generator class="identity" />
+        </id>
+        <property name="msgId" type="string">
+            <column name="MsgID" length="64" />
+        </property>
+        <property name="itemIndex" type="java.lang.Short">
+            <column name="ItemIndex" />
+        </property>
+        <property name="contentType" type="string">
+            <column name="ContentType" length="48" />
+        </property>
+        <property name="itemFile" type="string">
+            <column name="ItemFile" />
+        </property>
+        <property name="itemFileSize" type="java.lang.Integer">
+            <column name="ItemFileSize" />
+        </property>
+    </class>
+</hibernate-mapping>

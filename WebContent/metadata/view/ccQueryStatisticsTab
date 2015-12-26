@@ -1,0 +1,998 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|userAlias": "ccQueryStatisticsTab",
+        "designer|userClassName": "ccQueryStatisticsTab",
+        "id": "ccQueryStatisticsTab",
+        "layout": "fit",
+        "title": "建设用地查询与统计"
+    },
+    "designerId": "9c3b7697-710c-4c57-ac61-85408fff78ee",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0
+            },
+            "name": "MyTabPanel8",
+            "designerId": "a0c76ef3-1f1b-486e-8eb8-e32ff2302ef7",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "查询"
+                    },
+                    "name": "MyPanel23",
+                    "designerId": "c3a5be5e-8dbc-4130-9f54-b0b570b37ace",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig21",
+                            "designerId": "3a33039e-9007-4f25-b60c-bd9ab0e65969"
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "ccQueryStatisticTable",
+                                "store": "ccQueryStatisticStore",
+                                "title": null
+                            },
+                            "name": "MyGridPanel28",
+                            "designerId": "d223e0d1-399f-4864-b4d8-666d42cf69fa",
+                            "cn": [
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top"
+                                    },
+                                    "name": "MyToolbar22",
+                                    "designerId": "fe34d8d0-5119-4a3b-acfa-dbdc07fb5f21",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "",
+                                                "id": "txt_SearchKey",
+                                                "layout|flex": null
+                                            },
+                                            "name": "MyTextField38",
+                                            "designerId": "6a115003-1cb1-4d5e-b516-9b1ab80695be"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "查询"
+                                            },
+                                            "name": "MyButton83",
+                                            "designerId": "85f98b44-a861-4d21-aa0c-cb9085c40ede",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick",
+                                                        "implHandler": [
+                                                            "var getKeyword = Ext.getCmp('txt_SearchKey').getValue();",
+                                                            "var mystore=Ext.StoreMgr.get('ccQueryStatisticStore'); //获得store对象",
+                                                            "//在load事件中添加参数",
+                                                            "mystore.load(",
+                                                            "    {",
+                                                            "        params:{",
+                                                            "        start:\"0\",",
+                                                            "        limit:\"25\",",
+                                                            "        searchKeyword:getKeyword",
+                                                            "        }",
+                                                            "    }",
+                                                            ");"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick",
+                                                    "designerId": "a112538f-2efb-4c5f-84af-0b45d3d92f56"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id",
+                                        "format": "0",
+                                        "text": "编号"
+                                    },
+                                    "name": "MyNumberColumn5",
+                                    "designerId": "d59b7e44-01ec-4079-8987-17dfc074ade3"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ticketId",
+                                        "format": "0",
+                                        "text": "地票"
+                                    },
+                                    "name": "MyNumberColumn6",
+                                    "designerId": "cad7df1d-166f-4a3d-aa10-8334df3f9f5f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Boolean",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "isPush",
+                                        "falseText": "否",
+                                        "text": "是否推送",
+                                        "trueText": "是"
+                                    },
+                                    "name": "MyBooleanColumn",
+                                    "designerId": "4ed538ec-9542-43cf-9a9b-a54e6a57e88e"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Date",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "publishDate",
+                                        "text": "发布日期"
+                                    },
+                                    "name": "MyDateColumn13",
+                                    "designerId": "108fc6f8-dbaa-42c2-b639-51cdb1d6a87e"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView25",
+                                    "designerId": "3989f5f3-7cd8-4b4d-9a29-ad9ce1edae26"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "area",
+                                        "text": "地票面积（亩）"
+                                    },
+                                    "name": "MyNumberColumn7",
+                                    "designerId": "54a2a271-e995-4a92-84b5-9e027df97f99"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Boolean",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "isMailPush",
+                                        "falseText": "否",
+                                        "text": "是否邮件推送",
+                                        "trueText": "是"
+                                    },
+                                    "name": "MyBooleanColumn1",
+                                    "designerId": "e06615da-ec52-42df-a636-2a3f5baf4999"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "price",
+                                        "text": "地票价格（万）"
+                                    },
+                                    "name": "MyNumberColumn8",
+                                    "designerId": "95b60210-c720-4926-89af-98f1e6652f2f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "auction",
+                                        "text": "拍卖方式"
+                                    },
+                                    "name": "MyColumn63",
+                                    "designerId": "21830dfe-04cb-47f6-8ffe-fea06adab6e7"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "supplier",
+                                        "text": "供应方"
+                                    },
+                                    "name": "MyColumn64",
+                                    "designerId": "f9a97be2-59b1-41e1-a13d-44595f834b21"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "region",
+                                        "text": "行政区"
+                                    },
+                                    "name": "MyColumn65",
+                                    "designerId": "aeb7b8b2-fd43-4a67-837f-7ea8b3ecaf8b"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "others",
+                                        "text": "其他"
+                                    },
+                                    "name": "MyColumn66",
+                                    "designerId": "7793d839-97a8-4373-98bd-fe6c4455dba9"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "border",
+                        "title": "统计"
+                    },
+                    "name": "MyPanel24",
+                    "designerId": "22c3f9c0-1d77-4b74-9c9c-247217868cf7",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig22",
+                            "designerId": "d998f541-21d3-4827-9872-db2aad7dbc76"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "dock": null,
+                                "layout": "vbox",
+                                "layout|region": "west",
+                                "layout|split": true,
+                                "title": "选择统计图表：",
+                                "width": 150
+                            },
+                            "name": "MyPanel25",
+                            "designerId": "ba9110d8-2a86-40f3-b6d3-f5f02d8bf72a",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|createAlias": "",
+                                        "height": 40,
+                                        "id": "tjtb_supplier",
+                                        "layout|flex": 1,
+                                        "maxHeight": 40,
+                                        "text": "地块供应方"
+                                    },
+                                    "name": "MyButton84",
+                                    "designerId": "c148a352-6f07-47f4-adf3-d66d486d86af",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var myTabPanel = Ext.getCmp('StatisticForm');",
+                                                    "myTabPanel.setActiveTab('StatisticForm_Bar');",
+                                                    "",
+                                                    "var mystore=Ext.StoreMgr.get('ccQueryStatisticSupplierStore'); //获得store对象",
+                                                    "mystore.reload();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "069ddb83-cbb4-4ff6-ba94-ffa311e54c12"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "id": "tjtb_Auction",
+                                        "layout|flex": 1,
+                                        "maxHeight": 40,
+                                        "text": "拍卖方式"
+                                    },
+                                    "name": "MyButton85",
+                                    "designerId": "ff61738d-9755-4f26-8f20-0336d6fe9bed",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var myTabPanel = Ext.getCmp('StatisticForm');",
+                                                    "myTabPanel.setActiveTab('StatisticForm_Pie');",
+                                                    "",
+                                                    "var mystore=Ext.StoreMgr.get('ccQueryStatisticSupplierStore'); //获得store对象",
+                                                    "mystore.reload();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "fa6adaef-2a5c-49ab-b31a-601625e80d0b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "id": "tjtb_price_time",
+                                        "layout|flex": 1,
+                                        "maxHeight": 40,
+                                        "text": "地块价格趋势"
+                                    },
+                                    "name": "MyButton86",
+                                    "designerId": "ac179e4f-0c14-469e-82ef-087e8e104a4f",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var myTabPanel = Ext.getCmp('StatisticForm');",
+                                                    "myTabPanel.setActiveTab('StatisticForm_Line');",
+                                                    "",
+                                                    "var mystore=Ext.StoreMgr.get('ccQueryStatisticPriceStore'); //获得store对象",
+                                                    "mystore.reload();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "bfba12fd-0c54-482a-a3b5-c01d0436b073"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "id": "tjtb_area",
+                                        "layout|flex": 1,
+                                        "maxHeight": 40,
+                                        "text": "地块面积统计"
+                                    },
+                                    "name": "MyButton87",
+                                    "designerId": "f326e8a3-74c0-4325-aae4-527413d2c389",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var myTabPanel = Ext.getCmp('StatisticForm');",
+                                                    "myTabPanel.setActiveTab('StatisticForm_Point');",
+                                                    "",
+                                                    "var mystore=Ext.StoreMgr.get('ccQueryStatisticAreaStore'); //获得store对象",
+                                                    "mystore.reload();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "7f1cad1a-b41c-4b70-822e-ec2a9bb56d86"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0,
+                                "designer|createAlias": "",
+                                "id": "StatisticForm",
+                                "layout|flex": 1,
+                                "layout|region": "center",
+                                "tabPosition": "bottom"
+                            },
+                            "name": "MyTabPanel9",
+                            "designerId": "10959eba-c3f6-45ae-bea7-9d44ac9294ca",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "StatisticForm_Bar",
+                                        "layout": "fit",
+                                        "title": "柱状图"
+                                    },
+                                    "name": "MyPanel26",
+                                    "designerId": "089e49ec-fb26-463c-9524-c3742ef19683",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig23",
+                                            "designerId": "6e9e5562-cfd6-4347-8f53-761a4aaa9db2"
+                                        },
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": [
+                                                    "true"
+                                                ],
+                                                "height": 250,
+                                                "insetPadding": 20,
+                                                "store": "ccQueryStatisticSupplierStore",
+                                                "width": 400
+                                            },
+                                            "name": "BarChart",
+                                            "designerId": "5b4eece9-f7b1-4469-8df8-ba2c8ccb4a68",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-bar-chart",
+                                            "autoName": "BarChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.axis.Category",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "name"
+                                                        ],
+                                                        "position": "left",
+                                                        "title": "供应方名称"
+                                                    },
+                                                    "name": "MyCategoryAxis",
+                                                    "designerId": "4957ad08-3e39-40b7-af14-655cfafb3dfe"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.axis.Numeric",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "data"
+                                                        ],
+                                                        "position": "bottom",
+                                                        "title": "数量"
+                                                    },
+                                                    "name": "MyNumericAxis",
+                                                    "designerId": "45b3909e-82bf-4100-9746-5e520f17b2e8"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.series.Bar",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "axis": [
+                                                            "bottom"
+                                                        ],
+                                                        "highlight": [
+                                                            "{",
+                                                            "    size: 7,",
+                                                            "    radius: 7",
+                                                            "}"
+                                                        ],
+                                                        "label": [
+                                                            "{'display':'insideEnd','field':'data','color':'#333','text-anchor':'middle'}"
+                                                        ],
+                                                        "tips": [
+                                                            "{",
+                                                            "  trackMouse: true,",
+                                                            "  width: 180,",
+                                                            "  height: 28,",
+                                                            "  renderer: function(storeItem, item) {",
+                                                            "    this.setTitle(storeItem.get('name') + '，流转地块: ' + storeItem.get('data')+'宗');",
+                                                            "  }",
+                                                            "}"
+                                                        ],
+                                                        "xField": "name",
+                                                        "yField": [
+                                                            "data"
+                                                        ]
+                                                    },
+                                                    "name": "MyBarSeries",
+                                                    "designerId": "757a0600-30c4-48bc-82c0-e0ddbdd61687"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "StatisticForm_Pie",
+                                        "layout": "fit",
+                                        "title": "拍卖方式"
+                                    },
+                                    "name": "MyPanel27",
+                                    "designerId": "faeca509-4b63-4a95-97fe-f1d768a7962c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig24",
+                                            "designerId": "9628927a-a72f-4f6a-82a5-9568ad75bdf5"
+                                        },
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": [
+                                                    "true"
+                                                ],
+                                                "height": 250,
+                                                "insetPadding": 60,
+                                                "store": "ccQueryStatisticPieStore",
+                                                "theme": "Base:gradients",
+                                                "width": 400
+                                            },
+                                            "name": "PieChart",
+                                            "designerId": "c03a64d5-3c53-49ed-8e0b-69b1979bcd2a",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-pie-chart",
+                                            "autoName": "PieChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.series.Pie",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "angleField": "data",
+                                                        "donut": false,
+                                                        "label": [
+                                                            "{'field':'name','display':'rotate','contrast':true,'font':'18px Arial'}"
+                                                        ],
+                                                        "showInLegend": true,
+                                                        "tips": [
+                                                            "{",
+                                                            "    trackMouse: true,",
+                                                            "    width: 140,",
+                                                            "    height: 28,",
+                                                            "    renderer: function(storeItem, item) {",
+                                                            "        // calculate and display percentage on hover",
+                                                            "        var total = 0;",
+                                                            "         var store = Ext.data.StoreManager.lookup('ccQueryStatisticPieStore');",
+                                                            "        store.each(function(rec) {",
+                                                            "            total += rec.get('data');",
+                                                            "        });",
+                                                            "        this.setTitle(storeItem.get('name') + ': ' + Math.round(storeItem.get('data') / total * 100) + '%');",
+                                                            "    }",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "MyPieSeries",
+                                                    "configAlternates": {
+                                                        "donut": "boolean"
+                                                    },
+                                                    "designerId": "63ca2ca0-8db2-4dab-ad9f-40f7749edabd"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "StatisticForm_Line",
+                                        "layout": "fit",
+                                        "title": "地块价格趋势"
+                                    },
+                                    "name": "MyPanel28",
+                                    "designerId": "667529c4-54a9-484b-859a-d7ee535eb1bb",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig25",
+                                            "designerId": "eb8c4c75-9eaa-46f1-9e4e-b535f7eda12c"
+                                        },
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": [
+                                                    "true"
+                                                ],
+                                                "height": 250,
+                                                "insetPadding": 20,
+                                                "store": "ccQueryStatisticPriceStore",
+                                                "width": 400
+                                            },
+                                            "name": "LineChart",
+                                            "designerId": "adc519cf-d679-4362-b8b9-b14ccbe21cdd",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-line-chart",
+                                            "autoName": "LineChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.axis.Category",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "name"
+                                                        ],
+                                                        "title": "流转时间"
+                                                    },
+                                                    "name": "MyCategoryAxis1",
+                                                    "designerId": "96a52700-45e5-4439-b165-e595d5db59b0"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.axis.Numeric",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "data"
+                                                        ],
+                                                        "title": "流转价格"
+                                                    },
+                                                    "name": "MyNumericAxis1",
+                                                    "designerId": "72435aa9-dc22-4d30-aafd-1a0cb8ead9dd"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.series.Line",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "smooth": 3,
+                                                        "tips": [
+                                                            "{",
+                                                            "  trackMouse: true,",
+                                                            "  width: 180,",
+                                                            "  height: 28,",
+                                                            "  renderer: function(storeItem, item) {",
+                                                            "    this.setTitle(storeItem.get('data'));",
+                                                            "  }",
+                                                            "}"
+                                                        ],
+                                                        "xField": "name",
+                                                        "yField": [
+                                                            "data"
+                                                        ]
+                                                    },
+                                                    "name": "MyLineSeries",
+                                                    "designerId": "42193eaa-080d-4288-8756-63a58fd5d5c2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "StatisticForm_Point",
+                                        "layout": "fit",
+                                        "title": "地块面积统计"
+                                    },
+                                    "name": "MyPanel29",
+                                    "designerId": "688c858f-6ea6-44b9-aac2-6d9586336998",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig26",
+                                            "designerId": "fdc32c40-5907-472b-944f-266c9df9c633"
+                                        },
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": [
+                                                    "true"
+                                                ],
+                                                "height": 250,
+                                                "insetPadding": 20,
+                                                "store": "ccQueryStatisticAreaStore",
+                                                "width": 400
+                                            },
+                                            "name": "LineChart1",
+                                            "designerId": "ee10f740-2210-4487-9a68-2281448f1541",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-line-chart",
+                                            "autoName": "LineChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.axis.Category",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "name"
+                                                        ],
+                                                        "title": "流转时间"
+                                                    },
+                                                    "name": "MyCategoryAxis2",
+                                                    "designerId": "1bfab3cd-606e-40ae-bcd9-dbae94e1eecf"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.axis.Numeric",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "data"
+                                                        ],
+                                                        "title": "流转面积"
+                                                    },
+                                                    "name": "MyNumericAxis2",
+                                                    "designerId": "10544f03-fef5-4924-b54a-78c6816d0516"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.series.Line",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "label": [
+                                                            "{",
+                                                            "    renderer: Ext.util.Format.numberRenderer('0,0')",
+                                                            "}"
+                                                        ],
+                                                        "smooth": 3,
+                                                        "tips": [
+                                                            "{",
+                                                            "  trackMouse: true,",
+                                                            "  width: 180,",
+                                                            "  height: 28,",
+                                                            "  renderer: function(storeItem, item) {",
+                                                            "    this.setTitle(storeItem.get('data'));",
+                                                            "  }",
+                                                            "}"
+                                                        ],
+                                                        "xField": "name",
+                                                        "yField": [
+                                                            "data"
+                                                        ]
+                                                    },
+                                                    "name": "MyLineSeries1",
+                                                    "designerId": "98476cec-33a7-4390-a1af-b956651b683a"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

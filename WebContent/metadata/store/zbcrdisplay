@@ -1,0 +1,40 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "zbcrdisplay",
+        "designer|userClassName": "zbcrdisplay",
+        "groupField": "fkxmbh",
+        "model": "zbcr",
+        "storeId": "zbcrdisplay"
+    },
+    "designerId": "345c3e8c-fecd-4627-a95f-6dd447f70781",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy56",
+            "designerId": "4cf4c131-f21c-4a74-a209-b64be95d3387",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader56",
+                    "designerId": "1abc79e7-6115-4fc8-9cbc-8f2fc626a3c7"
+                }
+            ]
+        }
+    ]
+}

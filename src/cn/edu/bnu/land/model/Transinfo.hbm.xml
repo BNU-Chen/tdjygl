@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-8-16 10:11:45 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Transinfo" table="transinfo" catalog="tdlz">
+        <id name="number" type="java.lang.Integer">
+            <column name="number" />
+            <generator class="identity" />
+        </id>
+        <property name="region" type="string">
+            <column name="region" length="100" />
+        </property>
+        <property name="acre" type="java.lang.Integer">
+            <column name="acre" precision="12" scale="0" />
+        </property>
+        <property name="transtyle" type="string">
+            <column name="transtyle" length="50" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" precision="12" scale="0" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="100" />
+        </property>
+        <property name="releasedate" type="date">
+            <column name="releasedate" length="10" />
+        </property>
+ 
+        <property name="title" type="string">
+            <column name="title" length="100" />
+        </property>
+  
+        <property name="url" type="string">
+            <column name="url" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

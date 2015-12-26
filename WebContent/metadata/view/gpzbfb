@@ -1,0 +1,260 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "bodyPadding": 10,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "gpzbfb",
+        "designer|userClassName": "gpzbfb",
+        "id": "gpzbfb",
+        "layout": "absolute",
+        "title": "挂牌指标发布"
+    },
+    "designerId": "fe3d76ce-c0d8-4cd8-960c-256181548c7e",
+    "cn": [
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 0,
+                "text": "当前信息库地票总额:"
+            },
+            "name": "MyLabel6",
+            "designerId": "f606897c-7672-477a-bd2e-f13f53cd82e9"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 140,
+                "layout|y": 0,
+                "text": "5000亩"
+            },
+            "name": "MyLabel7",
+            "designerId": "6c88332f-7961-40a8-9eac-35eaa4e4d310"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "本批次发布额度",
+                "layout|x": 220,
+                "layout|y": -3,
+                "width": 160
+            },
+            "name": "MyTextField1",
+            "designerId": "ae0cd829-824c-43f4-a7cd-1027ed62ca9d"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 260,
+                "layout": "absolute",
+                "layout|x": 10,
+                "layout|y": 50,
+                "title": "编号",
+                "titleAlign": "center",
+                "width": 270
+            },
+            "name": "MyPanel",
+            "designerId": "732283c0-e2b8-4a0f-87b5-6a757443c9ae",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 190,
+                        "text": "挂牌发布"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "72d179da-6af7-4158-a671-a0788e107af3"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "地票额度",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 20,
+                        "width": 150
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "c3dbddcd-e7aa-45da-9c27-c0df7946efb4"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "截止日期",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 80,
+                        "width": 150
+                    },
+                    "name": "MyDateField",
+                    "designerId": "143bee4d-bde6-44f1-bfda-6315ff9fef49"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "设置低价",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 140,
+                        "width": 150
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "c860c7a3-7c16-43ba-885e-6961aa1eb9ea"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 270,
+                "layout": "absolute",
+                "layout|x": 370,
+                "layout|y": 50,
+                "title": "编号",
+                "titleAlign": "center",
+                "width": 260
+            },
+            "name": "MyPanel1",
+            "designerId": "cf2235bd-df47-4cdf-9d93-1c112277ab17",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 190,
+                        "text": "挂牌发布"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "aeed5dc4-32d2-4e83-b25c-968a48b563df"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "地票额度",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 20,
+                        "width": 150
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "b6641cf0-9e21-4cc1-bb83-3869868d0853"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "截止日期",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 80,
+                        "width": 150
+                    },
+                    "name": "MyDateField1",
+                    "designerId": "5e126803-80a8-4c31-b4a4-356eb69917c4"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "设置低价",
+                        "labelWidth": 60,
+                        "layout|x": 90,
+                        "layout|y": 140,
+                        "width": 150
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "7a875565-b946-48a4-a3f9-a4ae2cf84cce"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "layout|x": 95,
+                "layout|y": 298,
+                "width": 360
+            },
+            "name": "MyPagingToolbar",
+            "designerId": "3c4b6507-fa8a-40e2-9568-0fd2b34671e8"
+        }
+    ]
+}

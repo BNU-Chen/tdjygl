@@ -1,0 +1,231 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|userAlias": "quotaExtract",
+        "designer|userClassName": "quotaExtract",
+        "height": 462,
+        "layout": "border",
+        "title": "信息抽取设置>>建设指标",
+        "width": 762
+    },
+    "designerId": "12be702b-ca1f-4e9b-9004-206e30bc0644",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "layout": "vbox",
+                "layout|region": "center",
+                "title": ""
+            },
+            "name": "MyForm17",
+            "designerId": "385a24fd-e37e-40f6-a340-69de61367c16",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "layout": "hbox"
+                    },
+                    "name": "MyContainer11",
+                    "designerId": "5e423ec7-a7d9-46e8-8912-e607e786b5f3",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 205,
+                                "layout|flex": 1,
+                                "title": "网站数据字段列表"
+                            },
+                            "name": "MyGridPanel40",
+                            "designerId": "46f7881e-6f7f-416b-8de0-45d3ce5047db",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "string",
+                                        "text": "",
+                                        "width": 329
+                                    },
+                                    "name": "MyColumn108",
+                                    "designerId": "65d32f9e-c18c-47cf-b5e8-f5ba7b7e1ee8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "height": 30,
+                                "layout": "hbox",
+                                "layout|flex": null,
+                                "width": 77
+                            },
+                            "name": "MyContainer12",
+                            "designerId": "c297929c-a057-43b8-9f4c-2e7cf6938b44",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "对应",
+                                        "width": 63
+                                    },
+                                    "name": "MyButton120",
+                                    "designerId": "1b5a3042-6f00-44fd-bbef-e6dd47b814fe"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 205,
+                                "layout|flex": 1,
+                                "title": "网站数据字段列表"
+                            },
+                            "name": "MyGridPanel41",
+                            "designerId": "ef8a6b35-c234-4821-8e54-1cb0a7696a7f",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "string",
+                                        "text": "",
+                                        "width": 320
+                                    },
+                                    "name": "MyColumn109",
+                                    "designerId": "cb6ebc5a-c665-485a-a485-2b40778f6926"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "anchorSize": null,
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 120,
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer13",
+                    "designerId": "c8ab5df0-1049-486e-b183-37382434eb84",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 140,
+                                "layout|flex": null,
+                                "title": "字段对应结果",
+                                "width": 711
+                            },
+                            "name": "MyGridPanel42",
+                            "designerId": "aea5d0d7-eaaa-405b-b0cc-78dc220f57f7",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "string",
+                                        "text": "",
+                                        "width": 710
+                                    },
+                                    "name": "MyColumn110",
+                                    "designerId": "d2b9e6b7-c98e-45c9-a7c9-8a47fd8ebad7"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView37",
+                                    "designerId": "76a3b8b8-9cef-47f6-8a91-36fa66ec5049"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "保存设置",
+                                "width": 70
+                            },
+                            "name": "MyButton121",
+                            "designerId": "9cb2618e-192b-45da-bd94-acec60a177a6"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

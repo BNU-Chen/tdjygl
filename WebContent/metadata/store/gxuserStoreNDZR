@@ -1,0 +1,70 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "gxuserStoreNDZR",
+        "designer|userClassName": "gxuserStoreNDZR",
+        "model": "gxUsersData",
+        "pageSize": 10,
+        "storeId": "gxuserStoreNDZR"
+    },
+    "designerId": "feb771b2-4ec7-464a-85a9-1f6d79f5b1f0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "searchUserToChoice"
+            },
+            "name": "MyAjaxProxy74",
+            "designerId": "1e0a7817-9e6d-4a02-b945-78ec477034c7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader74",
+                    "designerId": "81bd6c90-50d0-4744-825d-04adbbfecdfc"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={\r",
+                    "    searchField:Ext.getCmp('searchUsers_ndzr').getValue()\r",
+                    "\r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "211aaac3-db89-4f72-b30d-86e591640d86"
+        }
+    ]
+}

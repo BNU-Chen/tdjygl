@@ -1,0 +1,75 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    [\"北京\",\"北京\"],\r",
+            "    [\"天津\",\"天津\"],\r",
+            "    [\"河北\",\"河北\"],\r",
+            "    [\"重庆\",\"重庆\"],\r",
+            "    [\"上海\",\"上海\"],\r",
+            "    [\"山东\",\"山东\"],\r",
+            "    [\"山西\",\"山西\"],\r",
+            "    [\"河南\",\"河南\"]\r",
+            "]"
+        ],
+        "designer|userClassName": "areaStore",
+        "storeId": "areaStore"
+    },
+    "designerId": "867e2dfb-9f74-4e4e-beac-45c1465f8d93",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy7",
+            "designerId": "480d19f1-9daf-4b3a-8ce9-74ebce3e9fbe",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader7",
+                    "designerId": "3decdc90-7542-438f-ab1d-87d1f0e11076"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "area"
+            },
+            "name": "MyField37",
+            "designerId": "1575eb7c-b279-4f3d-9264-56280ca27c05"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "areaText"
+            },
+            "name": "MyField38",
+            "designerId": "aab539e3-2344-44fb-89d6-ba34eee022da"
+        }
+    ]
+}

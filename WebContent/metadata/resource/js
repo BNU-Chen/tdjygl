@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "url": "resources/validation.js",
+        "x-compile": true
+    },
+    "designerId": "d6358afe-54ab-428f-9a80-153faa6c3a67"
+}

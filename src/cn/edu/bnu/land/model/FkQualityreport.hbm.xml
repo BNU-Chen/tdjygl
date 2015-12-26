@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkQualityreport" table="fk_qualityreport" catalog="tdlz">
+        <id name="applyId" type="java.lang.Integer">
+            <column name="ApplyId" />
+            <generator class="identity" />
+        </id>
+        <property name="projectname" type="string">
+            <column name="Projectname" length="45" />
+        </property>
+        <property name="evaluationRank" type="string">
+            <column name="evaluationRank" length="45" />
+        </property>
+        <property name="evaluators" type="string">
+            <column name="evaluators" length="45" />
+        </property>
+        <property name="evaluationComment" type="string">
+            <column name="evaluation_comment" length="45" />
+        </property>
+        <property name="auditOpinion" type="string">
+            <column name="auditOpinion" length="45" />
+        </property>
+        <property name="auditDate" type="string">
+            <column name="auditDate" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

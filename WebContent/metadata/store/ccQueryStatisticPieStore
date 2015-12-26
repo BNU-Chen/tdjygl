@@ -1,0 +1,48 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "ccQueryStatisticPieStore",
+        "designer|userClassName": "ccQueryStatisticPieStore",
+        "model": "ccQueryStatisticPieModel",
+        "storeId": "ccQueryStatisticPieStore"
+    },
+    "name": "ccQueryStatisticStore1",
+    "designerId": "603a9cdc-4031-4d2e-8c80-6881caa43d42",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "StatisticAuction"
+            },
+            "name": "MyAjaxProxy28",
+            "designerId": "7823e03f-73c0-464b-966b-0409f61bc2d0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader28",
+                    "designerId": "925572a2-d711-4cb3-ab32-9470365c3ead"
+                }
+            ]
+        }
+    ]
+}

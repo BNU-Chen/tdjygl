@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-1-20 10:50:32 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.RssUserDevice" table="rss_user_device" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="50" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="50">
+                <comment>&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="orderId" type="string">
+            <column name="orderId" length="50">
+                <comment>&#182;&#169;&#212;&#196;&#181;&#196;&#192;&#224;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="orderCode" type="string">
+            <column name="orderCode" length="50">
+                <comment>&#182;&#169;&#212;&#196;&#181;&#196;&#208;&#208;&#213;&#254;&#199;&#248;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

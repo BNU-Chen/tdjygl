@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>重庆市农地转入信息</title>
+    <link>http://192.168.191.14:8080/tdlz_homeWebSite/</link>
+    <description>重庆市农地转出信息订阅</description>
+    <language>zh-cn</language>
+    <copyright>Copyright 2014 重庆市农地流转信息网. All Rights Reserved.</copyright>
+    <pubDate>星期日, 16 03 2014 19:35:07 CST</pubDate>
+    <lastBuildDate>星期日, 16 03 2014 19:35:07 CST</lastBuildDate>
+    <generator>JNULRSS 1.0(beta)</generator>
+    <item>
+      <title>龙河镇需地50亩</title>
+      <link>http://172.16.210.3:8080/tdlz_homeWebSite/ArticleDetailForAndriod.jsp?articleId=16&amp;channelId=4</link>
+      <pubdate>星期二, 08 10 2013 00:00:00 CST</pubdate>
+      <coordinate>29.979764,107.219629;29.998282,107.298393;29.94472,107.287469;29.948725.107.198932</coordinate>
+      <description><![CDATA[类型：农田
+联系人：忆苦思甜
+电话：8984 2843]]></description>
+    </item>
+    <item>
+      <title>双龙镇需地30亩</title>
+      <link>http://172.16.210.3:8080/tdlz_homeWebSite/ArticleDetailForAndriod.jsp?articleId=6&amp;channelId=4</link>
+      <pubdate>星期二, 08 10 2013 00:00:00 CST</pubdate>
+      <coordinate>29.979764,107.219629;29.998282,107.298393;29.94472,107.287469;29.948725.107.198932</coordinate>
+      <description><![CDATA[作者：王志飞
+来源：www.gdkakjs.com
+
+
+
+类型：种植
+联系人：圣吉奥
+电话：8920 3829]]></description>
+    </item>
+  </channel>
+</rss>
+

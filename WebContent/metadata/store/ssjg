@@ -1,0 +1,46 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ssjg",
+        "designer|userClassName": "ssjg",
+        "model": "ssjg",
+        "pageSize": 30,
+        "storeId": "ssjg"
+    },
+    "designerId": "7f664aae-52b9-4103-97cf-81158cf81b5f",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getssjg"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "fa71d4ce-03bd-414e-8698-7f3f9c3f52ce",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "2ae89d37-c2ef-4f5d-bb8d-02173def00f0"
+                }
+            ]
+        }
+    ]
+}

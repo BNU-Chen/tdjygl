@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.RssItemsDetails" table="rss_items_details" catalog="tdlz">
+        <id name="itemsId" type="int">
+            <column name="itemsId" />
+            <generator class="foreign">
+                <param name="property">rssChannelItems</param>
+            </generator>
+        </id>
+        <one-to-one name="rssChannelItems" class="cn.edu.bnu.land.model.RssChannelItems" constrained="true"></one-to-one>
+        <property name="title" type="string">
+            <column name="title" length="100" />
+        </property>
+        <property name="link" type="string">
+            <column name="link" length="100" />
+        </property>
+        <property name="pubdate" type="date">
+            <column name="pubdate" length="10" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="1000" />
+        </property>
+    </class>
+</hibernate-mapping>

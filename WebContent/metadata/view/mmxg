@@ -1,0 +1,81 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "mmxg",
+        "designer|userClassName": "mmxg",
+        "height": 624,
+        "layout": "absolute",
+        "title": "密码修改",
+        "width": 807
+    },
+    "designerId": "6a8f5432-976d-484f-a2cd-7b5b18eae93f",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "原秘密",
+                "layout|x": 280,
+                "layout|y": 160
+            },
+            "name": "MyTextField175",
+            "designerId": "33938cfa-8903-4fed-ba2b-31d1b4843f65"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "新密码",
+                "layout|x": 280,
+                "layout|y": 210
+            },
+            "name": "MyTextField176",
+            "designerId": "f7b9df99-67dd-4345-aacf-e2fccfadcad7"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "再次输入",
+                "layout|x": 280,
+                "layout|y": 260
+            },
+            "name": "MyTextField177",
+            "designerId": "a9f74495-a04b-41f7-9eee-8b8e82a2ca36"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 360,
+                "layout|y": 330,
+                "text": "提交",
+                "width": 80
+            },
+            "name": "MyButton185",
+            "designerId": "34479447-9411-4161-85eb-8068379ebbd1"
+        }
+    ]
+}

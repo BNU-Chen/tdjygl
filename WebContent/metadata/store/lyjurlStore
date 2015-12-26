@@ -1,0 +1,51 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "lyjurlStore",
+        "designer|userClassName": "lyjurlStore",
+        "model": "CrawlurlModel",
+        "pageSize": 10,
+        "storeId": "lyjurlStore"
+    },
+    "designerId": "46398cf2-cced-4a58-8203-1f41a1211dc6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchField:''}"
+                ],
+                "url": "look_url"
+            },
+            "name": "MyAjaxProxy86",
+            "designerId": "8f0385be-4702-42c7-9307-670c9520f7ed",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader85",
+                    "designerId": "5d95fd33-b04f-48ec-8bc1-36655affc070"
+                }
+            ]
+        }
+    ]
+}

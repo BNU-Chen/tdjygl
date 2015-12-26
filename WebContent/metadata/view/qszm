@@ -1,0 +1,32 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "qszm",
+        "designer|userClassName": "qszm",
+        "height": 355,
+        "layout": "fit",
+        "title": "权属证明",
+        "width": 541
+    },
+    "designerId": "36493dc2-7e4d-4caa-80b5-627edb90636c",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null
+            },
+            "name": "MyImg9",
+            "designerId": "b611cf76-61bf-4af9-9aa1-6781e430c3ec"
+        }
+    ]
+}

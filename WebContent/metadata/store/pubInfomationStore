@@ -1,0 +1,72 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "pubInfomationStore",
+        "designer|userClassName": "pubInfomationStore",
+        "model": "InfoArticleModel",
+        "pageSize": 10,
+        "storeId": "pubInfomationStore"
+    },
+    "designerId": "4636780c-97b9-446f-b5df-3fefe15da3ed",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "search_PubInfomation"
+            },
+            "name": "MyAjaxProxy79",
+            "designerId": "c48feda2-ff23-4235-8419-2733c341e52e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader79",
+                    "designerId": "c566396e-da80-465f-b885-cbb0fed559ff"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={\r",
+                    "    searchField:Ext.getCmp('searchField_pubInformation').getValue(),  \r",
+                    "    searchDate:Ext.util.Format.date(Ext.getCmp('searchDate_pubInformation').getValue(),'Y-m-d')  \r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onStoreBeforeLoad",
+            "designerId": "4f70a947-de99-429d-854d-cea669363e0d"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.RssChannelItems" table="rss_channel_items" catalog="tdlz">
+        <id name="itemsId" type="java.lang.Integer">
+            <column name="itemsId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="rssChannel" class="cn.edu.bnu.land.model.RssChannel" fetch="select">
+            <column name="Id" not-null="true" />
+        </many-to-one>
+        <property name="items" type="string">
+            <column name="items" length="50" />
+        </property>
+        <property name="areaCode" type="string">
+            <column name="areaCode" length="50" />
+        </property>
+        <one-to-one name="rssItemsDetails" class="cn.edu.bnu.land.model.RssItemsDetails"></one-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,140 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "deposithistory"
+    },
+    "designerId": "9ccaf7e8-0899-4d97-8dff-24570d207751",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "name": "MyField367",
+            "designerId": "c6a1faa7-ba40-49b9-aea2-f2b5f68927df"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "loginname",
+                "type": "string"
+            },
+            "name": "MyField368",
+            "designerId": "8dd79459-8f11-4b45-ab88-d5bb61b64088"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "reaname",
+                "type": "string"
+            },
+            "name": "MyField369",
+            "designerId": "7403a94c-1a3c-40b4-9de5-86f1223fa5fa"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ticketid",
+                "type": "string"
+            },
+            "name": "MyField370",
+            "designerId": "dc30782c-be43-4fa2-a051-f31b6170751c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "operatedate",
+                "type": "date"
+            },
+            "name": "MyField371",
+            "designerId": "de08d5bc-7bf8-479b-a610-ac08e75cb609"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "comein",
+                "type": "string"
+            },
+            "name": "MyField372",
+            "designerId": "5ca88889-6d8a-427c-aa69-2ed8f9127678"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "getout",
+                "type": "string"
+            },
+            "name": "MyField373",
+            "designerId": "fc321778-295f-4acc-ba5f-2f7904318b97"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "yue",
+                "type": "string"
+            },
+            "name": "MyField374",
+            "designerId": "6864a16c-622b-49b8-9bb1-12d47ac5f36d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "operator",
+                "type": "string"
+            },
+            "name": "MyField375",
+            "designerId": "5f850427-223d-4e65-aea9-b482b2c09436"
+        }
+    ]
+}

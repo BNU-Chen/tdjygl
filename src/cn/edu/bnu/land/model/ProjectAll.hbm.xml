@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ProjectAll" table="project_all" catalog="tdlz">
+        <id name="projectName" type="string">
+            <column name="project_name" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectLocation" type="string">
+            <column name="project_location" length="50" />
+        </property>
+        <property name="area" type="java.lang.Double">
+            <column name="area" precision="22" scale="0" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="type" />
+        </property>
+        <property name="designUnit" type="string">
+            <column name="design_unit" length="50" />
+        </property>
+        <property name="dataSource" type="java.lang.Integer">
+            <column name="data_source" />
+        </property>
+        <property name="dbTime" type="date">
+            <column name="db_time" length="10" />
+        </property>
+        <property name="showtime" type="date">
+            <column name="showtime" length="10" />
+        </property>
+        <property name="startTime" type="date">
+            <column name="start_time" length="10" />
+        </property>
+        <property name="monitorTime" type="date">
+            <column name="monitor_time" length="10" />
+        </property>
+        <property name="finishTime" type="date">
+            <column name="finish_time" length="10" />
+        </property>
+        <property name="isShow" type="java.lang.Boolean">
+            <column name="is_show" />
+        </property>
+        <property name="isMonitor" type="java.lang.Boolean">
+            <column name="is_monitor" />
+        </property>
+        <property name="isFinish" type="java.lang.Boolean">
+            <column name="is_finish" />
+        </property>
+        <property name="agree" type="java.lang.Integer">
+            <column name="agree" />
+        </property>
+        <property name="against" type="java.lang.Integer">
+            <column name="against" />
+        </property>
+        <property name="oyerResult" type="string">
+            <column name="oyer_result" length="30" />
+        </property>
+        <property name="oyerTime" type="date">
+            <column name="oyer_time" length="10" />
+        </property>
+        <property name="willYes" type="java.lang.Integer">
+            <column name="will_yes" />
+        </property>
+        <property name="wiliNo" type="java.lang.Integer">
+            <column name="wili_no" />
+        </property>
+    </class>
+</hibernate-mapping>

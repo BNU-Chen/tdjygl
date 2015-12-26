@@ -1,0 +1,127 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "gxMyData"
+    },
+    "designerId": "f2731273-6844-4b99-b893-7a521c0f326a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "id",
+                "name": "id",
+                "sortType": "asInt",
+                "type": "int"
+            },
+            "name": "MyField433",
+            "designerId": "6da56f81-233c-42c5-99d0-930fbce412d5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ticketId",
+                "sortType": "asUCString",
+                "type": "string"
+            },
+            "name": "MyField434",
+            "designerId": "80d6d333-e255-46d0-97a9-fd3f7635ab7c",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "map",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isPush",
+                "sortType": "asUCString",
+                "type": "boolean"
+            },
+            "name": "MyField435",
+            "designerId": "34f8f9fc-02e6-4f39-804c-d93400cdbaf8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "publishDate",
+                "sortType": "asUCString",
+                "type": "string"
+            },
+            "name": "MyField436",
+            "designerId": "b889988e-b777-4585-a9a5-5ca980b271da"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "area",
+                "sortType": "asFloat",
+                "type": "float"
+            },
+            "name": "MyField437",
+            "designerId": "fa9c42f5-53e8-4a9c-83d0-74bf1f1affe0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deadline",
+                "sortType": "asUCString",
+                "type": "string"
+            },
+            "name": "MyField438",
+            "designerId": "c97e5dec-2ca0-41fa-88a5-58edb371c1a3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isMailPush",
+                "sortType": "asUCString",
+                "type": "boolean"
+            },
+            "name": "MyField439",
+            "designerId": "9d8bb9df-2ff4-420e-85a1-a29a73d67f10"
+        }
+    ]
+}

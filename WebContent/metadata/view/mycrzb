@@ -1,0 +1,230 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "cls": null,
+        "designer|userAlias": "mycrzb",
+        "designer|userClassName": "mycrzb",
+        "height": 497,
+        "id": "crzbdj",
+        "layout": "fit",
+        "title": "<font size='2.5px'>我的出让指标</font>",
+        "width": 1118
+    },
+    "designerId": "d685bdc3-561d-458a-bc27-8d60891843a5",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "x-grid3-row TD",
+                "height": 250,
+                "store": "zbcrsh",
+                "title": "",
+                "width": 400
+            },
+            "name": "MyGridPanel57",
+            "designerId": "e6c54235-8497-494d-bced-e92c35b6875a",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "crzbbh",
+                        "text": "指标编号"
+                    },
+                    "name": "MyColumn185",
+                    "designerId": "4ce7734e-f30c-4600-81b3-bbfd9d1380af"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "userid",
+                        "text": "用户名"
+                    },
+                    "name": "MyColumn186",
+                    "designerId": "bd571a9c-f6a6-40b0-b832-2a61ff260248"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "fkxmbh",
+                        "text": "复垦项目编号"
+                    },
+                    "name": "MyColumn187",
+                    "designerId": "5d27f692-cb49-4282-94a6-1c0686a8b418"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "fkxmmc",
+                        "text": "复垦项目名称"
+                    },
+                    "name": "MyColumn188",
+                    "designerId": "ab738d3d-eb86-448b-95e1-14bd7756d1ee"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "fkxmgm",
+                        "text": "复垦项目规模（公顷）",
+                        "width": 140
+                    },
+                    "name": "MyNumberColumn33",
+                    "designerId": "b598a319-85bd-4c44-ac9f-de12962af9b2"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "kcrgm",
+                        "text": "可出让规模（公顷）",
+                        "width": 126
+                    },
+                    "name": "MyNumberColumn34",
+                    "designerId": "be5036ec-1941-488a-b144-5795e1fa33b7"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "bccrgm",
+                        "text": "本次出让规模(公顷)",
+                        "width": 125
+                    },
+                    "name": "MyNumberColumn35",
+                    "designerId": "5fca5f43-c3e6-46ad-8ece-26a6f6dc0806"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "crzt",
+                        "text": "审核状态",
+                        "width": 80
+                    },
+                    "name": "MyColumn189",
+                    "designerId": "8ac21e27-697d-4f87-a813-1152b6b4beab"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "x-grid3-row TD"
+                    },
+                    "name": "MyGridView56",
+                    "designerId": "f98ef03f-da6f-4b91-9af4-d436c8c48a72"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "crbz",
+                        "text": "备注",
+                        "tooltip": "备注信息将反馈给申让方"
+                    },
+                    "name": "MyColumn190",
+                    "designerId": "a509b662-a7d4-4ce5-a139-b17bf6de4083"
+                },
+                {
+                    "type": "Ext.grid.plugin.CellEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": "Ext.grid.plugin.CellEditing",
+                    "name": "MyCellEditingPlugin5",
+                    "designerId": "fd39f24d-779e-4894-8849-367b0b993a28"
+                },
+                {
+                    "type": "Ext.grid.feature.Grouping",
+                    "reference": {
+                        "name": "features",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyGroupingFeature1",
+                    "designerId": "d41fc125-5d6d-4b38-905d-bc883315faf0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "store": "zbcrsh",
+                "width": 360
+            },
+            "name": "MyPagingToolbar42",
+            "designerId": "1095c6d6-83c0-43f6-9d4b-8c657bb0edca"
+        }
+    ]
+}
