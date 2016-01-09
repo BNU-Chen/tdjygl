@@ -10,7 +10,7 @@
         "cacheBust": true,
         "urlPrefix": "http://localhost:8080",
         "exportPath": "F:/eclipsework2/tdlz_houtai/WebContent",
-        "buildShouldOverwriteIndex": true,
+        "buildShouldOverwriteIndex": false,
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -20,7 +20,11 @@
             }
         },
         "sdkPath": "",
-        "generateArchitectVersion": true
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": false,
+        "lockUrlPrefix": false,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1123-inputEl": "a new version of the framework is available"
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 1943,

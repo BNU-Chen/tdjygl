@@ -505,7 +505,7 @@ Ext.define('MyApp.view.pmjj', {
 
             runner.stopAll();
             var pcqt=Ext.getCmp('pcqt');
-            var num=10;
+            var num=30;
             var jxdjs =runner.newTask({
                 run: function()
                 {
@@ -539,7 +539,7 @@ Ext.define('MyApp.view.pmjj', {
                             if(n!=cjstore.count())
                             {
                                 n=cjstore.count();
-                                num=10;
+                                num=30;
                             }
                             var d = Ext.getDom('cc');
 
