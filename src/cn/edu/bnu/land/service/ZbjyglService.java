@@ -282,26 +282,26 @@ public class ZbjyglService {
 		{
 			sqjzrq=record.getSqjzrq();
 		}
-		if(currentdate.after(sqjzrq))
-		{System.out.println("进入if");
-			List<Zbgmgl> results = null;
-			
-			String totalConut=null;
-			String h = "from Zbgmgl s where s.zbpcbh='"+record.getZbpcbh()+"'"+"and s.pczt='待审核'";//1表示要显示的，包括未审核和未通过的
-			
-			try {
-				org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(h);
-				
-				 totalConut = String.valueOf(query.list().size());
-				//query.setFirstResult(Integer.parseInt(start));
-				//query.setMaxResults(Integer.parseInt(limit));
-				results = (List<Zbgmgl>) query.list();
-				
-				//results.get(0).setArea("gea");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}			
-			if(results.size()==0)
+//		if(currentdate.after(sqjzrq))
+//		{System.out.println("进入if");
+//			List<Zbgmgl> results = null;
+//			
+//			String totalConut=null;
+//			String h = "from Zbgmgl s where s.zbpcbh='"+record.getZbpcbh()+"'"+"and s.pczt='待审核'";//1表示要显示的，包括未审核和未通过的
+//			
+//			try {
+//				org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(h);
+//				
+//				 totalConut = String.valueOf(query.list().size());
+//				//query.setFirstResult(Integer.parseInt(start));
+//				//query.setMaxResults(Integer.parseInt(limit));
+//				results = (List<Zbgmgl>) query.list();
+//				
+//				//results.get(0).setArea("gea");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}			
+//			if(results.size()==0)
 			{System.out.println("全部审核完毕");
 				List<Zbgglb> ggresult = null;
 				String hql = "from Zbgglb s where s.zbpcbh='"+record.getZbpcbh()+"'";
@@ -316,7 +316,7 @@ public class ZbjyglService {
 					//gmresults.get(i).setPczt("尚未开始");
 				//}
 			}
-		}
+//		}
 		
 		model.put("success", true);
 		//model.put("total", totalConut);
@@ -346,6 +346,7 @@ public class ZbjyglService {
 	}
 	
 	public Map<String, Object> updateJpResult(String zbpcbh) {
+		System.out.println("updateJpResult");
 		Map<String, Object> model = new TreeMap<String, Object>();
 		List<Zbjpssjg> results = null;
 		String totalConut=null;
@@ -415,7 +416,7 @@ public class ZbjyglService {
 		List<Zbgmgl> results = null;
 		String totalConut=null;
 		String h = "from Zbgmgl s where s.zbpcbh='"+zbpcbh+"'";//1表示要显示的，包括未审核和未通过的
-		
+		System.out.println("进入网备环节");
 		try {
 			org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(h);			
 			results = (List<Zbgmgl>) query.list();
@@ -423,6 +424,17 @@ public class ZbjyglService {
 			{
 				results.get(i).setDqhj(5);
 				results.get(i).setPczt("尚未备案");
+			}
+			
+			List<Zbgglb> result2 = null;
+			String hql2 = "from Zbgglb s where s.zbpcbh='"+zbpcbh+"'";
+			org.hibernate.Query q2 = sessionFactory.getCurrentSession().createQuery(hql2);
+			result2=(List<Zbgglb>)q2.list();
+			int n2=result2.size();
+			for(int i=0;i<n2;i++)
+			{
+				result2.get(i).setDqhj(5);
+				
 			}
 			
 		} catch (Exception e) {
@@ -510,5 +522,36 @@ public class ZbjyglService {
 			result.get(i).setPczt("完成备案");
 			result.get(i).setPzwz(dpwz);
 		}
+	}
+	
+	public  Map<String, Object> updateGmToWq(String zbpcbh,String userid)
+	{
+		Map<String, Object> model = new TreeMap<String, Object>();
+		List<Zbgmgl> result = null;
+		String hql = "from Zbgmgl s where s.zbpcbh='"+zbpcbh+"' and s.userid='"+userid+"'";
+		org.hibernate.Query q = sessionFactory.getCurrentSession().createQuery(hql);
+		result=(List<Zbgmgl>)q.list();
+		int n=result.size();
+		System.out.println(hql);
+		for(int i=0;i<n;i++)
+		{
+			result.get(i).setDqhj(4);
+			result.get(i).setPczt("未签");
+		}
+		
+		List<Zbgglb> result2 = null;
+		String hql2 = "from Zbgglb s where s.zbpcbh='"+zbpcbh+"'";
+		org.hibernate.Query q2 = sessionFactory.getCurrentSession().createQuery(hql2);
+		result2=(List<Zbgglb>)q2.list();
+		int n2=result2.size();
+		for(int i=0;i<n2;i++)
+		{
+			result2.get(i).setDqhj(4);
+			
+		}
+		
+		model.put("success", true);
+		//model.put("total", totalConut);
+		return model;	
 	}
 }

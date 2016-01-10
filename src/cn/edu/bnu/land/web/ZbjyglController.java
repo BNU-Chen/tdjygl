@@ -115,11 +115,11 @@ public class ZbjyglController {
 	
 	@RequestMapping(value = "/updatejpresult",method=RequestMethod.GET)
 	@ResponseBody 	
-	public Map<String,Object> handleJpResult(@RequestBody Zbgglb record) throws IOException, ParseException 
+	public Map<String,Object> handleJpResult(@RequestParam("zbpcbh") String zbpcbh) throws IOException, ParseException 
 	{ 	
 		System.out.println("更新购买列表竞价结果");
-		//System.out.println(zbpcbh);			
-		return zbjyglService.updateWb(record.getZbpcbh());   	 
+		System.out.println(zbpcbh);			
+		return zbjyglService.updateGmToWq(zbpcbh,"oper");   	 
 	}
 			
 	@RequestMapping(value = "/updateToWb",method=RequestMethod.GET)
@@ -128,7 +128,7 @@ public class ZbjyglController {
 	{ 	
 		System.out.println("同意合同并进入网备阶段");
 		//System.out.println(zbpcbh);			
-		return zbjyglService.updateWb(zbpcbh);   	 
+		return zbjyglService.updateWbToWb(zbpcbh);   	 
 	}
 	
 	@RequestMapping(value = "/scdp",method=RequestMethod.POST)

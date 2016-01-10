@@ -294,6 +294,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom"
+            },
+            "name": "MyPagingToolbar3",
+            "designerId": "b31be939-1f80-405c-925a-526a67af6126"
         }
     ]
 }
