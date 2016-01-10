@@ -21,12 +21,12 @@ Ext.define('MyApp.view.zbsgsh', {
         'Ext.grid.RowNumberer',
         'Ext.grid.column.Date',
         'Ext.grid.View',
-        'Ext.toolbar.Toolbar',
         'Ext.Img',
         'Ext.form.Label',
         'Ext.form.field.Text',
         'Ext.grid.column.Action',
-        'Ext.grid.plugin.CellEditing'
+        'Ext.grid.plugin.CellEditing',
+        'Ext.toolbar.Paging'
     ],
 
     height: 676,
@@ -291,6 +291,13 @@ Ext.define('MyApp.view.zbsgsh', {
                             fieldLabel: 'Label'
                         }
                     ]
+                },
+                {
+                    xtype: 'pagingtoolbar',
+                    dock: 'bottom',
+                    width: 360,
+                    displayInfo: true,
+                    store: 'zbgmstore'
                 }
             ],
             plugins: [

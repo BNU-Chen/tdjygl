@@ -20,10 +20,10 @@ Ext.define('MyApp.view.wqgl', {
     requires: [
         'Ext.grid.column.Action',
         'Ext.grid.View',
-        'Ext.toolbar.Toolbar',
         'Ext.Img',
         'Ext.form.Label',
-        'Ext.form.field.Text'
+        'Ext.form.field.Text',
+        'Ext.toolbar.Paging'
     ],
 
     height: 572,
@@ -178,6 +178,13 @@ Ext.define('MyApp.view.wqgl', {
                             fieldLabel: 'Label'
                         }
                     ]
+                },
+                {
+                    xtype: 'pagingtoolbar',
+                    dock: 'bottom',
+                    width: 360,
+                    displayInfo: true,
+                    store: 'zbgmstore'
                 }
             ],
             listeners: {

@@ -128,7 +128,7 @@ public class ZbjyglController {
 	{ 	
 		System.out.println("同意合同并进入网备阶段");
 		//System.out.println(zbpcbh);			
-		return zbjyglService.updateWb(zbpcbh);   	 
+		return zbjyglService.updateWbToWb(zbpcbh);   	 
 	}
 	
 	@RequestMapping(value = "/scdp",method=RequestMethod.POST)

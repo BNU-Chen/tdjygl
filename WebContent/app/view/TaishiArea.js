@@ -19,11 +19,11 @@ Ext.define('MyApp.view.TaishiArea', {
 
     requires: [
         'Ext.panel.Panel',
-        'Ext.toolbar.Toolbar',
         'Ext.form.field.ComboBox',
         'Ext.toolbar.Separator',
         'Ext.form.RadioGroup',
-        'Ext.form.field.Radio'
+        'Ext.form.field.Radio',
+        'Ext.toolbar.Paging'
     ],
 
     height: 551,
@@ -133,6 +133,11 @@ Ext.define('MyApp.view.TaishiArea', {
                             ]
                         }
                     ]
+                },
+                {
+                    xtype: 'pagingtoolbar',
+                    dock: 'bottom',
+                    displayInfo: true
                 }
             ]
         });

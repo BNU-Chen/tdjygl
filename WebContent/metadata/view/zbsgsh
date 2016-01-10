@@ -804,6 +804,22 @@
             },
             "name": "onGridpanelActivate",
             "designerId": "3bd707aa-2515-428f-909f-cf01a84e42c2"
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "dock": "bottom",
+                "store": "zbgmstore",
+                "width": 360
+            },
+            "name": "MyPagingToolbar1",
+            "designerId": "1c12c0ad-2c0c-42fa-b1ab-c3dbe33f70d7"
         }
     ]
 }

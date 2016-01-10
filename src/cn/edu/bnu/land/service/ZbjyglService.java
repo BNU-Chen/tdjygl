@@ -416,7 +416,7 @@ public class ZbjyglService {
 		List<Zbgmgl> results = null;
 		String totalConut=null;
 		String h = "from Zbgmgl s where s.zbpcbh='"+zbpcbh+"'";//1表示要显示的，包括未审核和未通过的
-		
+		System.out.println("进入网备环节");
 		try {
 			org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(h);			
 			results = (List<Zbgmgl>) query.list();
@@ -424,6 +424,17 @@ public class ZbjyglService {
 			{
 				results.get(i).setDqhj(5);
 				results.get(i).setPczt("尚未备案");
+			}
+			
+			List<Zbgglb> result2 = null;
+			String hql2 = "from Zbgglb s where s.zbpcbh='"+zbpcbh+"'";
+			org.hibernate.Query q2 = sessionFactory.getCurrentSession().createQuery(hql2);
+			result2=(List<Zbgglb>)q2.list();
+			int n2=result2.size();
+			for(int i=0;i<n2;i++)
+			{
+				result2.get(i).setDqhj(5);
+				
 			}
 			
 		} catch (Exception e) {
