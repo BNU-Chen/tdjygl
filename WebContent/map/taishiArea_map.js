@@ -84,7 +84,7 @@ require([
         map = new Map("mapDiv_taishiArea", {
             logo: false
         });
-        mapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://172.16.190.35:8399/arcgis/rest/services/basemap/csqzjxzq/MapServer");
+        mapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/csqzjxzq/MapServer");
         map.addLayer(mapServiceLayer);
 
         mapServiceLayer.on("load", function () {
