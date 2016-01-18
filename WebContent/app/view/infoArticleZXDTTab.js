@@ -41,7 +41,6 @@ Ext.define('MyApp.view.infoArticleZXDTTab', {
                 {
                     xtype: 'tabpanel',
                     height: 421,
-                    id: '1',
                     bodyPadding: 10,
                     items: [
                         {

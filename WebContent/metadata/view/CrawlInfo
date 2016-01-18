@@ -30,6 +30,7 @@
             "userConfig": {
                 "forceFit": true,
                 "layout|region": "west",
+                "layout|split": true,
                 "store": "landinfo1",
                 "title": "检索信息列表",
                 "width": 446
@@ -92,6 +93,21 @@
                     "designerId": "744a0abe-bfee-4072-a5f3-3c573e1b9aec"
                 },
                 {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "price",
+                        "text": "价格（万元）",
+                        "width": 50
+                    },
+                    "name": "MyColumn116",
+                    "designerId": "48e73d40-7820-4977-bc80-19354a44388a"
+                },
+                {
                     "type": "Ext.grid.column.Number",
                     "reference": {
                         "name": "columns",
@@ -135,21 +151,6 @@
                     },
                     "name": "MyDateColumn22",
                     "designerId": "5195f317-8f86-42c6-b628-05adecafaf2e"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "price",
-                        "hidden": true,
-                        "text": "price"
-                    },
-                    "name": "MyColumn116",
-                    "designerId": "48e73d40-7820-4977-bc80-19354a44388a"
                 },
                 {
                     "type": "Ext.toolbar.Toolbar",
@@ -327,6 +328,7 @@
                 "id": "allmap",
                 "layout|flex": 1,
                 "layout|region": "center",
+                "layout|split": true,
                 "title": "地图定位显示"
             },
             "name": "MyForm19",

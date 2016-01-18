@@ -42,6 +42,7 @@ Ext.define('MyApp.view.CrawlInfo', {
                 {
                     xtype: 'gridpanel',
                     region: 'west',
+                    split: true,
                     width: 446,
                     title: '检索信息列表',
                     forceFit: true,
@@ -64,6 +65,12 @@ Ext.define('MyApp.view.CrawlInfo', {
                             text: 'region'
                         },
                         {
+                            xtype: 'gridcolumn',
+                            width: 50,
+                            dataIndex: 'price',
+                            text: '价格（万元）'
+                        },
+                        {
                             xtype: 'numbercolumn',
                             width: 40,
                             dataIndex: 'acre',
@@ -80,12 +87,6 @@ Ext.define('MyApp.view.CrawlInfo', {
                             hidden: true,
                             dataIndex: 'releasedate',
                             text: 'releasedate'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            hidden: true,
-                            dataIndex: 'price',
-                            text: 'price'
                         }
                     ],
                     dockedItems: [
@@ -136,6 +137,7 @@ Ext.define('MyApp.view.CrawlInfo', {
                     xtype: 'form',
                     flex: 1,
                     region: 'center',
+                    split: true,
                     id: 'allmap',
                     bodyPadding: 10,
                     title: '地图定位显示',

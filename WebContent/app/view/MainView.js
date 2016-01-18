@@ -117,7 +117,7 @@ Ext.define('MyApp.view.MainView', {
                                     },
                                     {
                                         id: 'infoArticleZJJYTab',
-                                        text: '交记录易',
+                                        text: '交易记录',
                                         icon: 'images/tubiao.png',
                                         leaf: true
                                     },
@@ -154,7 +154,7 @@ Ext.define('MyApp.view.MainView', {
                                 children: [
                                     {
                                         id: 'zbshrk',
-                                        text: '指标审核入库',
+                                        text: '指标审核入库建档',
                                         icon: '',
                                         leaf: true
                                     },
@@ -293,14 +293,14 @@ Ext.define('MyApp.view.MainView', {
                                         icon: 'images/tubiao.png',
                                         children: [
                                             {
-                                                id: 'Crawl',
-                                                text: '检索网站设置',
+                                                id: 'CrawlInfo',
+                                                text: '查看检索信息列表',
                                                 icon: 'images/tubiao.jpg',
                                                 leaf: true
                                             },
                                             {
-                                                id: 'CrawlInfo',
-                                                text: '查看检索信息列表',
+                                                id: 'Crawl',
+                                                text: '检索网站设置',
                                                 icon: 'images/tubiao.jpg',
                                                 leaf: true
                                             },
@@ -320,7 +320,7 @@ Ext.define('MyApp.view.MainView', {
                                     },
                                     {
                                         id: 'ccQueryStatisticsTab',
-                                        text: '查询与统计',
+                                        text: '流转信息查询与统计',
                                         icon: 'images/tubiao.png',
                                         leaf: true
                                     }
